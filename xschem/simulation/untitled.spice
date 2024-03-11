@@ -1,0 +1,29 @@
+** sch_path: /home/vblabs/Analog/circuitos/comparador/xschem/untitled.sch
+**.subckt untitled OUT1 OUT2 Out3
+*.iopin OUT1
+*.iopin OUT2
+*.iopin Out3
+VA VA GND 0
+XM1 OUT2 OUT2 OUT1 OUT1 sky130_fd_pr__pfet_g5v0d10v5 L=8 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Out3 Out3 OUT2 OUT2 sky130_fd_pr__pfet_g5v0d10v5 L=8 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 GND GND Out3 Out3 sky130_fd_pr__pfet_g5v0d10v5 L=8 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 OUT1 OUT1 VA VA sky130_fd_pr__pfet_g5v0d10v5 L=8 W=7 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+**** begin user architecture code
+
+.control
+dc VA 0 5 0.01
+save all
+plot out3 VA
+.endc
+
+
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.end
