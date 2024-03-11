@@ -1,0 +1,397 @@
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Thu Feb  8 02:23:45 UTC 2024
+******
+
+Note: Compatibility modes selected: hs a
+
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Vdd 3
+temperature -40
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          3
+vin                                          0
+net5                                  0.761216
+net6                                  0.304713
+net1                                         3
+net2                                   1.94372
+voutp                                  3.00001
+net3                                  0.328914
+vdd18                                      1.8
+vout                               1.01638e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -1.79552e-12
+vin#branch                                   0
+vdd#branch                        -1.92383e-07
+v1#branch                                    0
+
+ Reference value :  3.12105e-03
+No. of Data Rows : 21010
+rth                 =  1.271068e+00
+rtl                 =  1.129609e+00
+vhist = 1.414590e-01
+temperature 25
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          3
+vin                                          0
+net5                                  0.651149
+net6                                 0.0842165
+net1                                         3
+net2                                   2.05794
+voutp                                        3
+net3                                  0.409692
+vdd18                                      1.8
+vout                               1.39411e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -1.79908e-12
+vin#branch                                   0
+vdd#branch                        -1.96094e-07
+v1#branch                                    0
+
+ Reference value :  3.19455e-03
+No. of Data Rows : 21012
+rth                 =  1.301240e+00
+rtl                 =  1.098609e+00
+vhist = 2.026310e-01
+temperature 85
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          3
+vin                                          0
+net5                                  0.549028
+net6                                0.00463199
+net1                                         3
+net2                                   2.16132
+voutp                                  2.99999
+net3                                  0.484143
+vdd18                                      1.8
+vout                                  1.83e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -1.83199e-12
+vin#branch                                   0
+vdd#branch                        -1.99046e-07
+v1#branch                                    0
+
+ Reference value :  3.10465e-03
+No. of Data Rows : 21012
+rth                 =  1.330443e+00
+rtl                 =  1.069102e+00
+vhist = 2.613410e-01
+Vdd 5
+temperature -40
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          5
+vin                                          0
+net5                                  0.761216
+net6                                  0.342216
+net1                                         5
+net2                                   3.94336
+voutp                                  5.00008
+net3                                  0.332936
+vdd18                                      1.8
+vout                               8.36443e-10
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -2.13424e-12
+vin#branch                                   0
+vdd#branch                        -1.93059e-07
+v1#branch                                    0
+
+ Reference value :  3.09805e-03
+No. of Data Rows : 21009
+rth                 =  1.271585e+00
+rtl                 =  1.130086e+00
+vhist = 1.414990e-01
+temperature 25
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          5
+vin                                          0
+net5                                  0.651149
+net6                                  0.137405
+net1                                         5
+net2                                   4.05751
+voutp                                        5
+net3                                  0.414175
+vdd18                                      1.8
+vout                               1.11167e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -2.13776e-12
+vin#branch                                   0
+vdd#branch                        -1.96825e-07
+v1#branch                                    0
+
+ Reference value :  3.15115e-03
+No. of Data Rows : 21010
+rth                 =  1.301477e+00
+rtl                 =  1.099118e+00
+vhist = 2.023590e-01
+temperature 85
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                          5
+vin                                          0
+net5                                  0.549028
+net6                                 0.0149494
+net1                                         5
+net2                                   4.16082
+voutp                                  4.99999
+net3                                  0.489025
+vdd18                                      1.8
+vout                               1.43053e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -2.17067e-12
+vin#branch                                   0
+vdd#branch                        -1.99839e-07
+v1#branch                                    0
+
+ Reference value :  3.19054e-03
+No. of Data Rows : 21011
+rth                 =  1.330343e+00
+rtl                 =  1.069870e+00
+vhist = 2.604730e-01
+Vdd 5.5
+temperature -40
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                        5.5
+vin                                          0
+net5                                  0.761216
+net6                                  0.377983
+net1                                       5.5
+net2                                    4.4425
+voutp                                  5.50008
+net3                                  0.333763
+vdd18                                      1.8
+vout                               1.20654e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -3.21376e-12
+vin#branch                                   0
+vdd#branch                        -1.94686e-07
+v1#branch                                    0
+
+ Reference value :  3.15405e-03
+No. of Data Rows : 21009
+rth                 =  1.270603e+00
+rtl                 =  1.131100e+00
+vhist = 1.395030e-01
+temperature 25
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                        5.5
+vin                                          0
+net5                                  0.651149
+net6                                     0.189
+net1                                       5.5
+net2                                   4.55647
+voutp                                  5.49999
+net3                                  0.415089
+vdd18                                      1.8
+vout                               1.58814e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -3.21719e-12
+vin#branch                                   0
+vdd#branch                         -1.9861e-07
+v1#branch                                    0
+
+ Reference value :  3.16765e-03
+No. of Data Rows : 21011
+rth                 =  1.300247e+00
+rtl                 =  1.100617e+00
+vhist = 1.996300e-01
+temperature 85
+Reset re-loads circuit ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip_
+_overvoltage/xschem/comparador_completo_modificado.sch
+
+Circuit: ** sch_path: /home/vblabs/analog/circuitos/sky130_vbl_ip__overvoltage/x
+schem/comparador_completo_modificado.sch
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 85.000000 and TNOM = 27.000000
+
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+net4                                       1.2
+vdd                                        5.5
+vin                                          0
+net5                                  0.549028
+net6                                 0.0416148
+net1                                       5.5
+net2                                   4.65959
+voutp                                  5.49998
+net3                                  0.490013
+vdd18                                      1.8
+vout                               2.01829e-09
+ena                                          0
+xc1.a                                        0
+xc1.b1                                       0
+v4#branch                                    0
+v3#branch                         -3.25008e-12
+vin#branch                                   0
+vdd#branch                        -2.01768e-07
+v1#branch                                    0
+
+ Reference value :  3.14155e-03
+No. of Data Rows : 21011
+rth                 =  1.328896e+00
+rtl                 =  1.071602e+00
+vhist = 2.572940e-01
+ngspice 1 -> 
