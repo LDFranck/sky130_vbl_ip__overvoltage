@@ -985,16 +985,8 @@ N 5490 -3610 5490 -3370 {
 lab=out1}
 N 4610 -3210 4610 -3190 {
 lab=D}
-N 4610 -2680 4610 -2660 {
-lab=GND}
-N 4610 -2850 4610 -2820 {
-lab=VDD}
-N 4610 -2920 4610 -2900 {
-lab=NotD}
 N 4710 -3060 4820 -3060 {
 lab=out110}
-N 4610 -2900 4610 -2890 {
-lab=NotD}
 N 4710 -2760 4820 -2760 {
 lab=out110}
 N 4820 -3060 4820 -2760 {
@@ -1088,8 +1080,6 @@ lab=out110}
 N 4540 -2660 4580 -2660 {
 lab=out1101}
 N 4610 -2680 4610 -2660 {
-lab=GND}
-N 4610 -2680 4670 -2680 {
 lab=GND}
 N 4670 -2680 4670 -2650 {
 lab=GND}
@@ -1285,6 +1275,8 @@ N 4710 -2850 4710 -2660 {
 lab=out110}
 N 4610 -3120 4680 -3120 {
 lab=VDD}
+N 4610 -2680 4670 -2680 {
+lab=GND}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 5650 -5120 3 0 {name=M1
 L=0.5
 W=1
@@ -2328,71 +2320,7 @@ C {devices/lab_wire.sym} 4610 -3530 2 0 {name=p101 sig_type=std_logic lab=NotD
 }
 C {devices/lab_pin.sym} 4540 -3680 0 0 {name=p102 sig_type=std_logic lab=out1010}
 C {devices/lab_pin.sym} 4550 -3380 2 1 {name=p103 sig_type=std_logic lab=out1011}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 4610 -2940 3 0 {name=M59
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 4610 -3170 1 0 {name=M60
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {devices/gnd.sym} 4670 -2950 0 0 {name=l36 lab=GND}
-C {devices/lab_wire.sym} 4680 -3170 0 0 {name=p105 sig_type=std_logic lab=VDD
-}
 C {devices/lab_wire.sym} 4610 -3210 0 0 {name=p106 sig_type=std_logic lab=D}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 4610 -2640 3 0 {name=M61
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 4610 -2870 1 0 {name=M62
-L=0.5
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {devices/gnd.sym} 4670 -2650 0 0 {name=l37 lab=GND}
-C {devices/lab_wire.sym} 4680 -2870 0 0 {name=p107 sig_type=std_logic lab=VDD
-}
-C {devices/lab_wire.sym} 4610 -2910 2 0 {name=p108 sig_type=std_logic lab=NotD
-}
 C {devices/lab_pin.sym} 4610 -2530 0 0 {name=p111 sig_type=std_logic lab=D}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 4610 -2170 3 0 {name=M63
 L=0.5
