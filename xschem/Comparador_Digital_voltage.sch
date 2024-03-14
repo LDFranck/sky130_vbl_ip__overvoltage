@@ -85,15 +85,15 @@ N 2340 -990 2350 -990 {
 lab=VDD}
 N 2350 -990 2350 -960 {
 lab=VDD}
-N 1730 -920 1730 -890 {
+N 1490 -890 1490 -860 {
 lab=VDD}
-N 1730 -830 1730 -810 {
+N 1490 -800 1490 -780 {
 lab=GND}
-N 1730 -670 1730 -660 {
+N 1490 -520 1490 -510 {
 lab=GND}
-N 1720 -750 1730 -750 {
+N 1480 -600 1490 -600 {
 lab=VIN}
-N 1730 -750 1730 -730 {
+N 1490 -600 1490 -580 {
 lab=VIN}
 N 2360 -560 2360 -540 {
 lab=#net3}
@@ -183,11 +183,11 @@ N 2910 -570 2960 -570 {
 lab=GND}
 N 2080 -390 2160 -390 {
 lab=GND}
-N 1380 -800 1390 -800 {
+N 1480 -750 1490 -750 {
 lab=ENA}
-N 1390 -800 1390 -770 {
+N 1490 -750 1490 -720 {
 lab=ENA}
-N 1390 -710 1390 -690 {
+N 1490 -660 1490 -640 {
 lab=GND}
 N 2860 -570 2870 -570 {
 lab=ENA}
@@ -195,12 +195,6 @@ N 2030 -460 2050 -460 {
 lab=ENA}
 N 2910 -540 2910 -530 {
 lab=GND}
-N 1630 -470 1630 -460 {
-lab=GND}
-N 1620 -550 1630 -550 {
-lab=VIxxx}
-N 1630 -550 1630 -530 {
-lab=VIxxx}
 N 2080 -620 2100 -620 {
 lab=VIN}
 N 2620 -620 2620 -580 {
@@ -287,17 +281,19 @@ N 2360 -390 2360 -370 {
 lab=GND}
 N 2220 -460 2220 -390 {
 lab=GND}
+N 2360 -480 2360 -470 {
+lab=GND}
 C {devices/vsource.sym} 2620 -550 0 0 {name=V1 value=1.2 savecurrent=false}
 C {devices/gnd.sym} 2360 -370 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 2620 -510 0 0 {name=l2 lab=GND}
 C {devices/ipin.sym} 2340 -990 0 0 {name=p1 lab=VDD
 }
-C {devices/vsource.sym} 1730 -860 0 0 {name=VDD value=\{pVDD\} savecurrent=false}
-C {devices/ipin.sym} 1730 -920 0 1 {name=p2 lab=VDD
+C {devices/vsource.sym} 1490 -830 0 0 {name=VDD value=\{pVDD\} savecurrent=false}
+C {devices/ipin.sym} 1490 -890 0 0 {name=p2 lab=VDD
 }
-C {devices/gnd.sym} 1730 -810 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} 1730 -700 0 0 {name=VIN value="DC 0 PWL (1m 0 2m  2.5 3m 0) " savecurrent=false}
-C {devices/gnd.sym} 1730 -660 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 1490 -780 0 0 {name=l4 lab=GND}
+C {devices/vsource.sym} 1490 -550 0 0 {name=VIN value="DC 0 PWL (1m 0 2m  2.5 3m 0) " savecurrent=false}
+C {devices/gnd.sym} 1490 -510 0 0 {name=l3 lab=GND}
 C {devices/code_shown.sym} 1160 -660 0 0 {name="spice" only_toplevel="false" value=".param Wn1 = 5 Ln1 = 1 
 .param Wp1 = 5 Lp1 = 1 
 .param Wp2 = 2 Lp2 = 2
@@ -331,7 +327,7 @@ foreach var2 1.8
 end
 .endc"}
 C {devices/iopin.sym} 2940 -770 0 0 {name=p3 lab=Vout}
-C {devices/ipin.sym} 1720 -750 0 0 {name=p4 lab=VIN
+C {devices/ipin.sym} 1480 -600 0 0 {name=p4 lab=VIN
 
 }
 C {devices/ipin.sym} 2080 -620 0 0 {name=p5 lab=VIN
@@ -535,19 +531,16 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/vsource.sym} 1390 -740 0 0 {name=V4 value="0" savecurrent=false}
-C {devices/ipin.sym} 1380 -800 0 0 {name=p9 lab=ENA
+C {devices/vsource.sym} 1490 -690 0 0 {name=V4 value="0" savecurrent=false}
+C {devices/ipin.sym} 1480 -750 0 0 {name=p9 lab=ENA
 
 
 }
-C {devices/gnd.sym} 1390 -690 0 0 {name=l6 lab=GND}
+C {devices/gnd.sym} 1490 -640 0 0 {name=l6 lab=GND}
 C {devices/ipin.sym} 2030 -460 0 0 {name=p10 lab=ENA
 
 
 }
-C {devices/vsource.sym} 1630 -500 0 0 {name=VIN1 value="DC 0 PWL (1m 0 2m  5 3m 0) " savecurrent=false}
-C {devices/gnd.sym} 1630 -460 0 0 {name=l7 lab=GND}
-C {devices/ipin.sym} 1620 -550 0 0 {name=p11 lab=VIxxx}
 C {devices/ipin.sym} 2840 -570 0 0 {name=p13 lab=ENA
 
 
