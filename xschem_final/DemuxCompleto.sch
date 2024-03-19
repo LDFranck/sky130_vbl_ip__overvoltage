@@ -197,7 +197,7 @@ lab=avdd}
 N 1270 -2550 1270 -2530 {
 lab=vtrip_2_b}
 N 1270 -1380 1270 -1360 {
-lab=vtrip_2_b}
+lab=vtrip_2}
 N 1370 -1520 1480 -1520 {
 lab=out1}
 N 1480 -1820 1480 -1520 {
@@ -1054,8 +1054,6 @@ N 950 -4540 950 -4340 {
 lab=vtrip_1}
 N 1270 -3420 1270 -2840 {
 lab=vtrip_2}
-N 520 -3260 530 -3260 {
-lab=in_0111}
 N 530 -1300 570 -1300 {
 lab=in_1101}
 N 530 -1300 530 -1110 {
@@ -1334,7 +1332,7 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 1340 -1630 0 0 {name=p23 sig_type=std_logic lab=avdd
 }
-C {devices/lab_wire.sym} 1270 -1360 2 0 {name=p24 sig_type=std_logic lab=vtrip_2_b
+C {devices/lab_wire.sym} 1270 -1360 2 0 {name=p24 sig_type=std_logic lab=vtrip_2
 }
 C {devices/lab_wire.sym} 1270 -2140 2 0 {name=p25 sig_type=std_logic lab=vtrip_2_b
 }
