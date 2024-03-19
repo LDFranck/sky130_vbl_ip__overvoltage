@@ -68,7 +68,7 @@ B 5 -152.5 7.5 -147.5 12.5 {name=in_1100 sig_type=std_logic dir=in}
 B 5 -152.5 27.5 -147.5 32.5 {name=in_1101 sig_type=std_logic dir=in}
 B 5 -152.5 47.5 -147.5 52.5 {name=in_1110 sig_type=std_logic dir=in}
 B 5 -152.5 67.5 -147.5 72.5 {name=in_1111 sig_type=std_logic dir=in}
-T {16x1 bis MUX} 18.5 -136 1 0 0.8 0.8 {}
+T {16x1 bits MUX} 18.5 -136 1 0 0.8 0.8 {}
 T {@name} 135 -252 0 0 0.2 0.2 {}
 T {in_0000} -125 -234 0 0 0.2 0.2 {}
 T {in_0001} -125 -214 0 0 0.2 0.2 {}
