@@ -1,0 +1,15 @@
+cace/*.spice
+cace/xschemrc
+cace/sky130_vbl_ip__overvoltage_out.txt
+cace/*.sym
+ngspice/*
+netlist/*
+spice/*
+plots/*
+xschem/xschemrc
+xschem/*.spice
+mag/*.ext
+mag/*.res.ext
+mag/*.nodes
+mag/*.sim
+.spiceinit
