@@ -91,8 +91,8 @@ pins {
 	description:	Input bias current
 	type:		signal
 	direction:	input
-	Vmin:		98 nA
-	Vmax:		102 nA
+	Vmin:		392 nA
+	Vmax:		408 nA
 
  	+
 	name:		ovout
