@@ -180,16 +180,16 @@ default_conditions {
 	description:	Input bias current
 	display:	Ibias
 	unit:		nA
-	minimum:	98
-	typical:	100
-	maximum:	102
+	minimum:	392
+	typical:	400
+	maximum:	408
 	
 	+
 	name:		vtrip[3:0]
 	description:	Trip point selection
 	display:	vtrip[3:0]
 	minimum:	0000
-	typical:	0010
+	typical:	1000
 	maximum:	1111
 
 	+
@@ -234,7 +234,7 @@ electrical_parameters {
 		
 		+
 		name:		Ibias
-		typical:	100
+		typical:	400
 	}
 
 	+
@@ -263,7 +263,7 @@ electrical_parameters {
 		
 		+
 		name:		Ibias
-		typical:	100
+		typical:	400
 	}
 
 	+
@@ -288,7 +288,7 @@ electrical_parameters {
 		
 		+
 		name:		Ibias
-		typical:	100
+		typical:	400
 		
 		+
 		name: 		vtrip[3:0]
@@ -339,7 +339,9 @@ electrical_parameters {
 
 		+
 		name: 		corner
-		enumerate:	ss_mm tt_mm ff_mm sf_mm fs_mm
+		minimum:	ss_mm
+		typical:	tt_mm
+		maximum:	ff_mm
 		
 		+
 		name:		Vdummy
@@ -395,6 +397,12 @@ electrical_parameters {
 			   	0100 0101 0110 0111 \
 			   	1000 1001 1010 1011 \
 			   	1100 1101 1110 1111
+			   	
+		+
+		name: 		corner
+		minimum:	ss_mm
+		typical:	tt_mm
+		maximum:	ff_mm
 		
 		+
 		name:		Vdummy
