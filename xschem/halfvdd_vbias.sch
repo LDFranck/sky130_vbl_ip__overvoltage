@@ -47,17 +47,17 @@ lab=#net3}
 N 360 -560 420 -560 {
 lab=#net3}
 N 420 -490 420 -470 {
-lab=vbias}
+lab=bias}
 N 420 -440 450 -440 {
-lab=vbias}
+lab=bias}
 N 450 -480 450 -440 {
-lab=vbias}
+lab=bias}
 N 420 -480 450 -480 {
-lab=vbias}
+lab=bias}
 N 420 -520 450 -520 {
-lab=vbias}
+lab=bias}
 N 450 -520 450 -480 {
-lab=vbias}
+lab=bias}
 N 420 -600 450 -600 {
 lab=avdd}
 N 450 -650 450 -600 {
@@ -93,9 +93,9 @@ lab=ena}
 N 310 -650 420 -650 {
 lab=avdd}
 N 450 -480 520 -480 {
-lab=vbias}
+lab=bias}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -600 0 0 {name=M1
-L=5
+L=10
 W=1
 nf=1
 mult=1
@@ -109,7 +109,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -520 2 1 {name=M2
-L=5
+L=10
 W=1
 nf=1
 mult=1
@@ -123,7 +123,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -440 0 0 {name=M3
-L=5
+L=10
 W=1
 nf=1
 mult=1
@@ -137,7 +137,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -360 2 1 {name=M4
-L=5
+L=10
 W=1
 nf=1
 mult=1
@@ -151,7 +151,7 @@ model=pfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 400 -260 0 0 {name=M5
-L=1
+L=3
 W=5
 nf=1
 mult=1
