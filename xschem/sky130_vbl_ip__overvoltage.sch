@@ -257,7 +257,7 @@ C {devices/lab_pin.sym} 1075 -505 0 0 {name=p45 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1485 -345 0 0 {name=p46 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 1985 -425 0 1 {name=p47 sig_type=std_logic lab=vss}
 C {devices/ipin.sym} 525 -865 0 0 {name=p10 lab=vtrip[3]}
-C {devices/opin.sym} 2110 -575 0 0 {name=p36 lab=out}
+C {devices/opin.sym} 2110 -575 0 0 {name=p36 lab=ovout}
 C {devices/ipin.sym} 1830 -505 0 0 {name=p41 lab=vbg}
 C {devices/ipin.sym} 525 -665 0 0 {name=p5 lab=vtrip[2]}
 C {devices/ipin.sym} 525 -475 0 0 {name=p8 lab=vtrip[1]}
