@@ -146,8 +146,8 @@ C {devices/code_shown.sym} 0 -990 0 0 {name=SETUP only_toplevel=false value="* C
 "}
 C {devices/code_shown.sym} 0 -820 0 0 {name=CONTROL only_toplevel=false value=".control
 op
-set wr_singlescale
-wrdata \{simpath\}/\{filename\}_\{N\}.data -I(Vmeas)
+let itotal = -I(Vmeas)
+echo $&itotal > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}
@@ -161,7 +161,6 @@ C {devices/lab_pin.sym} 495 -660 0 0 {name=p14 sig_type=std_logic lab=vbg}
 C {devices/lab_pin.sym} 660 -790 1 0 {name=p15 sig_type=std_logic lab=ibias}
 C {devices/lab_pin.sym} 495 -535 0 0 {name=p17 sig_type=std_logic lab=A}
 C {devices/vsource.sym} 280 -210 0 1 {name=Vmeas value=0 savecurrent=false}
-C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x1}
 C {devices/gnd.sym} 800 -560 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 620 -415 0 0 {name=l4 lab=GND}
 C {devices/lab_pin.sym} 495 -510 0 0 {name=p1 sig_type=std_logic lab=B}
@@ -170,3 +169,4 @@ C {devices/lab_pin.sym} 495 -485 0 0 {name=p2 sig_type=std_logic lab=C
 C {devices/lab_pin.sym} 495 -460 0 0 {name=p22 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 495 -570 0 0 {name=p18 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 840 -660 0 1 {name=p16 sig_type=std_logic lab=ovout}
+C {sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x2}

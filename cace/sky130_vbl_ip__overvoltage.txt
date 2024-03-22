@@ -218,7 +218,7 @@ electrical_parameters {
 	simulate {
 		tool:		ngspice
 		template:	tb_dccurrent.spice
-		format:		ascii .data null result
+		format:		ascii .data result
 	}
 	conditions {
 		name:		Vbg
