@@ -24,7 +24,7 @@ T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
 T {DC Current Consumption Testbench} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-20} 1100 -110 2 1 0.4 0.4 {}
+T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
 N 840 -660 840 -640 {
 lab=ovout}
 N 760 -660 840 -660 {
@@ -169,4 +169,4 @@ C {devices/lab_pin.sym} 495 -485 0 0 {name=p2 sig_type=std_logic lab=C
 C {devices/lab_pin.sym} 495 -460 0 0 {name=p22 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 495 -570 0 0 {name=p18 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 840 -660 0 1 {name=p16 sig_type=std_logic lab=ovout}
-C {sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x2}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x1}

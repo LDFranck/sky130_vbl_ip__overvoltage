@@ -24,7 +24,7 @@ T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
 T {Response Time Testbench} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-20} 1100 -110 2 1 0.4 0.4 {}
+T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
 N 160 -310 260 -310 {
 lab=GND}
 N 390 -410 390 -390 {
@@ -42,10 +42,6 @@ lab=GND}
 N 290 -410 290 -390 {
 lab=ibias}
 N 90 -330 90 -310 {
-lab=GND}
-N 710 -410 710 -390 {
-lab=vtrip}
-N 710 -330 710 -310 {
 lab=GND}
 N 90 -310 90 -290 {
 lab=GND}
@@ -85,43 +81,41 @@ N 390 -330 390 -310 {
 lab=GND}
 N 90 -310 160 -310 {
 lab=GND}
-N 360 -310 460 -310 {
-lab=GND}
-N 460 -310 710 -310 {
-lab=GND}
-N 840 -690 840 -670 {
+N 860 -690 860 -670 {
 lab=ovout}
-N 760 -690 840 -690 {
+N 780 -690 860 -690 {
 lab=ovout}
-N 760 -690 760 -670 {
+N 780 -690 780 -670 {
 lab=ovout}
-N 580 -820 580 -800 {
+N 600 -820 600 -800 {
 lab=avdd}
-N 620 -820 620 -800 {
+N 640 -820 640 -800 {
 lab=dvdd}
-N 660 -820 660 -800 {
+N 680 -820 680 -800 {
 lab=ibias}
-N 495 -565 515 -565 {
+N 515 -565 535 -565 {
 lab=A}
-N 760 -610 760 -590 {
+N 780 -610 780 -590 {
 lab=GND}
-N 760 -590 840 -590 {
+N 780 -590 860 -590 {
 lab=GND}
-N 840 -610 840 -590 {
+N 860 -610 860 -590 {
 lab=GND}
-N 725 -690 760 -690 {
+N 745 -690 780 -690 {
 lab=ovout}
-N 495 -540 515 -540 {
+N 515 -540 535 -540 {
 lab=B}
-N 495 -515 515 -515 {
+N 515 -515 535 -515 {
 lab=C}
-N 495 -490 515 -490 {
+N 515 -490 535 -490 {
 lab=D}
-N 495 -600 515 -600 {
+N 515 -600 535 -600 {
 lab=ena}
-N 495 -690 515 -690 {
+N 515 -690 535 -690 {
 lab=vbg}
-C {devices/vsource.sym} 390 -360 0 0 {name=Vavdd value="PWL (0 \{Vavdd|minimum\} 50u \{Vavdd|maximum\})" savecurrent=false}
+N 360 -310 390 -310 {
+lab=GND}
+C {devices/vsource.sym} 390 -360 0 0 {name=Vavdd value="PWL (0 0 10u 0 10u \{Vavdd|maximum\})" savecurrent=false}
 C {devices/gnd.sym} 90 -180 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 90 -360 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
 C {devices/lab_pin.sym} 390 -410 0 0 {name=p15 sig_type=std_logic lab=avdd}
@@ -135,9 +129,9 @@ C {devices/code_shown.sym} 0 -1030 0 0 {name=SETUP only_toplevel=false value="* 
 .option warn=1
 "}
 C {devices/code_shown.sym} 0 -860 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 100n 150u 1u
-meas tran ttrip WHEN V(avdd) = V(vtrip) RISE=1
-meas tran trise WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
+tran 100n 100u 1u
+meas tran ttrip WHEN V(avdd) = [\{Vavdd|maximum\}/2] RISE=1
+meas tran trise WHEN V(ovout) = [\{Vdvdd\}/2] RISE=1
 let resptime = $&trise - $&ttrip
 echo $&resptime > \{simpath\}/\{filename\}_\{N\}.data
 quit
@@ -147,8 +141,6 @@ C {devices/vsource.sym} 190 -360 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=fa
 C {devices/lab_pin.sym} 190 -410 0 0 {name=p17 sig_type=std_logic lab=vbg}
 C {devices/isource.sym} 290 -360 2 1 {name=Ibias value="DC \{Ibias\}"}
 C {devices/lab_pin.sym} 290 -410 0 0 {name=p18 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 710 -410 0 0 {name=p19 sig_type=std_logic lab=vtrip}
-C {devices/vsource.sym} 710 -360 0 0 {name=Vtrip value="DC [(8*\{vtrip[3]\} + 4*\{vtrip[2]\} + 2*\{vtrip[1]\} + 1*\{vtrip[0]\})*0.14667 + 3.3]" savecurrent=false}
 C {devices/vsource.sym} 160 -230 0 0 {name=Vena value="DC [\{ena\} * \{Vdvdd\}]" savecurrent=false}
 C {devices/lab_pin.sym} 160 -280 0 0 {name=p20 sig_type=std_logic lab=ena}
 C {devices/vsource.sym} 340 -230 0 0 {name=VA value="DC [\{vtrip[3]\} * \{Vdvdd\}]" savecurrent=false}
@@ -159,27 +151,27 @@ C {devices/vsource.sym} 700 -230 0 0 {name=VC value="DC [\{vtrip[1]\} * \{Vdvdd\
 C {devices/vsource.sym} 880 -230 0 0 {name=VD value="DC [\{vtrip[0]\} * \{Vdvdd\}]" savecurrent=false}
 C {devices/lab_pin.sym} 700 -280 0 0 {name=p23 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 880 -280 0 0 {name=p25 sig_type=std_logic lab=D}
-C {devices/capa.sym} 840 -640 0 0 {name=Cout
+C {devices/capa.sym} 860 -640 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 760 -640 0 0 {name=Rout
+C {devices/res.sym} 780 -640 0 0 {name=Rout
 value=\{Rout\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 580 -820 1 0 {name=p12 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 620 -820 1 0 {name=p13 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 495 -690 0 0 {name=p14 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 660 -820 1 0 {name=p1 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 495 -565 0 0 {name=p2 sig_type=std_logic lab=A}
-C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 290 -360 0 0 {name=x1}
-C {devices/gnd.sym} 800 -590 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 620 -445 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 495 -540 0 0 {name=p3 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 495 -515 0 0 {name=p4 sig_type=std_logic lab=C
+C {devices/lab_pin.sym} 600 -820 1 0 {name=p12 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 640 -820 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 515 -690 0 0 {name=p14 sig_type=std_logic lab=vbg}
+C {devices/lab_pin.sym} 680 -820 1 0 {name=p1 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 515 -565 0 0 {name=p2 sig_type=std_logic lab=A}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 310 -360 0 0 {name=x1}
+C {devices/gnd.sym} 820 -590 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 640 -445 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 515 -540 0 0 {name=p3 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 515 -515 0 0 {name=p4 sig_type=std_logic lab=C
 }
-C {devices/lab_pin.sym} 495 -490 0 0 {name=p5 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 495 -600 0 0 {name=p6 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 840 -690 0 1 {name=p7 sig_type=std_logic lab=ovout}
+C {devices/lab_pin.sym} 515 -490 0 0 {name=p5 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 515 -600 0 0 {name=p6 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 860 -690 0 1 {name=p7 sig_type=std_logic lab=ovout}
