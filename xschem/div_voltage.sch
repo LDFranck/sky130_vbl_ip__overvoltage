@@ -28,12 +28,12 @@ lab=v2}
 N 450 -750 460 -750 {
 lab=v2}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 450 -880 0 0 {name=R1
-L=0.35
+L=0.70
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
 C {sky130_fd_pr/res_xhigh_po_0p35.sym} 450 -800 0 0 {name=R2
-L=0.35
+L=0.70
 model=res_xhigh_po_0p35
 spiceprefix=X
 mult=1}
