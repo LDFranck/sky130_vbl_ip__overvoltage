@@ -24,7 +24,7 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
-T {sky130_vbl_ip_overvoltage} 150 -110 2 1 0.4 0.4 {}
+T {sky130_vbl_ip__overvoltage} 150 -110 2 1 0.4 0.4 {}
 T {2024-03-21} 2280 -110 2 1 0.4 0.4 {}
 N 415 -915 545 -915 {
 lab=#net1}
