@@ -15,7 +15,8 @@ L 4 920 0 2200 -0 {}
 L 4 2200 -140 2200 0 {}
 L 4 920 -100 2200 -100 {}
 L 4 2040 -140 2040 -100 {}
-L 4 650 -2350 650 -2280 {}
+L 4 790 -2840 790 -2770 {}
+L 4 1460 -1140 1460 -1035 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=0.8
 image=/home/vblabs/Downloads/vblabs.png
@@ -25,588 +26,562 @@ T {16x1 bits MUX} 150 -130 0 0 0.4 0.4 {}
 T {Von Braun Labs
 Lucas Daudt Franck and William Carrara Orlato
 Supervisor: Toni Robert Trigoso Tejada} 160 -90 0 0 0.4 0.4 {}
-N 1480 -3880 1480 -3580 {
-lab=out0}
-N 1480 -1820 1480 -1520 {
-lab=out1}
-N 1160 -5140 1160 -4840 {
+N 1300 -2720 1300 -2420 {
 lab=out00}
-N 1850 -3690 1850 -3110 {
+N 1990 -1985 1990 -1405 {
 lab=out}
-N 1850 -3110 1850 -2900 {
-lab=out}
-N 1480 -4610 1480 -4360 {
-lab=out0}
-N 1160 -4190 1160 -3890 {
-lab=out01}
-N 1160 -2780 1160 -2480 {
+N 1300 -1505 1300 -1205 {
 lab=out10}
-N 1480 -2360 1480 -2060 {
-lab=out1}
-N 1160 -1420 1160 -1120 {
+N 1300 -755 1300 -455 {
 lab=out11}
-N 1850 -2900 1850 -2790 {
-lab=out}
-N 1480 -2690 1480 -2360 {
-lab=out1}
-N 1160 -1120 1160 -840 {
-lab=out11}
-N 1160 -2480 1160 -2230 {
-lab=out10}
-N 1160 -4840 1160 -4700 {
+N 1300 -2420 1300 -2280 {
 lab=out00}
-N 1480 -4070 1480 -3880 {
-lab=out0}
-N 1160 -3670 1160 -3620 {
+N 1300 -1805 1300 -1755 {
 lab=out01}
-N 1480 -4360 1480 -4070 {
-lab=out0}
-N 1160 -3890 1160 -3670 {
-lab=out01}
-N 1480 -2060 1480 -1820 {
-lab=out1}
-N 830 -740 830 -440 {
-lab=out111}
-N 820 -440 830 -440 {
-lab=out111}
-N 810 -440 820 -440 {
-lab=out111}
-N 1850 -3190 1870 -3190 {
+N 1990 -1645 2010 -1645 {
 lab=out}
-N 810 -1510 810 -1210 {
-lab=out110}
-N 1535 -3690 1550 -3690 {}
-N 1770 -3690 1850 -3690 {}
-N 1480 -3690 1535 -3690 {}
-N 1770 -2790 1850 -2790 {}
-N 1480 -2790 1480 -2690 {}
-N 1480 -2790 1550 -2790 {}
-N 1160 -2690 1175 -2690 {}
-N 1395 -2690 1480 -2690 {}
-N 1160 -3620 1160 -3580 {}
-N 1160 -3580 1175 -3580 {}
-N 1160 -1520 1160 -1420 {}
-N 1160 -1520 1175 -1520 {}
-N 1160 -4700 1160 -4610 {}
-N 1160 -4610 1175 -4610 {}
-N 810 -5140 855 -5140 {}
-N 810 -4700 855 -4700 {}
-N 810 -4190 855 -4190 {}
-N 810 -3530 855 -3530 {}
-N 1075 -3530 1160 -3530 {}
-N 1160 -3580 1160 -3530 {}
-N 810 -2780 855 -2780 {}
-N 810 -2230 850 -2230 {}
-N 850 -2230 855 -2230 {}
-N 810 -1420 855 -1420 {}
-N 830 -840 855 -840 {}
-N 830 -840 830 -740 {}
-N 1075 -5140 1160 -5140 {}
-N 1075 -4700 1160 -4700 {}
-N 1395 -4610 1480 -4610 {}
-N 1075 -4190 1160 -4190 {}
-N 1395 -3580 1480 -3580 {}
-N 1075 -2780 1160 -2780 {}
-N 1075 -2230 1160 -2230 {}
-N 1075 -1420 1160 -1420 {}
-N 1395 -1520 1480 -1520 {}
-N 1075 -840 1160 -840 {}
-N 725 -5140 810 -5140 {}
-N 725 -1510 810 -1510 {}
-N 725 -1210 810 -1210 {}
-N 725 -740 830 -740 {}
-N 725 -440 810 -440 {}
-N 790 -5310 790 -5140 {}
-N 725 -5310 790 -5310 {}
-N 790 -4870 790 -4700 {}
-N 725 -4870 790 -4870 {}
-N 725 -4700 790 -4700 {}
-N 790 -4700 810 -4700 {}
-N 725 -4190 810 -4190 {}
-N 725 -4360 790 -4360 {}
-N 790 -4360 790 -4190 {}
-N 725 -3700 790 -3700 {}
-N 790 -3700 790 -3530 {}
-N 790 -3530 810 -3530 {}
-N 725 -3530 790 -3530 {}
-N 725 -2780 810 -2780 {}
-N 790 -2940 790 -2780 {}
-N 725 -2945 790 -2945 {}
-N 790 -2945 790 -2940 {}
-N 725 -2400 790 -2400 {}
-N 790 -2400 790 -2230 {}
-N 790 -2230 810 -2230 {}
-N 725 -2230 785 -2230 {}
-N 785 -2230 790 -2230 {}
-C {devices/lab_wire.sym} 1695 -3740 0 0 {name=p1 sig_type=std_logic lab=avdd
+N 1675 -1985 1690 -1985 {}
+N 1910 -1985 1990 -1985 {}
+N 1620 -1985 1675 -1985 {}
+N 1910 -1290 1990 -1290 {}
+N 1620 -1290 1620 -1190 {}
+N 1620 -1290 1690 -1290 {}
+N 1300 -1190 1315 -1190 {}
+N 1535 -1190 1620 -1190 {}
+N 1300 -1755 1300 -1715 {}
+N 1300 -1985 1315 -1985 {}
+N 1300 -985 1315 -985 {}
+N 1300 -2280 1300 -2190 {}
+N 1300 -2190 1315 -2190 {}
+N 950 -2720 995 -2720 {}
+N 950 -2400 995 -2400 {}
+N 950 -1985 995 -1985 {}
+N 950 -1665 995 -1665 {}
+N 1215 -1665 1300 -1665 {}
+N 1300 -1715 1300 -1665 {}
+N 950 -1505 995 -1505 {}
+N 950 -1190 990 -1190 {}
+N 990 -1190 995 -1190 {}
+N 950 -755 995 -755 {}
+N 970 -435 995 -435 {}
+N 1215 -2720 1300 -2720 {}
+N 1215 -2400 1300 -2400 {}
+N 1535 -2190 1620 -2190 {}
+N 1215 -1985 1300 -1985 {}
+N 1535 -1985 1620 -1985 {}
+N 1215 -1505 1300 -1505 {}
+N 1215 -1190 1300 -1190 {}
+N 1215 -755 1300 -755 {}
+N 1215 -435 1300 -435 {}
+N 865 -2720 950 -2720 {}
+N 930 -2890 930 -2720 {}
+N 865 -2890 930 -2890 {}
+N 930 -2570 930 -2400 {}
+N 865 -2570 930 -2570 {}
+N 865 -2400 930 -2400 {}
+N 930 -2400 950 -2400 {}
+N 865 -1985 950 -1985 {}
+N 865 -2155 930 -2155 {}
+N 930 -2155 930 -1985 {}
+N 865 -1835 930 -1835 {}
+N 930 -1835 930 -1665 {}
+N 930 -1665 950 -1665 {}
+N 865 -1665 930 -1665 {}
+N 865 -1505 930 -1505 {}
+N 865 -1190 930 -1190 {}
+N 930 -1190 950 -1190 {}
+N 865 -755 930 -755 {}
+N 865 -1340 930 -1340 {}
+N 930 -1505 930 -1340 {}
+N 930 -1505 950 -1505 {}
+N 865 -1020 930 -1020 {}
+N 930 -1190 930 -1020 {}
+N 930 -755 950 -755 {}
+N 865 -580 930 -580 {}
+N 930 -755 930 -580 {}
+N 865 -265 930 -265 {}
+N 930 -435 930 -265 {}
+N 865 -435 930 -435 {}
+N 930 -435 970 -435 {}
+N 1300 -1985 1300 -1805 {}
+N 1300 -1205 1300 -1190 {}
+N 1300 -455 1300 -435 {}
+N 1620 -2190 1620 -1985 {}
+N 1300 -985 1300 -845 {
+lab=out00}
+N 1300 -845 1300 -755 {}
+N 1535 -985 1620 -985 {}
+N 1620 -1190 1620 -985 {}
+N 1990 -1405 1990 -1290 {}
+C {devices/lab_wire.sym} 1835 -2035 0 0 {name=p1 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1615 -3740 0 0 {name=p2 sig_type=std_logic lab=vtrip_3
+C {devices/lab_wire.sym} 1755 -2035 0 0 {name=p2 sig_type=std_logic lab=vtrip_3
 L=5
 W=2}
-C {devices/lab_wire.sym} 1695 -2840 0 1 {name=p3 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1835 -1340 0 1 {name=p3 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1615 -2740 2 0 {name=p4 sig_type=std_logic lab=vtrip_3
+C {devices/lab_wire.sym} 1755 -1240 2 0 {name=p4 sig_type=std_logic lab=vtrip_3
 L=5
 W=2}
-C {devices/lab_wire.sym} 1615 -2840 0 1 {name=p5 sig_type=std_logic lab=vtrip_3_b
+C {devices/lab_wire.sym} 1755 -1340 0 1 {name=p5 sig_type=std_logic lab=vtrip_3_b
 L=5
 W=2}
-C {devices/lab_wire.sym} 1320 -4660 0 1 {name=p14 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1460 -2240 0 1 {name=p14 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1320 -3630 0 1 {name=p16 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1460 -2035 0 1 {name=p16 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1320 -2740 0 1 {name=p21 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1460 -1240 0 1 {name=p21 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1320 -1570 0 1 {name=p23 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1460 -1035 0 1 {name=p23 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1240 -1470 2 1 {name=p24 sig_type=std_logic lab=vtrip_2
+C {devices/lab_wire.sym} 1380 -935 2 1 {name=p24 sig_type=std_logic lab=vtrip_2
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -5190 0 1 {name=p32 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -2770 0 1 {name=p32 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 920 -5190 0 0 {name=p33 sig_type=std_logic lab=vtrip_1
+C {devices/lab_wire.sym} 1060 -2770 0 0 {name=p33 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -4750 0 1 {name=p34 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -2450 0 1 {name=p34 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 920 -4750 0 0 {name=p36 sig_type=std_logic lab=vtrip_1_b
+C {devices/lab_wire.sym} 1060 -2450 0 0 {name=p36 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {devices/lab_pin.sym} 920 -4240 0 0 {name=p35 sig_type=std_logic lab=vtrip_1
+C {devices/lab_pin.sym} 1060 -2035 0 0 {name=p35 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -4240 0 1 {name=p39 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -2035 0 1 {name=p39 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -3580 0 1 {name=p41 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -1715 0 1 {name=p41 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_pin.sym} 920 -2830 2 1 {name=p45 sig_type=std_logic lab=vtrip_1
+C {devices/lab_pin.sym} 1060 -1555 2 1 {name=p45 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -2830 0 1 {name=p46 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -1555 0 1 {name=p46 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -2280 0 1 {name=p48 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -1240 0 1 {name=p48 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 920 -2280 0 0 {name=p49 sig_type=std_logic lab=vtrip_1_b
+C {devices/lab_wire.sym} 1060 -1240 0 0 {name=p49 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -1470 0 1 {name=p53 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -805 0 1 {name=p53 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 1000 -890 0 1 {name=p55 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 1140 -485 0 1 {name=p55 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 920 -890 0 0 {name=p56 sig_type=std_logic lab=vtrip_1_b
+C {devices/lab_wire.sym} 1060 -485 0 0 {name=p56 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {devices/lab_pin.sym} 920 -790 0 0 {name=p59 sig_type=std_logic lab=vtrip_1
+C {devices/lab_pin.sym} 1060 -385 0 0 {name=p59 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -5360 0 1 {name=p63 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2940 0 1 {name=p63 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -5360 0 0 {name=p64 sig_type=std_logic lab=vtrip_0
+C {devices/lab_wire.sym} 710 -2940 0 0 {name=p64 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -5190 0 1 {name=p65 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2770 0 1 {name=p65 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -5190 0 0 {name=p66 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -2770 0 0 {name=p66 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -5310 0 0 {name=p67 sig_type=std_logic lab=in_0000
+C {devices/ipin.sym} 645 -2890 0 0 {name=p67 sig_type=std_logic lab=in_0000
 L=5
 W=2}
-C {devices/ipin.sym} 505 -5140 2 1 {name=p68 sig_type=std_logic lab=in_0001
+C {devices/ipin.sym} 645 -2720 2 1 {name=p68 sig_type=std_logic lab=in_0001
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -4920 0 0 {name=p69 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -2620 0 0 {name=p69 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -4920 0 1 {name=p70 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2620 0 1 {name=p70 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -4750 0 1 {name=p72 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2450 0 1 {name=p72 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -4750 0 0 {name=p73 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -2450 0 0 {name=p73 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -4870 0 0 {name=p74 sig_type=std_logic lab=in_0010
+C {devices/ipin.sym} 645 -2570 0 0 {name=p74 sig_type=std_logic lab=in_0010
 
 L=5
 W=2}
-C {devices/ipin.sym} 505 -4700 2 1 {name=p75 sig_type=std_logic lab=in_0011
+C {devices/ipin.sym} 645 -2400 2 1 {name=p75 sig_type=std_logic lab=in_0011
 
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -4410 0 1 {name=p77 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2205 0 1 {name=p77 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -4410 0 0 {name=p78 sig_type=std_logic lab=vtrip_0
+C {devices/lab_wire.sym} 710 -2205 0 0 {name=p78 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -4240 0 1 {name=p79 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -2035 0 1 {name=p79 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -4240 0 0 {name=p80 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -2035 0 0 {name=p80 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -4360 0 0 {name=p81 sig_type=std_logic lab=in_0100
+C {devices/ipin.sym} 645 -2155 0 0 {name=p81 sig_type=std_logic lab=in_0100
 L=5
 W=2}
-C {devices/ipin.sym} 505 -4190 2 1 {name=p82 sig_type=std_logic lab=in_0101
+C {devices/ipin.sym} 645 -1985 2 1 {name=p82 sig_type=std_logic lab=in_0101
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -3750 0 0 {name=p83 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -1885 0 0 {name=p83 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -3750 0 1 {name=p84 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1885 0 1 {name=p84 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -3580 0 1 {name=p86 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1715 0 1 {name=p86 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -3580 0 0 {name=p87 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -1715 0 0 {name=p87 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -3700 0 0 {name=p88 sig_type=std_logic lab=in_0110
+C {devices/ipin.sym} 645 -1835 0 0 {name=p88 sig_type=std_logic lab=in_0110
 L=5
 W=2}
-C {devices/ipin.sym} 505 -3530 2 1 {name=p89 sig_type=std_logic lab=in_0111
+C {devices/ipin.sym} 645 -1665 2 1 {name=p89 sig_type=std_logic lab=in_0111
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -2995 0 0 {name=p90 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -1555 0 0 {name=p90 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -2995 0 1 {name=p91 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1555 0 1 {name=p91 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -2830 0 1 {name=p93 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1390 0 1 {name=p93 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -2830 0 0 {name=p94 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -1390 0 0 {name=p94 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -2945 0 0 {name=p95 sig_type=std_logic lab=in_1000
+C {devices/ipin.sym} 645 -1505 0 0 {name=p95 sig_type=std_logic lab=in_1000
 L=5
 W=2}
-C {devices/ipin.sym} 505 -2780 2 1 {name=p96 sig_type=std_logic lab=in_1001
+C {devices/ipin.sym} 645 -1340 2 1 {name=p96 sig_type=std_logic lab=in_1001
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -2450 0 0 {name=p97 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -1240 0 0 {name=p97 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -2450 0 1 {name=p98 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1240 0 1 {name=p98 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -2280 0 1 {name=p100 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -1070 0 1 {name=p100 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -2280 0 0 {name=p101 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -1070 0 0 {name=p101 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -2400 0 0 {name=p102 sig_type=std_logic lab=in_1010
+C {devices/ipin.sym} 645 -1190 0 0 {name=p102 sig_type=std_logic lab=in_1010
 L=5
 W=2}
-C {devices/ipin.sym} 505 -2230 2 1 {name=p103 sig_type=std_logic lab=in_1011
+C {devices/ipin.sym} 645 -1020 2 1 {name=p103 sig_type=std_logic lab=in_1011
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -790 0 0 {name=p111 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -485 0 0 {name=p111 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -790 0 1 {name=p112 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -485 0 1 {name=p112 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -490 0 1 {name=p114 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -315 0 1 {name=p114 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -490 0 0 {name=p115 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -315 0 0 {name=p115 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -740 0 0 {name=p116 sig_type=std_logic lab=in_1110
+C {devices/ipin.sym} 645 -435 0 0 {name=p116 sig_type=std_logic lab=in_1110
 L=5
 W=2}
-C {devices/ipin.sym} 505 -440 2 1 {name=p117 sig_type=std_logic lab=in_1111
+C {devices/ipin.sym} 645 -265 2 1 {name=p117 sig_type=std_logic lab=in_1111
 L=5
 W=2}
-C {devices/lab_pin.sym} 570 -390 0 0 {name=p118 sig_type=std_logic lab=vtrip_0
+C {devices/lab_pin.sym} 710 -215 0 0 {name=p118 sig_type=std_logic lab=vtrip_0
 L=3}
-C {devices/lab_wire.sym} 650 -1560 0 1 {name=p119 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -805 0 1 {name=p119 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 650 -1260 0 1 {name=p120 sig_type=std_logic lab=avdd
+C {devices/lab_wire.sym} 790 -635 0 1 {name=p120 sig_type=std_logic lab=avdd
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -1260 0 0 {name=p121 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -635 0 0 {name=p121 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {devices/ipin.sym} 505 -1510 0 0 {name=p122 sig_type=std_logic lab=in_1100
+C {devices/ipin.sym} 645 -755 0 0 {name=p122 sig_type=std_logic lab=in_1100
 L=5
 W=2}
-C {devices/ipin.sym} 505 -1210 2 1 {name=p123 sig_type=std_logic lab=in_1101
+C {devices/ipin.sym} 645 -585 2 1 {name=p123 sig_type=std_logic lab=in_1101
 L=5
 W=2}
-C {devices/lab_pin.sym} 1240 -4660 0 0 {name=p76 sig_type=std_logic lab=vtrip_2
+C {devices/lab_pin.sym} 1380 -2240 0 0 {name=p76 sig_type=std_logic lab=vtrip_2
 L=5
 W=2}
-C {devices/opin.sym} 1870 -3190 0 0 {name=p92 lab=out
+C {devices/opin.sym} 2010 -1645 0 0 {name=p92 lab=out
 L=5
 W=2}
-C {devices/ipin.sym} 280 -3310 0 0 {name=p6 lab=vtrip_3
+C {devices/ipin.sym} 420 -1605 0 0 {name=p6 lab=vtrip_3
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3280 0 0 {name=p13 lab=vtrip_3_b
+C {devices/ipin.sym} 420 -1575 0 0 {name=p13 lab=vtrip_3_b
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3250 0 0 {name=p30 lab=vtrip_2
+C {devices/ipin.sym} 420 -1545 0 0 {name=p30 lab=vtrip_2
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3220 0 0 {name=p99 lab=vtrip_2_b
+C {devices/ipin.sym} 420 -1515 0 0 {name=p99 lab=vtrip_2_b
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3190 0 0 {name=p62 lab=vtrip_1
+C {devices/ipin.sym} 420 -1485 0 0 {name=p62 lab=vtrip_1
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3160 0 0 {name=p104 lab=vtrip_1_b
+C {devices/ipin.sym} 420 -1455 0 0 {name=p104 lab=vtrip_1_b
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3130 0 0 {name=p47 lab=vtrip_0
+C {devices/ipin.sym} 420 -1425 0 0 {name=p47 lab=vtrip_0
 L=1
 W=2}
-C {devices/ipin.sym} 280 -3100 0 0 {name=p105 lab=vtrip_0_b
+C {devices/ipin.sym} 420 -1395 0 0 {name=p105 lab=vtrip_0_b
 L=1
 W=2}
-C {devices/iopin.sym} 280 -3370 0 1 {name=p107 lab=avdd
+C {devices/iopin.sym} 420 -1665 0 1 {name=p107 lab=avdd
 L=1
 W=2}
-C {devices/iopin.sym} 280 -3340 0 1 {name=p9 lab=vss
+C {devices/iopin.sym} 420 -1635 0 1 {name=p9 lab=vss
 L=1
 W=2}
-C {devices/lab_pin.sym} 650 -5260 2 0 {name=p31 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -2840 2 0 {name=p31 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -5090 2 0 {name=p54 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -2670 2 0 {name=p54 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -4820 2 0 {name=p71 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -2520 2 0 {name=p71 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -4650 2 0 {name=p108 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -2350 2 0 {name=p108 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -4310 2 0 {name=p109 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -2105 2 0 {name=p109 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -4140 2 0 {name=p110 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1935 2 0 {name=p110 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -3650 2 0 {name=p113 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1785 2 0 {name=p113 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -3480 2 0 {name=p124 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1615 2 0 {name=p124 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -2895 2 0 {name=p125 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1455 2 0 {name=p125 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -2730 2 0 {name=p126 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1290 2 0 {name=p126 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -2350 2 0 {name=p127 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -1140 2 0 {name=p127 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -2180 2 0 {name=p128 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -970 2 0 {name=p128 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -1460 2 0 {name=p129 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -705 2 0 {name=p129 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -1160 2 0 {name=p130 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -535 2 0 {name=p130 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -690 2 0 {name=p131 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -385 2 0 {name=p131 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 650 -390 2 0 {name=p132 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 790 -215 2 0 {name=p132 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -790 2 0 {name=p133 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -385 2 0 {name=p133 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -2180 2 0 {name=p135 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -1140 2 0 {name=p135 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -2730 2 0 {name=p136 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -1455 2 0 {name=p136 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -3480 2 0 {name=p137 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -1615 2 0 {name=p137 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -4140 2 0 {name=p138 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -1935 2 0 {name=p138 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -4650 2 0 {name=p139 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -2350 2 0 {name=p139 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1000 -5090 2 0 {name=p140 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1140 -2670 2 0 {name=p140 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1320 -4560 2 0 {name=p141 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1460 -2140 2 0 {name=p141 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1320 -2640 2 0 {name=p143 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1460 -1140 2 0 {name=p143 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1320 -1470 2 0 {name=p144 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1460 -935 2 0 {name=p144 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1695 -3640 2 0 {name=p145 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1835 -1935 2 0 {name=p145 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 1695 -2740 2 0 {name=p146 sig_type=std_logic lab=vss
+C {devices/lab_pin.sym} 1835 -1240 2 0 {name=p146 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {T_gate.sym} 1500 -3600 0 0 {name=x1}
-C {devices/lab_wire.sym} 1615 -3640 2 0 {name=p7 sig_type=std_logic lab=vtrip_3_b
+C {T_gate.sym} 1640 -1895 0 0 {name=x1}
+C {devices/lab_wire.sym} 1755 -1935 2 0 {name=p7 sig_type=std_logic lab=vtrip_3_b
 L=5
 W=2}
-C {T_gate.sym} 1500 -2700 0 0 {name=x2}
-C {T_gate.sym} 1125 -2600 0 0 {name=x3}
-C {devices/lab_wire.sym} 1240 -2640 2 1 {name=p8 sig_type=std_logic lab=vtrip_2_b
+C {T_gate.sym} 1640 -1200 0 0 {name=x2}
+C {T_gate.sym} 1265 -1100 0 0 {name=x3}
+C {devices/lab_wire.sym} 1380 -1140 2 1 {name=p8 sig_type=std_logic lab=vtrip_2_b
 L=5
 W=2}
-C {devices/lab_wire.sym} 1240 -2740 0 0 {name=p10 sig_type=std_logic lab=vtrip_2
+C {devices/lab_wire.sym} 1380 -1240 0 0 {name=p10 sig_type=std_logic lab=vtrip_2
 L=5
 W=2}
-C {T_gate.sym} 1125 -3490 0 0 {name=x4}
-C {devices/lab_pin.sym} 1320 -3530 2 0 {name=p11 sig_type=std_logic lab=vss
+C {T_gate.sym} 1265 -1895 0 0 {name=x4}
+C {devices/lab_pin.sym} 1460 -1935 2 0 {name=p11 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_wire.sym} 1240 -3630 0 0 {name=p12 sig_type=std_logic lab=vtrip_2_b
+C {devices/lab_wire.sym} 1380 -2035 0 0 {name=p12 sig_type=std_logic lab=vtrip_2_b
 L=5
 W=2}
-C {devices/lab_wire.sym} 1240 -3530 2 1 {name=p15 sig_type=std_logic lab=vtrip_2
+C {devices/lab_wire.sym} 1380 -1935 2 1 {name=p15 sig_type=std_logic lab=vtrip_2
 L=5
 W=2}
-C {T_gate.sym} 1125 -1430 0 0 {name=x5}
-C {devices/lab_wire.sym} 1240 -1570 0 0 {name=p17 sig_type=std_logic lab=vtrip_2_b
+C {T_gate.sym} 1265 -895 0 0 {name=x5}
+C {devices/lab_wire.sym} 1380 -1035 0 0 {name=p17 sig_type=std_logic lab=vtrip_2_b
 L=5
 W=2}
-C {T_gate.sym} 1125 -4520 0 0 {name=x6}
-C {devices/lab_wire.sym} 1240 -4560 2 1 {name=p19 sig_type=std_logic lab=vtrip_2_b
+C {T_gate.sym} 1265 -2100 0 0 {name=x6}
+C {devices/lab_wire.sym} 1380 -2140 2 1 {name=p19 sig_type=std_logic lab=vtrip_2_b
 L=5
 W=2}
-C {T_gate.sym} 805 -5050 0 0 {name=x7}
-C {devices/lab_wire.sym} 920 -5090 2 1 {name=p18 sig_type=std_logic lab=vtrip_1_b
+C {T_gate.sym} 945 -2630 0 0 {name=x7}
+C {devices/lab_wire.sym} 1060 -2670 2 1 {name=p18 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {T_gate.sym} 805 -4610 0 0 {name=x8}
-C {devices/lab_pin.sym} 920 -4650 0 0 {name=p20 sig_type=std_logic lab=vtrip_1
+C {T_gate.sym} 945 -2310 0 0 {name=x8}
+C {devices/lab_pin.sym} 1060 -2350 0 0 {name=p20 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {T_gate.sym} 805 -4100 0 0 {name=x9}
-C {devices/lab_wire.sym} 920 -4140 2 1 {name=p22 sig_type=std_logic lab=vtrip_1_b
+C {T_gate.sym} 945 -1895 0 0 {name=x9}
+C {devices/lab_wire.sym} 1060 -1935 2 1 {name=p22 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {T_gate.sym} 805 -3440 0 0 {name=x10}
-C {devices/lab_wire.sym} 920 -3580 0 0 {name=p25 sig_type=std_logic lab=vtrip_1_b
+C {T_gate.sym} 945 -1575 0 0 {name=x10}
+C {devices/lab_wire.sym} 1060 -1715 0 0 {name=p25 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {devices/lab_pin.sym} 920 -3480 0 0 {name=p26 sig_type=std_logic lab=vtrip_1
+C {devices/lab_pin.sym} 1060 -1615 0 0 {name=p26 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {T_gate.sym} 805 -2690 0 0 {name=x11}
-C {devices/lab_wire.sym} 920 -2730 2 1 {name=p27 sig_type=std_logic lab=vtrip_1_b
+C {T_gate.sym} 945 -1415 0 0 {name=x11}
+C {devices/lab_wire.sym} 1060 -1455 2 1 {name=p27 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {T_gate.sym} 805 -2140 0 0 {name=x12}
-C {devices/lab_pin.sym} 920 -2180 0 0 {name=p28 sig_type=std_logic lab=vtrip_1
+C {T_gate.sym} 945 -1100 0 0 {name=x12}
+C {devices/lab_pin.sym} 1060 -1140 0 0 {name=p28 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {T_gate.sym} 805 -1330 0 0 {name=x13}
-C {devices/lab_pin.sym} 1000 -1370 2 0 {name=p29 sig_type=std_logic lab=vss
+C {T_gate.sym} 945 -665 0 0 {name=x13}
+C {devices/lab_pin.sym} 1140 -705 2 0 {name=p29 sig_type=std_logic lab=vss
 L=5
 W=2}
-C {devices/lab_pin.sym} 920 -1470 0 0 {name=p37 sig_type=std_logic lab=vtrip_1
+C {devices/lab_pin.sym} 1060 -805 0 0 {name=p37 sig_type=std_logic lab=vtrip_1
 L=5
 W=2}
-C {devices/lab_wire.sym} 920 -1370 2 1 {name=p38 sig_type=std_logic lab=vtrip_1_b
+C {devices/lab_wire.sym} 1060 -705 2 1 {name=p38 sig_type=std_logic lab=vtrip_1_b
 L=5
 W=2}
-C {T_gate.sym} 805 -750 0 0 {name=x14}
-C {T_gate.sym} 455 -5220 0 0 {name=x15}
-C {devices/lab_wire.sym} 570 -5260 2 1 {name=p40 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 945 -345 0 0 {name=x14}
+C {T_gate.sym} 595 -2800 0 0 {name=x15}
+C {devices/lab_wire.sym} 710 -2840 2 1 {name=p40 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -5050 0 0 {name=x16}
-C {devices/lab_pin.sym} 570 -5090 0 0 {name=p42 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -2630 0 0 {name=x16}
+C {devices/lab_pin.sym} 710 -2670 0 0 {name=p42 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -4780 0 0 {name=x17}
-C {devices/lab_wire.sym} 570 -4820 2 1 {name=p43 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -2480 0 0 {name=x17}
+C {devices/lab_wire.sym} 710 -2520 2 1 {name=p43 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -4610 0 0 {name=x18}
-C {devices/lab_wire.sym} 570 -4650 2 1 {name=p44 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -2310 0 0 {name=x18}
+C {devices/lab_wire.sym} 710 -2350 2 1 {name=p44 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -4270 0 0 {name=x19}
-C {devices/lab_wire.sym} 570 -4310 2 1 {name=p50 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -2065 0 0 {name=x19}
+C {devices/lab_wire.sym} 710 -2105 2 1 {name=p50 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -4100 0 0 {name=x20}
-C {devices/lab_pin.sym} 570 -4140 0 0 {name=p51 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -1895 0 0 {name=x20}
+C {devices/lab_pin.sym} 710 -1935 0 0 {name=p51 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -3610 0 0 {name=x21}
-C {devices/lab_wire.sym} 570 -3650 2 1 {name=p52 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -1745 0 0 {name=x21}
+C {devices/lab_wire.sym} 710 -1785 2 1 {name=p52 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -3440 0 0 {name=x22}
-C {devices/lab_pin.sym} 570 -3480 0 0 {name=p57 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -1575 0 0 {name=x22}
+C {devices/lab_pin.sym} 710 -1615 0 0 {name=p57 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -2855 0 0 {name=x23}
-C {devices/lab_wire.sym} 570 -2895 2 1 {name=p58 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -1415 0 0 {name=x23}
+C {devices/lab_wire.sym} 710 -1455 2 1 {name=p58 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -2690 0 0 {name=x24}
-C {devices/lab_pin.sym} 570 -2730 0 0 {name=p60 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -1250 0 0 {name=x24}
+C {devices/lab_pin.sym} 710 -1290 0 0 {name=p60 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -2310 0 0 {name=x25}
-C {devices/lab_wire.sym} 570 -2350 2 1 {name=p61 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -1100 0 0 {name=x25}
+C {devices/lab_wire.sym} 710 -1140 2 1 {name=p61 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -2140 0 0 {name=x26}
-C {devices/lab_wire.sym} 570 -2180 2 1 {name=p85 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -930 0 0 {name=x26}
+C {devices/lab_wire.sym} 710 -970 2 1 {name=p85 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -1420 0 0 {name=x27}
-C {devices/lab_wire.sym} 570 -1560 0 0 {name=p106 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -665 0 0 {name=x27}
+C {devices/lab_wire.sym} 710 -805 0 0 {name=p106 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {devices/lab_wire.sym} 570 -1460 2 1 {name=p134 sig_type=std_logic lab=vtrip_0_b
+C {devices/lab_wire.sym} 710 -705 2 1 {name=p134 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -1120 0 0 {name=x28}
-C {devices/lab_pin.sym} 570 -1160 0 0 {name=p142 sig_type=std_logic lab=vtrip_0
+C {T_gate.sym} 595 -495 0 0 {name=x28}
+C {devices/lab_pin.sym} 710 -535 0 0 {name=p142 sig_type=std_logic lab=vtrip_0
 L=5
 W=2}
-C {T_gate.sym} 455 -650 0 0 {name=x29}
-C {devices/lab_wire.sym} 570 -690 2 1 {name=p147 sig_type=std_logic lab=vtrip_0_b
+C {T_gate.sym} 595 -345 0 0 {name=x29}
+C {devices/lab_wire.sym} 710 -385 2 1 {name=p147 sig_type=std_logic lab=vtrip_0_b
 L=5
 W=2}
-C {T_gate.sym} 455 -350 0 0 {name=x30}
+C {T_gate.sym} 595 -175 0 0 {name=x30}
