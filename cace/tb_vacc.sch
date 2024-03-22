@@ -79,26 +79,6 @@ N 90 -290 90 -180 {
 lab=GND}
 N 390 -330 390 -310 {
 lab=GND}
-N 890 -580 920 -580 {
-lab=ovout}
-N 920 -580 970 -580 {
-lab=ovout}
-N 800 -580 830 -580 {
-lab=ovout}
-N 480 -560 500 -560 {
-lab=GND}
-N 480 -560 480 -510 {
-lab=GND}
-N 440 -540 500 -540 {
-lab=ibias}
-N 830 -580 890 -580 {
-lab=ovout}
-N 340 -520 370 -520 {
-lab=#net1}
-N 370 -580 370 -520 {
-lab=#net1}
-N 370 -580 500 -580 {
-lab=#net1}
 N 90 -310 160 -310 {
 lab=GND}
 N 360 -310 390 -310 {
@@ -109,6 +89,38 @@ N 720 -330 720 -310 {
 lab=GND}
 N 390 -310 720 -310 {
 lab=GND}
+N 940 -700 940 -680 {
+lab=ovout}
+N 860 -700 940 -700 {
+lab=ovout}
+N 860 -700 860 -680 {
+lab=ovout}
+N 680 -830 680 -810 {
+lab=avdd}
+N 720 -830 720 -810 {
+lab=dvdd}
+N 760 -830 760 -810 {
+lab=ibias}
+N 595 -575 615 -575 {
+lab=A}
+N 860 -620 860 -600 {
+lab=GND}
+N 860 -600 940 -600 {
+lab=GND}
+N 940 -620 940 -600 {
+lab=GND}
+N 825 -700 860 -700 {
+lab=ovout}
+N 595 -550 615 -550 {
+lab=B}
+N 595 -525 615 -525 {
+lab=C}
+N 595 -500 615 -500 {
+lab=D}
+N 595 -610 615 -610 {
+lab=ena}
+N 595 -700 615 -700 {
+lab=vbg}
 C {devices/vsource.sym} 390 -360 0 0 {name=Vavdd value="PWL (0 \{Vavdd|minimum\} 150m \{Vavdd|maximum\})" savecurrent=false}
 C {devices/gnd.sym} 90 -180 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 90 -360 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
@@ -123,7 +135,7 @@ C {devices/code_shown.sym} 0 -1040 0 0 {name=SETUP only_toplevel=false value="* 
 .option warn=1
 "}
 C {devices/code_shown.sym} 0 -860 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 100e-6 150e-3
+tran 100u 150m 1m
 meas tran vthr FIND V(avdd)  WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 meas tran vref FIND V(vtrip) WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 let accuracy = $&vthr - $&vref
@@ -145,34 +157,29 @@ C {devices/vsource.sym} 700 -230 0 0 {name=VC value="DC [\{vtrip[1]\} * \{Vdvdd\
 C {devices/vsource.sym} 880 -230 0 0 {name=VD value="DC [\{vtrip[0]\} * \{Vdvdd\}]" savecurrent=false}
 C {devices/lab_pin.sym} 700 -280 0 0 {name=p23 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 880 -280 0 0 {name=p25 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 970 -580 0 1 {name=p26 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Downloads/comp/xschem/comp.sym} 650 -570 0 0 {name=x2}
-C {devices/gnd.sym} 800 -560 0 0 {name=l5 lab=GND}
-C {devices/gnd.sym} 480 -510 0 0 {name=l6 lab=GND}
-C {devices/lab_pin.sym} 440 -540 0 0 {name=p27 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 500 -600 0 0 {name=p29 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 800 -600 1 0 {name=p30 sig_type=std_logic lab=dvdd}
-C {devices/res.sym} 340 -670 0 0 {name=R1
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 340 -610 0 0 {name=R2
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 340 -550 0 0 {name=R3
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 340 -490 0 0 {name=R4
-value=1k
-footprint=1206
-device=resistor
-m=1}
-C {devices/gnd.sym} 340 -460 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 340 -700 0 0 {name=p1 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 720 -410 0 0 {name=p19 sig_type=std_logic lab=vtrip}
 C {devices/vsource.sym} 720 -360 0 0 {name=Vtrip value="DC [(8*\{vtrip[3]\} + 4*\{vtrip[2]\} + 2*\{vtrip[1]\} + 1*\{vtrip[0]\})*0.14667 + 3.3]" savecurrent=false}
+C {devices/capa.sym} 940 -650 0 0 {name=Cout
+m=1
+value=\{Cout\}
+footprint=1206
+device="ceramic capacitor"}
+C {devices/res.sym} 860 -650 0 0 {name=Rout
+value=\{Rout\}
+footprint=1206
+device=resistor
+m=1}
+C {devices/lab_pin.sym} 680 -830 1 0 {name=p12 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 720 -830 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 595 -700 0 0 {name=p14 sig_type=std_logic lab=vbg}
+C {devices/lab_pin.sym} 760 -830 1 0 {name=p1 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 595 -575 0 0 {name=p2 sig_type=std_logic lab=A}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 390 -370 0 0 {name=x1}
+C {devices/gnd.sym} 900 -600 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 720 -455 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 595 -550 0 0 {name=p3 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 595 -525 0 0 {name=p4 sig_type=std_logic lab=C
+}
+C {devices/lab_pin.sym} 595 -500 0 0 {name=p5 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 595 -610 0 0 {name=p6 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 940 -700 0 1 {name=p7 sig_type=std_logic lab=ovout}

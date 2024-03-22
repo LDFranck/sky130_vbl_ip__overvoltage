@@ -47,14 +47,6 @@ pins {
 	Vmax:		6.0 V
 	
 	+
-	name:		avss
-	description:	Analog ground
-	type:		ground
-	direction:	inout
-	Vmin:		-0.3 V
-	Vmax:		0.3 V
-	
-	+
 	name:		dvdd
 	description:	Digital power supply
 	type:		power
@@ -63,8 +55,8 @@ pins {
 	Vmax:		1.97 V
 	
 	+
-	name:		dvss
-	description:	Digital ground
+	name:		vss
+	description:	Ground
 	type:		ground
 	direction:	inout
 	Vmin:		-0.3 V

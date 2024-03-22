@@ -25,18 +25,12 @@ T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
 T {DC Current Consumption Testbench} 150 -110 2 1 0.4 0.4 {}
 T {2024-03-20} 1100 -110 2 1 0.4 0.4 {}
-N 1010 -560 1010 -540 {
-lab=avdd}
-N 930 -560 1010 -560 {
-lab=avdd}
-N 930 -560 930 -540 {
-lab=avdd}
-N 930 -480 930 -460 {
-lab=GND}
-N 930 -460 1010 -460 {
-lab=GND}
-N 1010 -480 1010 -460 {
-lab=GND}
+N 840 -660 840 -640 {
+lab=ovout}
+N 760 -660 840 -660 {
+lab=ovout}
+N 760 -660 760 -640 {
+lab=ovout}
 N 70 -280 70 -260 {
 lab=#net1}
 N 70 -260 180 -260 {
@@ -85,40 +79,44 @@ N 380 -280 380 -260 {
 lab=#net1}
 N 380 -360 380 -340 {
 lab=ibias}
-N 140 -540 140 -520 {
+N 580 -790 580 -770 {
 lab=avdd}
-N 230 -540 230 -520 {
+N 620 -790 620 -770 {
 lab=dvdd}
-N 320 -540 320 -520 {
-lab=vbg}
-N 410 -540 410 -520 {
+N 660 -790 660 -770 {
 lab=ibias}
-N 500 -540 500 -520 {
-lab=ena}
-N 580 -540 580 -520 {
+N 495 -535 515 -535 {
 lab=A}
-N 670 -540 670 -520 {
-lab=B}
-N 760 -540 760 -520 {
-lab=C}
-N 850 -540 850 -520 {
-lab=D}
-N 140 -460 850 -460 {
-lab=GND}
-N 850 -460 930 -460 {
-lab=GND}
 N 280 -260 280 -240 {
 lab=#net1}
 N 380 -260 520 -260 {
 lab=#net1}
 N 180 -280 180 -260 {
 lab=#net1}
-C {devices/capa.sym} 1010 -510 0 0 {name=Cout
+N 760 -580 760 -560 {
+lab=GND}
+N 760 -560 840 -560 {
+lab=GND}
+N 840 -580 840 -560 {
+lab=GND}
+N 725 -660 760 -660 {
+lab=ovout}
+N 495 -510 515 -510 {
+lab=B}
+N 495 -485 515 -485 {
+lab=C}
+N 495 -460 515 -460 {
+lab=D}
+N 495 -570 515 -570 {
+lab=ena}
+N 495 -660 515 -660 {
+lab=vbg}
+C {devices/capa.sym} 840 -610 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 930 -510 0 0 {name=Rout
+C {devices/res.sym} 760 -610 0 0 {name=Rout
 value=\{Rout\}
 footprint=1206
 device=resistor
@@ -157,60 +155,18 @@ C {devices/vsource.sym} 280 -310 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=fa
 C {devices/lab_pin.sym} 280 -360 0 0 {name=p8 sig_type=std_logic lab=vbg}
 C {devices/isource.sym} 380 -310 2 1 {name=Ibias value="DC \{Ibias\}"}
 C {devices/lab_pin.sym} 380 -360 0 0 {name=p9 sig_type=std_logic lab=ibias}
-C {devices/res.sym} 140 -490 0 0 {name=Rout1
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 230 -490 0 0 {name=Rout2
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 320 -490 0 0 {name=Rout3
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 410 -490 0 0 {name=Rout4
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 500 -490 0 0 {name=Rout5
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/lab_pin.sym} 140 -540 0 0 {name=p12 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 230 -540 0 0 {name=p13 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 320 -540 0 0 {name=p14 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 410 -540 0 0 {name=p15 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 500 -540 0 0 {name=p16 sig_type=std_logic lab=ena}
-C {devices/res.sym} 580 -490 0 0 {name=Rout6
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 670 -490 0 0 {name=Rout7
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 760 -490 0 0 {name=Rout8
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/res.sym} 850 -490 0 0 {name=Rout9
-value=100k
-footprint=1206
-device=resistor
-m=1}
-C {devices/lab_pin.sym} 580 -540 0 0 {name=p17 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 670 -540 0 0 {name=p18 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 760 -540 0 0 {name=p19 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 850 -540 0 0 {name=p20 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 960 -560 1 0 {name=p21 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 580 -790 1 0 {name=p12 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 620 -790 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 495 -660 0 0 {name=p14 sig_type=std_logic lab=vbg}
+C {devices/lab_pin.sym} 660 -790 1 0 {name=p15 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 495 -535 0 0 {name=p17 sig_type=std_logic lab=A}
 C {devices/vsource.sym} 280 -210 0 1 {name=Vmeas value=0 savecurrent=false}
-C {devices/gnd.sym} 140 -460 0 0 {name=l1 lab=GND}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x1}
+C {devices/gnd.sym} 800 -560 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 620 -415 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 495 -510 0 0 {name=p1 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 495 -485 0 0 {name=p2 sig_type=std_logic lab=C
+}
+C {devices/lab_pin.sym} 495 -460 0 0 {name=p22 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 495 -570 0 0 {name=p18 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 840 -660 0 1 {name=p16 sig_type=std_logic lab=ovout}
