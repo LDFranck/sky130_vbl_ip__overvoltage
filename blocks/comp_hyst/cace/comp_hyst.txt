@@ -1,0 +1,342 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name:		comp_hyst
+description:	Comparator with hysteresis
+commit:		N/A
+PDK:		sky130A
+
+cace_format:	4.0
+
+authorship {
+	designer:	Lucas Daudt Franck, William Carrara Orlato, Toni Robert Trigoso Tejada
+	company:	Von Braun Labs
+	creation_date:	March 20, 2024
+	license:	Apache 2.0
+}
+
+# Paths to various files
+
+paths {
+	root:		..
+	documentation:	doc
+	schematic:	xschem
+	magic:		mag
+	layout:		gds
+	netlist:	netlist
+	testbench:	cace
+	simulation:	ngspice
+	plots:		plots
+	logs:		ngspice/log
+}
+
+# Project dependencies
+
+dependencies {
+}
+
+# Pin names and descriptions
+
+pins {
+	name:		dvdd
+	description:	Digital power supply
+	type:		power
+	direction:	inout
+	Vmin:		1.65 V
+	Vmax:		1.95 V
+	
+	+
+	name:		vss
+	description:	Ground
+	type:		ground
+	direction:	inout
+	Vmin:		-0.3 V
+	Vmax:		0.3 V
+	
+	+
+	name:		ena
+	description:	Enable input (active high)
+	type:		digital
+	direction:	input
+	Vmin:		vss
+	Vmax:		dvdd
+	
+	+
+	name:		vin
+	description:	Input voltage
+	type:		signal
+	direction:	input
+	Vmin:		0.0 V
+	Vmax:		5.5 V
+
+ 	+
+	name:		vref
+	description:	Reference voltage
+	type:		signal
+	direction:	input
+	Vmin:		5.5 V
+	Vmax:		0.0 V
+	
+ 	+
+	name:		ibias
+	description:	Input bias current
+	type:		signal
+	direction:	input
+	Vmin:		588 nA
+	Vmax:		612 nA
+
+ 	+
+	name:		out
+	description:	Comparator output
+	type:		digital
+	direction:	output
+	Vmin:		vss
+	Vmax:		dvdd
+}
+
+# Default values for electrical parameter measurement conditions
+# if not otherwise specified
+
+default_conditions {
+	name:		Vdvdd
+	description:	Digital power supply voltage
+	display:	dvdd
+	unit:		V
+	minimum:	1.65
+	typical:	1.80
+	maximum:	1.95
+	
+	+
+	name:		Rout
+	description:	Output load resistance
+	display:	RLoad
+	unit:		M{ohms}
+	typical:	1
+
+	+
+	name:		Cout
+	description:	Output load capacitance
+	display:	CLoad
+	unit:		pF
+	typical:	1
+
+	+
+	name:		ena
+	description:	Comparator enable
+	display:	ena
+	typical:	1
+	
+	+
+	name:		Vvin
+	description:	Input voltage
+	display:	Vvin
+	unit:		V
+	minimum:	0.00
+	typical:	0.80
+	maximum:	1.60
+
+	+
+	name:		Vbg
+	description:	Bandgap reference voltage
+	display:	Vbg
+	unit:		V
+	minimum:	1.18
+	typical:	1.20
+	maximum:	1.22
+	
+	+
+	name:		Ibias
+	description:	Input bias current
+	display:	Ibias
+	unit:		nA
+	minimum:	588
+	typical:	600
+	maximum:	612
+
+	+
+	name:		temperature
+	description:	Ambient temperature
+	display:	Temp
+	unit:		{degrees}C
+	minimum:	-40
+	typical:	25
+	maximum:	85
+
+	+
+	name:		corner
+	description:	Process corner
+	display:	Corner
+	minimum:	ss
+	typical:	tt
+	maximum:	ff
+}
+
+# List of electrical parameters to be measured and their specified limits
+
+electrical_parameters {
+	name:		idc_enabled
+	status:		skip
+	description:	Current draw through analog and digital supplies, comparator enabled
+	display:	DC Current (enabled)
+	unit: 		{micro}A
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_dccurrent.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		ena
+		typical: 	1
+	}
+
+	+
+	name:		idc_disabled
+	status:		skip
+	description:	Current draw through analog and digital supplies, comparator disabled
+	display:	DC Current (disabled)
+	unit: 		{micro}A
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_dccurrent.spice
+		format:		ascii .data null result
+	}
+	conditions {
+		name: 		ena
+		typical: 	0
+	}
+
+	+
+	name:		resptime
+	status:		skip
+	description:	Time to change output after exceeding threshold
+	display:	Response Time
+	unit:		{micro}s
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_resptime.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		ena
+		typical: 	1
+	}
+	
+	+
+	name:		vhyst
+	status:		skip
+	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
+	display:	Hysteresis Voltage (corners)
+	unit:		V
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vhyst.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		ena
+		typical: 	1
+	}
+
+	+
+	name:		vhyst_mm
+	status:		skip
+	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
+	display:	Hysteresis Voltage (missmatch)
+	unit:		V
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vhyst_mm.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		corner
+		minimum:	ss_mm
+		typical:	tt_mm
+		maximum:	ff_mm
+		
+		+
+		name:		Vdummy
+		description:	Dummy voltage for performing iterations
+		display:	vdummy
+		unit:		V
+		enumerate:	1 2 3 4 5 6 7 8 9 10
+	}
+
+	+
+	name:		vacc
+	status:		skip
+	description:	Accuracy at the threshold
+	display:	Accuracy (corners)
+	unit:		V
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vacc.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		ena
+		typical: 	1
+	}
+
+	+
+	name:		vacc_mm
+	status:		skip
+	description:	Accuracy at the threshold
+	display:	Accuracy (missmatch)
+	unit:		V
+	spec {
+		minimum:	any
+		typical:	any
+		maximum:	any
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vacc_mm.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		corner
+		minimum:	ss_mm
+		typical:	tt_mm
+		maximum:	ff_mm
+		
+		+
+		name:		Vdummy
+		description:	Dummy voltage for performing iterations
+		display:	vdummy
+		unit:		V
+		enumerate:	1 2 3 4 5 6 7 8 9 10
+	}
+}
+# List of physical parameters to be measured and their specified limits
