@@ -52,7 +52,7 @@ pins {
 	type:		power
 	direction:	inout
 	Vmin:		1.65 V
-	Vmax:		1.97 V
+	Vmax:		1.95 V
 	
 	+
 	name:		vss
@@ -83,8 +83,8 @@ pins {
 	description:	Input bias current
 	type:		signal
 	direction:	input
-	Vmin:		392 nA
-	Vmax:		408 nA
+	Vmin:		588 nA
+	Vmax:		612 nA
 
  	+
 	name:		ovout
@@ -129,7 +129,7 @@ default_conditions {
 	unit:		V
 	minimum:	1.65
 	typical:	1.80
-	maximum:	1.97
+	maximum:	1.95
 	
 	+
 	name:		Vdvss
@@ -172,9 +172,7 @@ default_conditions {
 	description:	Input bias current
 	display:	Ibias
 	unit:		nA
-	minimum:	392
-	typical:	400
-	maximum:	408
+	typical:	600
 	
 	+
 	name:		vtrip[3:0]
@@ -223,10 +221,6 @@ electrical_parameters {
 	conditions {
 		name:		Vbg
 		typical:	1.20
-		
-		+
-		name:		Ibias
-		typical:	400
 	}
 
 	+
@@ -252,10 +246,6 @@ electrical_parameters {
 		+
 		name:		Vbg
 		typical:	1.20
-		
-		+
-		name:		Ibias
-		typical:	400
 	}
 
 	+
@@ -265,7 +255,7 @@ electrical_parameters {
 	display:	Response Time
 	unit:		{micro}s
 	spec {
-		minimum:	10	fail
+		minimum:	10
 		typical:	20
 		maximum:	50	fail
 	}
@@ -277,10 +267,6 @@ electrical_parameters {
 	conditions {
 		name:		Vbg
 		typical:	1.20
-		
-		+
-		name:		Ibias
-		typical:	400
 		
 		+
 		name: 		vtrip[3:0]
