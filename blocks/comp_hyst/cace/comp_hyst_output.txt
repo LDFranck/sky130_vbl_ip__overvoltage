@@ -1,5 +1,5 @@
 #---------------------------------------------------
-# CACE format 4.0 characterization file /home/vblabs/Music/blocks/comp_hyst/cace/comp_hyst_output.txt
+# CACE format 4.0 characterization file /home/vblabs/Music/push git/sky130_vbl_ip__overvoltage/blocks/comp_hyst/cace/comp_hyst_output.txt
 #---------------------------------------------------
 
 name:		comp_hyst
@@ -12,7 +12,7 @@ authorship {
 	designer:	Lucas Daudt Franck, William Carrara Orlato, Toni Robert Trigoso Tejada
 	company:	Von Braun Labs
 	creation_date:	March 20, 2024
-	modification_date:	March 23, 2024 at 03:49pm
+	modification_date:	March 23, 2024 at 10:32pm
 	license:	Apache 2.0
 }
 
@@ -12607,14 +12607,14 @@ electrical_parameters {
 	}
 	results {
 		name:		schematic
-		minimum:	0 pass
-		typical:	0 pass
-		maximum:	0 pass
+		minimum:	0.588 pass
+		typical:	0.6 pass
+		maximum:	0.612 pass
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_dccurrent.spice
-		format:		ascii .data null result
+		format:		ascii .data result
 	}
 	conditions {
 		name:		ena
@@ -12634,7 +12634,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12651,7 +12651,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12668,7 +12668,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -12685,7 +12685,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -12702,7 +12702,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -12719,7 +12719,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -12736,7 +12736,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -12753,7 +12753,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -12770,7 +12770,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -12787,7 +12787,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12804,7 +12804,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12821,7 +12821,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -12838,7 +12838,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -12855,7 +12855,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -12872,7 +12872,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -12889,7 +12889,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -12906,7 +12906,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -12923,7 +12923,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -12940,7 +12940,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12957,7 +12957,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -12974,7 +12974,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -12991,7 +12991,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -13008,7 +13008,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -13025,7 +13025,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -13042,7 +13042,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -13059,7 +13059,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -13076,7 +13076,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -13093,7 +13093,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13110,7 +13110,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13127,7 +13127,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -13144,7 +13144,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13161,7 +13161,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13178,7 +13178,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -13195,7 +13195,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13212,7 +13212,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13229,7 +13229,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -13246,7 +13246,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13263,7 +13263,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13280,7 +13280,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -13297,7 +13297,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13314,7 +13314,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13331,7 +13331,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -13348,7 +13348,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13365,7 +13365,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13382,7 +13382,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -13399,7 +13399,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13416,7 +13416,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -13433,7 +13433,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -13450,7 +13450,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13467,7 +13467,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -13484,7 +13484,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -13501,7 +13501,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13518,7 +13518,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -13535,7 +13535,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -13552,7 +13552,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13569,7 +13569,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13586,7 +13586,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -13603,7 +13603,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13620,7 +13620,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13637,7 +13637,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -13654,7 +13654,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13671,7 +13671,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13688,7 +13688,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -13705,7 +13705,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13722,7 +13722,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13739,7 +13739,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -13756,7 +13756,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13773,7 +13773,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13790,7 +13790,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -13807,7 +13807,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13824,7 +13824,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13841,7 +13841,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -13858,7 +13858,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13875,7 +13875,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -13892,7 +13892,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -13909,7 +13909,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13926,7 +13926,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -13943,7 +13943,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -13960,7 +13960,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13977,7 +13977,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -13994,7 +13994,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -14011,7 +14011,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14028,7 +14028,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14045,7 +14045,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -14062,7 +14062,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14079,7 +14079,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14096,7 +14096,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -14113,7 +14113,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14130,7 +14130,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14147,7 +14147,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -14164,7 +14164,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14181,7 +14181,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14198,7 +14198,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -14215,7 +14215,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14232,7 +14232,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14249,7 +14249,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -14266,7 +14266,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14283,7 +14283,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14300,7 +14300,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -14317,7 +14317,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14334,7 +14334,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -14351,7 +14351,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -14368,7 +14368,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14385,7 +14385,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -14402,7 +14402,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -14419,7 +14419,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14436,7 +14436,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -14453,7 +14453,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -14470,7 +14470,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14487,7 +14487,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14504,7 +14504,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -14521,7 +14521,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14538,7 +14538,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14555,7 +14555,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -14572,7 +14572,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14589,7 +14589,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14606,7 +14606,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -14623,7 +14623,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14640,7 +14640,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14657,7 +14657,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -14674,7 +14674,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14691,7 +14691,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14708,7 +14708,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -14725,7 +14725,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14742,7 +14742,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14759,7 +14759,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -14776,7 +14776,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14793,7 +14793,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -14810,7 +14810,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -14827,7 +14827,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14844,7 +14844,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -14861,7 +14861,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -14878,7 +14878,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14895,7 +14895,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -14912,7 +14912,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -14929,7 +14929,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -14946,7 +14946,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -14963,7 +14963,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -14980,7 +14980,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -14997,7 +14997,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -15014,7 +15014,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -15031,7 +15031,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15048,7 +15048,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15065,7 +15065,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -15082,7 +15082,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -15099,7 +15099,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -15116,7 +15116,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -15133,7 +15133,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -15150,7 +15150,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -15167,7 +15167,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -15184,7 +15184,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15201,7 +15201,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15218,7 +15218,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -15235,7 +15235,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -15252,7 +15252,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -15269,7 +15269,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -15286,7 +15286,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -15303,7 +15303,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -15320,7 +15320,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -15337,7 +15337,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15354,7 +15354,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -15371,7 +15371,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -15388,7 +15388,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15405,7 +15405,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15422,7 +15422,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -15439,7 +15439,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15456,7 +15456,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15473,7 +15473,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -15490,7 +15490,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15507,7 +15507,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15524,7 +15524,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -15541,7 +15541,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15558,7 +15558,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15575,7 +15575,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -15592,7 +15592,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15609,7 +15609,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15626,7 +15626,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -15643,7 +15643,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15660,7 +15660,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15677,7 +15677,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -15694,7 +15694,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15711,7 +15711,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88023E-07
 		}
 
 		+
@@ -15728,7 +15728,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -15745,7 +15745,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15762,7 +15762,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -15779,7 +15779,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -15796,7 +15796,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15813,7 +15813,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -15830,7 +15830,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -15847,7 +15847,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -15864,7 +15864,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -15881,7 +15881,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -15898,7 +15898,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -15915,7 +15915,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -15932,7 +15932,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -15949,7 +15949,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -15966,7 +15966,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -15983,7 +15983,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -16000,7 +16000,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -16017,7 +16017,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -16034,7 +16034,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -16051,7 +16051,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -16068,7 +16068,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -16085,7 +16085,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -16102,7 +16102,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -16119,7 +16119,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -16136,7 +16136,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -16153,7 +16153,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -16170,7 +16170,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00023E-07
 		}
 
 		+
@@ -16187,7 +16187,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -16204,7 +16204,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -16221,7 +16221,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -16238,7 +16238,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -16255,7 +16255,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -16272,7 +16272,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -16289,7 +16289,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -16306,7 +16306,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16323,7 +16323,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16340,7 +16340,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -16357,7 +16357,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16374,7 +16374,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16391,7 +16391,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -16408,7 +16408,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16425,7 +16425,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16442,7 +16442,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -16459,7 +16459,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16476,7 +16476,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16493,7 +16493,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -16510,7 +16510,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16527,7 +16527,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16544,7 +16544,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -16561,7 +16561,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16578,7 +16578,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16595,7 +16595,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -16612,7 +16612,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16629,7 +16629,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12023E-07
 		}
 
 		+
@@ -16646,7 +16646,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -16663,7 +16663,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16680,7 +16680,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -16697,7 +16697,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -16714,7 +16714,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16731,7 +16731,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -16748,7 +16748,7 @@ electrical_parameters {
 			temperature {degrees}C -40
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -16765,7 +16765,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -16782,7 +16782,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -16799,7 +16799,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -16816,7 +16816,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -16833,7 +16833,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -16850,7 +16850,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -16867,7 +16867,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -16884,7 +16884,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -16901,7 +16901,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -16918,7 +16918,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -16935,7 +16935,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -16952,7 +16952,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -16969,7 +16969,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -16986,7 +16986,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -17003,7 +17003,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -17020,7 +17020,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -17037,7 +17037,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -17054,7 +17054,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -17071,7 +17071,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -17088,7 +17088,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -17105,7 +17105,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -17122,7 +17122,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -17139,7 +17139,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -17156,7 +17156,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -17173,7 +17173,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -17190,7 +17190,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -17207,7 +17207,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -17224,7 +17224,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17241,7 +17241,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17258,7 +17258,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -17275,7 +17275,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17292,7 +17292,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17309,7 +17309,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -17326,7 +17326,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17343,7 +17343,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17360,7 +17360,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -17377,7 +17377,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17394,7 +17394,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17411,7 +17411,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -17428,7 +17428,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17445,7 +17445,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17462,7 +17462,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -17479,7 +17479,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17496,7 +17496,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17513,7 +17513,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -17530,7 +17530,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17547,7 +17547,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -17564,7 +17564,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -17581,7 +17581,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17598,7 +17598,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -17615,7 +17615,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -17632,7 +17632,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17649,7 +17649,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -17666,7 +17666,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -17683,7 +17683,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -17700,7 +17700,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -17717,7 +17717,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -17734,7 +17734,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -17751,7 +17751,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -17768,7 +17768,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -17785,7 +17785,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -17802,7 +17802,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -17819,7 +17819,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -17836,7 +17836,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -17853,7 +17853,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -17870,7 +17870,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -17887,7 +17887,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -17904,7 +17904,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -17921,7 +17921,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -17938,7 +17938,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -17955,7 +17955,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -17972,7 +17972,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -17989,7 +17989,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -18006,7 +18006,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -18023,7 +18023,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -18040,7 +18040,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -18057,7 +18057,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -18074,7 +18074,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -18091,7 +18091,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -18108,7 +18108,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -18125,7 +18125,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -18142,7 +18142,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18159,7 +18159,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18176,7 +18176,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -18193,7 +18193,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18210,7 +18210,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18227,7 +18227,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -18244,7 +18244,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18261,7 +18261,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18278,7 +18278,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -18295,7 +18295,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18312,7 +18312,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18329,7 +18329,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -18346,7 +18346,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18363,7 +18363,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18380,7 +18380,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -18397,7 +18397,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18414,7 +18414,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18431,7 +18431,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -18448,7 +18448,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18465,7 +18465,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -18482,7 +18482,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -18499,7 +18499,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18516,7 +18516,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -18533,7 +18533,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -18550,7 +18550,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18567,7 +18567,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -18584,7 +18584,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -18601,7 +18601,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18618,7 +18618,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18635,7 +18635,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -18652,7 +18652,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18669,7 +18669,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18686,7 +18686,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -18703,7 +18703,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -18720,7 +18720,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -18737,7 +18737,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -18754,7 +18754,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18771,7 +18771,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18788,7 +18788,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -18805,7 +18805,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18822,7 +18822,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18839,7 +18839,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -18856,7 +18856,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -18873,7 +18873,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -18890,7 +18890,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -18907,7 +18907,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18924,7 +18924,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -18941,7 +18941,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -18958,7 +18958,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18975,7 +18975,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -18992,7 +18992,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -19009,7 +19009,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -19026,7 +19026,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -19043,7 +19043,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -19060,7 +19060,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19077,7 +19077,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19094,7 +19094,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -19111,7 +19111,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19128,7 +19128,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19145,7 +19145,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -19162,7 +19162,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19179,7 +19179,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19196,7 +19196,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -19213,7 +19213,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19230,7 +19230,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19247,7 +19247,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -19264,7 +19264,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19281,7 +19281,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19298,7 +19298,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -19315,7 +19315,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19332,7 +19332,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19349,7 +19349,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -19366,7 +19366,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19383,7 +19383,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -19400,7 +19400,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -19417,7 +19417,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19434,7 +19434,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -19451,7 +19451,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -19468,7 +19468,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19485,7 +19485,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -19502,7 +19502,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -19519,7 +19519,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19536,7 +19536,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19553,7 +19553,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -19570,7 +19570,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19587,7 +19587,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19604,7 +19604,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -19621,7 +19621,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19638,7 +19638,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19655,7 +19655,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -19672,7 +19672,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19689,7 +19689,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19706,7 +19706,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -19723,7 +19723,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19740,7 +19740,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19757,7 +19757,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -19774,7 +19774,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19791,7 +19791,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19808,7 +19808,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -19825,7 +19825,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19842,7 +19842,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88024E-07
 		}
 
 		+
@@ -19859,7 +19859,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -19876,7 +19876,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19893,7 +19893,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -19910,7 +19910,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -19927,7 +19927,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19944,7 +19944,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -19961,7 +19961,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -19978,7 +19978,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -19995,7 +19995,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -20012,7 +20012,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -20029,7 +20029,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20046,7 +20046,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20063,7 +20063,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -20080,7 +20080,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20097,7 +20097,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20114,7 +20114,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -20131,7 +20131,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -20148,7 +20148,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -20165,7 +20165,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -20182,7 +20182,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20199,7 +20199,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20216,7 +20216,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -20233,7 +20233,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20250,7 +20250,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20267,7 +20267,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -20284,7 +20284,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -20301,7 +20301,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00024E-07
 		}
 
 		+
@@ -20318,7 +20318,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -20335,7 +20335,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20352,7 +20352,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -20369,7 +20369,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -20386,7 +20386,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20403,7 +20403,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -20420,7 +20420,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -20437,7 +20437,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20454,7 +20454,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20471,7 +20471,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -20488,7 +20488,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20505,7 +20505,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20522,7 +20522,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -20539,7 +20539,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20556,7 +20556,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20573,7 +20573,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -20590,7 +20590,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20607,7 +20607,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20624,7 +20624,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -20641,7 +20641,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20658,7 +20658,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20675,7 +20675,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -20692,7 +20692,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20709,7 +20709,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20726,7 +20726,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -20743,7 +20743,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20760,7 +20760,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12024E-07
 		}
 
 		+
@@ -20777,7 +20777,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -20794,7 +20794,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20811,7 +20811,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -20828,7 +20828,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -20845,7 +20845,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20862,7 +20862,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -20879,7 +20879,7 @@ electrical_parameters {
 			temperature {degrees}C 25
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -20896,7 +20896,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -20913,7 +20913,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88025E-07
 		}
 
 		+
@@ -20930,7 +20930,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -20947,7 +20947,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -20964,7 +20964,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -20981,7 +20981,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -20998,7 +20998,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21015,7 +21015,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21032,7 +21032,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88032E-07
 		}
 
 		+
@@ -21049,7 +21049,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -21066,7 +21066,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -21083,7 +21083,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -21100,7 +21100,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -21117,7 +21117,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -21134,7 +21134,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21151,7 +21151,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21168,7 +21168,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21185,7 +21185,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88032E-07
 		}
 
 		+
@@ -21202,7 +21202,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -21219,7 +21219,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -21236,7 +21236,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -21253,7 +21253,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -21270,7 +21270,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -21287,7 +21287,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21304,7 +21304,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21321,7 +21321,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -21338,7 +21338,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88032E-07
 		}
 
 		+
@@ -21355,7 +21355,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -21372,7 +21372,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00025E-07
 		}
 
 		+
@@ -21389,7 +21389,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -21406,7 +21406,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -21423,7 +21423,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -21440,7 +21440,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21457,7 +21457,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21474,7 +21474,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21491,7 +21491,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00032E-07
 		}
 
 		+
@@ -21508,7 +21508,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -21525,7 +21525,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -21542,7 +21542,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -21559,7 +21559,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -21576,7 +21576,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -21593,7 +21593,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21610,7 +21610,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21627,7 +21627,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21644,7 +21644,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00032E-07
 		}
 
 		+
@@ -21661,7 +21661,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -21678,7 +21678,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -21695,7 +21695,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -21712,7 +21712,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -21729,7 +21729,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -21746,7 +21746,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21763,7 +21763,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21780,7 +21780,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -21797,7 +21797,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00032E-07
 		}
 
 		+
@@ -21814,7 +21814,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -21831,7 +21831,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12025E-07
 		}
 
 		+
@@ -21848,7 +21848,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -21865,7 +21865,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -21882,7 +21882,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -21899,7 +21899,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -21916,7 +21916,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -21933,7 +21933,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -21950,7 +21950,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12032E-07
 		}
 
 		+
@@ -21967,7 +21967,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -21984,7 +21984,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -22001,7 +22001,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -22018,7 +22018,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -22035,7 +22035,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -22052,7 +22052,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22069,7 +22069,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22086,7 +22086,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22103,7 +22103,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12032E-07
 		}
 
 		+
@@ -22120,7 +22120,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -22137,7 +22137,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -22154,7 +22154,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -22171,7 +22171,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -22188,7 +22188,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -22205,7 +22205,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22222,7 +22222,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22239,7 +22239,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -22256,7 +22256,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12032E-07
 		}
 
 		+
@@ -22273,7 +22273,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22290,7 +22290,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22307,7 +22307,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -22324,7 +22324,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22341,7 +22341,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22358,7 +22358,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -22375,7 +22375,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22392,7 +22392,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22409,7 +22409,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -22426,7 +22426,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22443,7 +22443,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22460,7 +22460,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -22477,7 +22477,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22494,7 +22494,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22511,7 +22511,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -22528,7 +22528,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22545,7 +22545,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22562,7 +22562,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -22579,7 +22579,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22596,7 +22596,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88026E-07
 		}
 
 		+
@@ -22613,7 +22613,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -22630,7 +22630,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22647,7 +22647,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -22664,7 +22664,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -22681,7 +22681,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22698,7 +22698,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.8803E-07
 		}
 
 		+
@@ -22715,7 +22715,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -22732,7 +22732,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -22749,7 +22749,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -22766,7 +22766,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -22783,7 +22783,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -22800,7 +22800,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -22817,7 +22817,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -22834,7 +22834,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -22851,7 +22851,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -22868,7 +22868,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -22885,7 +22885,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -22902,7 +22902,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -22919,7 +22919,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -22936,7 +22936,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -22953,7 +22953,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -22970,7 +22970,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -22987,7 +22987,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -23004,7 +23004,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -23021,7 +23021,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -23038,7 +23038,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -23055,7 +23055,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00026E-07
 		}
 
 		+
@@ -23072,7 +23072,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -23089,7 +23089,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -23106,7 +23106,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -23123,7 +23123,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -23140,7 +23140,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -23157,7 +23157,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.0003E-07
 		}
 
 		+
@@ -23174,7 +23174,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -23191,7 +23191,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23208,7 +23208,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23225,7 +23225,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -23242,7 +23242,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23259,7 +23259,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23276,7 +23276,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -23293,7 +23293,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23310,7 +23310,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23327,7 +23327,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 
 		+
@@ -23344,7 +23344,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23361,7 +23361,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23378,7 +23378,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -23395,7 +23395,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23412,7 +23412,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23429,7 +23429,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -23446,7 +23446,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23463,7 +23463,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23480,7 +23480,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 
 		+
@@ -23497,7 +23497,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23514,7 +23514,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12026E-07
 		}
 
 		+
@@ -23531,7 +23531,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -23548,7 +23548,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23565,7 +23565,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -23582,7 +23582,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -23599,7 +23599,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23616,7 +23616,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.1203E-07
 		}
 
 		+
@@ -23633,7 +23633,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 
 		+
@@ -23650,7 +23650,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23667,7 +23667,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23684,7 +23684,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -23701,7 +23701,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -23718,7 +23718,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88028E-07
 		}
 
 		+
@@ -23735,7 +23735,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23752,7 +23752,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23769,7 +23769,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23786,7 +23786,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -23803,7 +23803,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23820,7 +23820,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23837,7 +23837,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -23854,7 +23854,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -23871,7 +23871,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -23888,7 +23888,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23905,7 +23905,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23922,7 +23922,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -23939,7 +23939,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -23956,7 +23956,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23973,7 +23973,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88027E-07
 		}
 
 		+
@@ -23990,7 +23990,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -24007,7 +24007,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -24024,7 +24024,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88029E-07
 		}
 
 		+
@@ -24041,7 +24041,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -24058,7 +24058,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -24075,7 +24075,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88031E-07
 		}
 
 		+
@@ -24092,7 +24092,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			5.88033E-07
 		}
 
 		+
@@ -24109,7 +24109,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24126,7 +24126,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24143,7 +24143,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24160,7 +24160,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -24177,7 +24177,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00028E-07
 		}
 
 		+
@@ -24194,7 +24194,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24211,7 +24211,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24228,7 +24228,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24245,7 +24245,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -24262,7 +24262,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24279,7 +24279,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24296,7 +24296,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24313,7 +24313,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24330,7 +24330,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24347,7 +24347,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24364,7 +24364,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24381,7 +24381,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24398,7 +24398,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -24415,7 +24415,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24432,7 +24432,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00027E-07
 		}
 
 		+
@@ -24449,7 +24449,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24466,7 +24466,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24483,7 +24483,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00029E-07
 		}
 
 		+
@@ -24500,7 +24500,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24517,7 +24517,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24534,7 +24534,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00031E-07
 		}
 
 		+
@@ -24551,7 +24551,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.00033E-07
 		}
 
 		+
@@ -24568,7 +24568,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24585,7 +24585,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24602,7 +24602,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24619,7 +24619,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -24636,7 +24636,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12028E-07
 		}
 
 		+
@@ -24653,7 +24653,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24670,7 +24670,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24687,7 +24687,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24704,7 +24704,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 
 		+
@@ -24721,7 +24721,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24738,7 +24738,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24755,7 +24755,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24772,7 +24772,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24789,7 +24789,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24806,7 +24806,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24823,7 +24823,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24840,7 +24840,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24857,7 +24857,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 
 		+
@@ -24874,7 +24874,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24891,7 +24891,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12027E-07
 		}
 
 		+
@@ -24908,7 +24908,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24925,7 +24925,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24942,7 +24942,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12029E-07
 		}
 
 		+
@@ -24959,7 +24959,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24976,7 +24976,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -24993,7 +24993,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12031E-07
 		}
 
 		+
@@ -25010,7 +25010,7 @@ electrical_parameters {
 			temperature {degrees}C 85
 		}
 		results {
-			
+			6.12033E-07
 		}
 	}
 

@@ -1,0 +1,306 @@
+<HTML>
+<BODY>
+<H1> CACE 4.0 datasheet </H1>
+
+
+<HR>
+
+<FONT size=+1><B>comp_hyst</B></FONT>
+
+
+<HR>
+
+<I> Comparator with hysteresis </I><BR><BR>
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> PDK:
+<TD> sky130A
+</TR>
+</TBODY>
+</TABLE>
+<BR>
+
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> Designer:
+<TD> Lucas Daudt Franck, William Carrara Orlato, Toni Robert Trigoso Tejada
+</TR>
+<TR>
+<TD> Company:
+<TD> Von Braun Labs
+</TR>
+<TR>
+<TD> Created:
+<TD> March 20, 2024
+</TR>
+<TR>
+<TD> Last modified:
+<TD> March 23, 2024 at 10:32pm
+</TR>
+<TR>
+<TD> License:
+<TD> Apache 2.0
+</TR>
+</TBODY>
+</TABLE>
+<H2> Project dependencies </H2>
+<BLOCKQUOTE>
+   (<B>comp_hyst</B> has no external dependencies.)
+</BLOCKQUOTE>
+<H2> Pin names and descriptions </H2>
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=comp_hyst_sym.svg WIDTH=30%>
+      <BR>
+      <I>Project schematic symbol</I>
+      <BR>
+   </CENTER>
+</BLOCKQUOTE>
+
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#eeeeff">
+<TBODY>
+<TR>
+<TD> <I>pin name</I><TD> <I>description</I><TD> <I>type</I><TD> <I>direction</I><TD> <I>Vmin</I><TD> <I>Vmax</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>dvdd</B>
+<TD> Digital power supply
+<TD> power
+<TD> inout
+<TD> 1.65 V
+<TD> 1.95 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>vss</B>
+<TD> Ground
+<TD> ground
+<TD> inout
+<TD> -0.3 V
+<TD> 0.3 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>ena</B>
+<TD> Enable input (active high)
+<TD> digital
+<TD> input
+<TD> vss
+<TD> dvdd
+<TD> 
+</TR>
+<TR>
+<TD> <B>vin</B>
+<TD> Input voltage
+<TD> signal
+<TD> input
+<TD> 0.0 V
+<TD> 5.5 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>vref</B>
+<TD> Reference voltage
+<TD> signal
+<TD> input
+<TD> 5.5 V
+<TD> 0.0 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>ibias</B>
+<TD> Input bias current
+<TD> signal
+<TD> input
+<TD> 588 nA
+<TD> 612 nA
+<TD> 
+</TR>
+<TR>
+<TD> <B>out</B>
+<TD> Comparator output
+<TD> digital
+<TD> output
+<TD> vss
+<TD> dvdd
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Default conditions </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddeeff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>dvdd</B>
+<TD> Digital power supply voltage
+<TD> V
+<TD> 1.65
+<TD> 1.80
+<TD> 1.95
+<TD> 
+</TR>
+<TR>
+<TD> <B>RLoad</B>
+<TD> Output load resistance
+<TD> MΩ
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>CLoad</B>
+<TD> Output load capacitance
+<TD> pF
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>ena</B>
+<TD> Comparator enable
+<TD> 
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vvin</B>
+<TD> Input voltage
+<TD> V
+<TD> 0.00
+<TD> 0.80
+<TD> 1.60
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vbg</B>
+<TD> Bandgap reference voltage
+<TD> V
+<TD> 1.18
+<TD> 1.20
+<TD> 1.22
+<TD> 
+</TR>
+<TR>
+<TD> <B>Ibias</B>
+<TD> Input bias current
+<TD> nA
+<TD> 588
+<TD> 600
+<TD> 612
+<TD> 
+</TR>
+<TR>
+<TD> <B>Temp</B>
+<TD> Ambient temperature
+<TD> °C
+<TD> -40
+<TD> 25
+<TD> 85
+<TD> 
+</TR>
+<TR>
+<TD> <B>Corner</B>
+<TD> Process corner
+<TD> 
+<TD> ss
+<TD> tt
+<TD> ff
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Electrical parameters </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddffff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>DC Current (enabled)</B>
+<TD> Current draw through analog and digital supplies, comparator enabled
+<TD> µA
+<TD> 1.483
+<TD> 1.655
+<TD> 3.15
+<TD> 
+</TR>
+<TR>
+<TD> <B>DC Current (disabled)</B>
+<TD> Current draw through analog and digital supplies, comparator disabled
+<TD> µA
+<TD> 0.588
+<TD> 0.6
+<TD> 0.612
+<TD> 
+</TR>
+<TR>
+<TD> <B>Response Time</B>
+<TD> Time to change output after exceeding threshold
+<TD> µs
+<TD> 0.5833
+<TD> 0.6381
+<TD> 0.7429
+<TD> 
+</TR>
+<TR>
+<TD> <B>Hysteresis Voltage (corners)</B>
+<TD> Hysteresis Voltage (prevent rapid on/off around threshold)
+<TD> V
+<TD> 0.03955
+<TD> 0.05286
+<TD> 0.06353
+<TD> 
+</TR>
+<TR>
+<TD> <B>Hysteresis Voltage (missmatch)</B>
+<TD> Hysteresis Voltage (prevent rapid on/off around threshold)
+<TD> V
+<TD> 0.03477
+<TD> 0.05324
+<TD> 0.06695
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy (corners)</B>
+<TD> Accuracy at the threshold
+<TD> V
+<TD> -0.00343
+<TD> -0.00129
+<TD> 4e-05
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy (missmatch)</B>
+<TD> Accuracy at the threshold
+<TD> V
+<TD> -0.00876
+<TD> -0.000762
+<TD> 0.00617
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<BR><I>Note:</I> Values taken from Specification<BR>
+</BODY>
+</HTML>
