@@ -2,6 +2,7 @@ cace/*.spice
 cace/xschemrc
 cace/sky130_vbl_ip__overvoltage_out.txt
 cace/*.sym
+netlist/*
 ngspice/*
 spice/*
 plots/*
@@ -23,3 +24,14 @@ blocks/comp_hyst/plots/*
 blocks/comp_hyst/xschem/xschemrc
 blocks/comp_hyst/xschem/*.spice
 blocks/comp_hyst/.spiceinit
+
+blocks/input/cace/*.spice
+blocks/input/cace/xschemrc
+blocks/input/cace/*.sym
+blocks/input/netlist/*
+blocks/input/ngspice/*
+blocks/input/spice/*
+blocks/input/plots/*
+blocks/input/xschem/xschemrc
+blocks/input/xschem/*.spice
+blocks/input/.spiceinit

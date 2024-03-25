@@ -2,8 +2,8 @@
 # CACE circuit characterization file
 #--------------------------------------------------------------
 
-name:		sky130_vbl_ip__overvoltage
-description:	Overvoltage detector with 4-bit selectable trip point.
+name:		input
+description:	Input circuitry (voltage divider + mux)
 commit:		N/A
 PDK:		sky130A
 
@@ -12,7 +12,7 @@ cace_format:	4.0
 authorship {
 	designer:	Lucas Daudt Franck, William Carrara Orlato, Toni Robert Trigoso Tejada
 	company:	Von Braun Labs
-	creation_date:	March 20, 2024
+	creation_date:	March 24, 2024
 	license:	Apache 2.0
 }
 
@@ -43,8 +43,8 @@ pins {
 	description:	Analog power supply
 	type:		power
 	direction:	inout
-	Vmin:		3.0 V
-	Vmax:		6.0 V
+	Vmin:		3.00 V
+	Vmax:		6.00 V
 	
 	+
 	name:		dvdd
@@ -69,30 +69,6 @@ pins {
 	direction:	input
 	Vmin:		vss
 	Vmax:		dvdd
-
- 	+
-	name:		vbg
-	description:	Bandgap reference voltage
-	type:		signal
-	direction:	input
-	Vmin:		1.18 V
-	Vmax:		1.22 V
-	
- 	+
-	name:		ibias
-	description:	Input bias current
-	type:		signal
-	direction:	input
-	Vmin:		588 nA
-	Vmax:		612 nA
-
- 	+
-	name:		ovout
-	description:	Overvoltage alarm output (active high)
-	type:		digital
-	direction:	output
-	Vmin:		vss
-	Vmax:		vdd
 	
 	+
 	name:		vtrip[3:0]
@@ -101,6 +77,14 @@ pins {
 	direction:	input
 	Vmin:		vss
 	Vmax:		dvdd
+
+ 	+
+	name:		mux_out
+	description:	Multiplexer output
+	type:		signal
+	direction:	output
+	Vmin:		vss
+	Vmax:		avdd
 }
 
 # Default values for electrical parameter measurement conditions
@@ -111,16 +95,9 @@ default_conditions {
 	description:	Analog power supply voltage
 	display:	avdd
 	unit:		V
-	minimum:	3
-	typical:	3.3
-	maximum:	6
-
-	+
-	name:		Vavss
-	description:	Analog ground
-	display:	avss
-	unit:		V
-	typical:	0
+	minimum:	3.00
+	typical:	3.30
+	maximum:	6.00
 
 	+
 	name:		Vdvdd
@@ -130,13 +107,6 @@ default_conditions {
 	minimum:	1.65
 	typical:	1.80
 	maximum:	1.95
-	
-	+
-	name:		Vdvss
-	description:	Digital ground
-	display:	dvss
-	unit:		V
-	typical:	0
 	
 	+
 	name:		Rout
@@ -151,13 +121,7 @@ default_conditions {
 	display:	CLoad
 	unit:		pF
 	typical:	1
-
-	+
-	name:		ena
-	description:	Overvoltage detector enable
-	display:	ena
-	typical:	1
-
+	
 	+
 	name:		Vbg
 	description:	Bandgap reference voltage
@@ -166,15 +130,12 @@ default_conditions {
 	minimum:	1.18
 	typical:	1.20
 	maximum:	1.22
-	
+
 	+
-	name:		Ibias
-	description:	Input bias current
-	display:	Ibias
-	unit:		nA
-	minimum:	588
-	typical:	600
-	maximum:	612
+	name:		ena
+	description:	Comparator enable
+	display:	ena
+	typical:	1
 	
 	+
 	name:		vtrip[3:0]
@@ -207,13 +168,13 @@ default_conditions {
 electrical_parameters {
 	name:		idc_enabled
 	status:		skip
-	description:	Current draw through analog and digital supplies, overvoltage detector enabled
+	description:	Current draw through analog and digital supplies, input enabled
 	display:	DC Current (enabled)
 	unit: 		{micro}A
 	spec {
-		minimum:	5
-		typical:	10
-		maximum:	20	fail
+		minimum:	any
+		typical:	any
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
@@ -221,20 +182,20 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name:		Vbg
-		typical:	1.20
+		name: 		ena
+		typical: 	1
 	}
 
 	+
 	name:		idc_disabled
 	status:		skip
-	description:	Current draw through analog and digital supplies, overvoltage detector disabled
+	description:	Current draw through analog and digital supplies, input disabled
 	display:	DC Current (disabled)
 	unit: 		{micro}A
 	spec {
-		minimum:	0.5
-		typical:	2
-		maximum:	5	fail
+		minimum:	any
+		typical:	any
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
@@ -244,22 +205,18 @@ electrical_parameters {
 	conditions {
 		name: 		ena
 		typical: 	0
-		
-		+
-		name:		Vbg
-		typical:	1.20
 	}
 
 	+
 	name:		resptime
 	status:		skip
-	description:	Time to trigger the alarm after exceeding threshold
+	description:	Propagation delay
 	display:	Response Time
 	unit:		{micro}s
 	spec {
-		minimum:	10
-		typical:	20
-		maximum:	50	fail
+		minimum:	any
+		typical:	any
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
@@ -267,75 +224,20 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name:		Vbg
-		typical:	1.20
+		name: 		ena
+		typical: 	1
 	}
 	
 	+
-	name:		vhyst
-	status:		skip
-	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
-	display:	Hysteresis Voltage (corners)
-	unit:		V
-	spec {
-		minimum:	0.1	fail
-		typical:	0.2
-		maximum:	0.3	fail
-	}
-	simulate {
-		tool:		ngspice
-		template:	tb_vhyst.spice
-		format:		ascii .data result
-	}
-	conditions {
-		name: 		vtrip[3:0]
-		enumerate: 	0000 1111
-	}
-
-	+
-	name:		vhyst_mm
-	status:		skip
-	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
-	display:	Hysteresis Voltage (missmatch)
-	unit:		V
-	spec {
-		minimum:	0.1	fail
-		typical:	0.2
-		maximum:	0.3	fail
-	}
-	simulate {
-		tool:		ngspice
-		template:	tb_vhyst_mm.spice
-		format:		ascii .data result
-	}
-	conditions {
-		name: 		vtrip[3:0]
-		enumerate: 	0000 1111
-
-		+
-		name: 		corner
-		minimum:	ss_mm
-		typical:	tt_mm
-		maximum:	ff_mm
-		
-		+
-		name:		Vdummy
-		description:	Dummy voltage for performing iterations
-		display:	vdummy
-		unit:		V
-		enumerate:	1 2 3 4 5 6 7 8 9 10
-	}
-
-	+
 	name:		vacc
 	status:		skip
-	description:	Accuracy at the alarm threshold
+	description:	Accuracy at the threshold
 	display:	Accuracy (corners)
 	unit:		V
 	spec {
-		minimum:	-0.1	fail
+		minimum:	any
 		typical:	any
-		maximum:	0.1	fail
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
@@ -353,13 +255,13 @@ electrical_parameters {
 	+
 	name:		vacc_mm
 	status:		skip
-	description:	Accuracy at the alarm threshold
+	description:	Accuracy at the threshold
 	display:	Accuracy (missmatch)
 	unit:		V
 	spec {
-		minimum:	-0.1	fail
+		minimum:	any
 		typical:	any
-		maximum:	0.1	fail
+		maximum:	any
 	}
 	simulate {
 		tool:		ngspice
@@ -372,7 +274,7 @@ electrical_parameters {
 			   	0100 0101 0110 0111 \
 			   	1000 1001 1010 1011 \
 			   	1100 1101 1110 1111
-			   	
+
 		+
 		name: 		corner
 		minimum:	ss_mm
