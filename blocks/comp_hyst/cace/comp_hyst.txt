@@ -167,9 +167,7 @@ default_conditions {
 	name:		corner
 	description:	Process corner
 	display:	Corner
-	minimum:	ss
-	typical:	tt
-	maximum:	ff
+	enumerate: 	ss tt ff sf fs
 }
 
 # List of electrical parameters to be measured and their specified limits
@@ -182,8 +180,8 @@ electrical_parameters {
 	unit: 		{micro}A
 	spec {
 		minimum:	any
-		typical:	1.00
-		maximum:	1.50	fail
+		typical:	any
+		maximum:	2.00	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -233,7 +231,7 @@ electrical_parameters {
 	spec {
 		minimum:	any
 		typical:	any
-		maximum:	any
+		maximum:	50	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -270,12 +268,12 @@ electrical_parameters {
 	name:		vhyst_mm
 	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
-	display:	Hysteresis Voltage (missmatch)
-	unit:		V
+	display:	Hysteresis Voltage (mismatch)
+	unit:		mV
 	spec {
-		minimum:	any
-		typical:	any
-		maximum:	any
+		minimum:	37.0	fail
+		typical:	51.0
+		maximum:	65.0	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -284,9 +282,7 @@ electrical_parameters {
 	}
 	conditions {
 		name: 		corner
-		minimum:	ss_mm
-		typical:	tt_mm
-		maximum:	ff_mm
+		enumerate:	ss_mm tt_mm ff_mm sf_mm fs_mm
 		
 		+
 		name:		Vdummy
@@ -301,11 +297,11 @@ electrical_parameters {
 	status:		skip
 	description:	Accuracy at the threshold
 	display:	Accuracy (corners)
-	unit:		V
+	unit:		mV
 	spec {
-		minimum:	any
-		typical:	any
-		maximum:	any
+		minimum:	-4.00	fail
+		typical:	0.00
+		maximum:	4.00	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -321,12 +317,12 @@ electrical_parameters {
 	name:		vacc_mm
 	status:		skip
 	description:	Accuracy at the threshold
-	display:	Accuracy (missmatch)
-	unit:		V
+	display:	Accuracy (mismatch)
+	unit:		mV
 	spec {
-		minimum:	any
-		typical:	any
-		maximum:	any
+		minimum:	-4.00	fail
+		typical:	0.00
+		maximum:	4.00	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -335,9 +331,7 @@ electrical_parameters {
 	}
 	conditions {
 		name: 		corner
-		minimum:	ss_mm
-		typical:	tt_mm
-		maximum:	ff_mm
+		enumerate:	ss_mm tt_mm ff_mm sf_mm fs_mm
 		
 		+
 		name:		Vdummy

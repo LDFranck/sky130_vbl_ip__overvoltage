@@ -5,17 +5,17 @@ K {}
 V {}
 S {}
 E {}
-L 4 570 -140 1230 -140 {}
-L 4 570 -100 1230 -100 {}
-L 4 1090 -140 1090 -100 {}
+L 4 1080 -140 1080 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 430 0 1230 0 {}
-L 4 1230 -140 1230 0 {}
-L 4 140 0 430 0 {}
-L 4 140 -100 570 -100 {}
-L 4 140 -140 570 -140 {}
+L 4 1220 -140 1220 0 {}
+L 4 1080 -100 1080 -60 {}
+L 4 1080 -60 1220 -60 {}
+L 4 0 -140 700 -140 {}
+L 4 140 -100 840 -100 {}
+L 4 700 -140 1220 -140 {}
+L 4 840 -100 1220 -100 {}
+L 4 0 0 1220 0 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -23,8 +23,10 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
-T {Hysteresis Voltage Testbench (missmatch)} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-21} 1100 -110 2 1 0.4 0.4 {}
+T {2024-03-26} 1090 -110 2 1 0.4 0.4 {}
+T {Version 2} 1100 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 315 35 2 1 0.4 0.4 {}
+T {Hysteresis Voltage Testbench (mismatch)} 150 -110 2 1 0.4 0.4 {}
 N 160 -310 260 -310 {
 lab=GND}
 N 90 -410 90 -390 {
@@ -108,6 +110,7 @@ meas tran vth FIND V(vin) WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 meas tran vtl FIND V(vin) WHEN V(ovout) = [\{Vdvdd\} / 2] FALL=1
 let vhyst = $&vth - $&vtl
 echo $&vhyst > \{simpath\}/\{filename\}_\{N\}.data
+echo $&vhyst >> \{simpath\}/vhyst.data
 quit
 .endc
 "}
@@ -139,4 +142,4 @@ C {devices/gnd.sym} 835 -470 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 650 -460 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 600 -420 1 1 {name=p3 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 875 -570 0 1 {name=p4 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Music/blocks/comp_hyst/xschem/comp_hyst.sym} 610 -560 0 0 {name=x1}
+C {/home/vblabs/Music/push git/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/comp_hyst.sym} 610 -560 0 0 {name=x1}

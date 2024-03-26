@@ -125,6 +125,14 @@ N 750 -660 750 -640 {
 lab=#net3}
 N 750 -560 750 -540 {
 lab=ibias}
+N 730 -610 750 -610 {
+lab=dvdd}
+N 730 -710 730 -610 {
+lab=dvdd}
+N 890 -610 910 -610 {
+lab=dvdd}
+N 910 -710 910 -610 {
+lab=dvdd}
 C {devices/capa.sym} 1075 -320 0 0 {name=Cout
 m=1
 value=\{Cout\}

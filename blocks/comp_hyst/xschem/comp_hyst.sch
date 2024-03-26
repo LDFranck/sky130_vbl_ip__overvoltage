@@ -502,9 +502,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 525 -460 0 0 {name=M3[0:3]
-L=2
-W=4
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 525 -460 0 0 {name=M3[0:1]
+L=8
+W=1.3
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -516,9 +516,9 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1120 -460 0 1 {name=M4[0:3]
-L=2
-W=4
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1120 -460 0 1 {name=M4[0:1]
+L=8
+W=1.3
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -544,7 +544,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 935 -590 0 1 {name=M1[0:5]
+C {sky130_fd_pr/pfet_01v8.sym} 935 -590 0 1 {name=M1[0:3]
 L=16
 W=1
 nf=1
