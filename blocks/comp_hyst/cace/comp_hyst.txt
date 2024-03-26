@@ -141,9 +141,9 @@ default_conditions {
 	description:	Bandgap reference voltage
 	display:	Vbg
 	unit:		V
-	minimum:	1.18
+#	minimum:	1.18
 	typical:	1.20
-	maximum:	1.22
+#	maximum:	1.22
 	
 	+
 	name:		Ibias

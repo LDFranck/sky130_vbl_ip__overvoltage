@@ -25,11 +25,11 @@ T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
 T {DC Current Consumption Testbench} 150 -110 2 1 0.4 0.4 {}
 T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
-N 805 -580 805 -560 {
+N 905 -550 905 -530 {
 lab=ovout}
-N 725 -580 805 -580 {
+N 825 -550 905 -550 {
 lab=ovout}
-N 725 -580 725 -560 {
+N 825 -550 825 -530 {
 lab=ovout}
 N 70 -280 70 -260 {
 lab=#net1}
@@ -55,38 +55,58 @@ N 380 -280 380 -260 {
 lab=#net1}
 N 380 -360 380 -340 {
 lab=ibias}
-N 425 -650 445 -650 {
+N 525 -620 545 -620 {
 lab=vin}
-N 580 -690 580 -670 {
+N 680 -660 680 -640 {
 lab=dvdd}
-N 530 -730 530 -710 {
-lab=ibias}
+N 630 -700 630 -680 {
+lab=#net2}
 N 280 -260 280 -240 {
 lab=#net1}
 N 180 -280 180 -260 {
 lab=#net1}
-N 725 -500 725 -480 {
+N 825 -470 825 -450 {
 lab=GND}
-N 725 -480 805 -480 {
+N 825 -450 905 -450 {
 lab=GND}
-N 805 -500 805 -480 {
+N 905 -470 905 -450 {
 lab=GND}
-N 690 -580 725 -580 {
+N 790 -550 825 -550 {
 lab=ovout}
-N 425 -510 445 -510 {
+N 525 -480 545 -480 {
 lab=vbg}
 N 380 -260 480 -260 {
 lab=#net1}
-N 530 -450 530 -430 {
+N 630 -420 630 -400 {
 lab=ena}
-N 580 -490 580 -470 {
-lab=ena}
-C {devices/capa.sym} 805 -530 0 0 {name=Cout
+N 680 -460 680 -440 {
+lab=GND}
+N 510 -760 570 -760 {
+lab=ibias}
+N 570 -790 570 -760 {
+lab=ibias}
+N 550 -790 590 -790 {
+lab=ibias}
+N 630 -760 630 -700 {
+lab=#net2}
+N 490 -790 510 -790 {
+lab=dvdd}
+N 490 -820 490 -790 {
+lab=dvdd}
+N 490 -820 510 -820 {
+lab=dvdd}
+N 630 -790 650 -790 {
+lab=dvdd}
+N 650 -820 650 -790 {
+lab=dvdd}
+N 630 -820 650 -820 {
+lab=dvdd}
+C {devices/capa.sym} 905 -500 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 725 -530 0 0 {name=Rout
+C {devices/res.sym} 825 -500 0 0 {name=Rout
 value=\{Rout\}
 footprint=1206
 device=resistor
@@ -115,15 +135,45 @@ quit
 "}
 C {devices/vsource.sym} 280 -310 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=false}
 C {devices/lab_pin.sym} 280 -360 0 0 {name=p8 sig_type=std_logic lab=vbg}
-C {devices/isource.sym} 380 -310 2 1 {name=Ibias value="DC \{Ibias\}"}
+C {devices/isource.sym} 380 -310 0 0 {name=Ibias value="DC \{Ibias\}"}
 C {devices/lab_pin.sym} 380 -360 0 0 {name=p9 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 425 -650 0 0 {name=p12 sig_type=std_logic lab=vin}
-C {devices/lab_pin.sym} 580 -690 1 0 {name=p13 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 425 -510 0 0 {name=p14 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 530 -730 1 0 {name=p15 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 525 -620 0 0 {name=p12 sig_type=std_logic lab=vin}
+C {devices/lab_pin.sym} 680 -660 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 525 -480 0 0 {name=p14 sig_type=std_logic lab=vbg}
 C {devices/vsource.sym} 280 -210 0 1 {name=Vmeas value=0 savecurrent=false}
-C {devices/gnd.sym} 765 -480 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 580 -470 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 530 -430 1 1 {name=p18 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 805 -580 0 1 {name=p16 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Music/blocks/comp_hyst/xschem/comp_hyst.sym} 540 -570 0 0 {name=x1}
+C {devices/gnd.sym} 865 -450 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 680 -440 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 630 -400 1 1 {name=p18 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 905 -550 0 1 {name=p16 sig_type=std_logic lab=ovout}
+C {comp_hyst.sym} 640 -540 0 0 {name=x1}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 530 -790 0 1 {name=M1
+L=10
+W=3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 610 -790 0 0 {name=M2
+L=10
+W=3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 510 -820 1 0 {name=p2 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 630 -820 1 0 {name=p6 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 510 -760 1 1 {name=p7 sig_type=std_logic lab=ibias}
