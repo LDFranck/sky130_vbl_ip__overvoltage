@@ -42,19 +42,19 @@ lab=avdd}
 N 355 -450 355 -365 {
 lab=avdd}
 N 310 -250 380 -250 {
-lab=xxx}
+lab=in}
 N 310 -430 380 -430 {
-lab=xxx}
+lab=in}
 N 310 -430 310 -250 {
-lab=xxx}
+lab=in}
 N 510 -430 510 -250 {
 lab=out}
 N 410 -210 410 -190 {
-lab=ena_b}
-N 410 -490 410 -470 {
 lab=ena}
+N 410 -490 410 -470 {
+lab=#net1}
 N 290 -340 310 -340 {
-lab=xxx}
+lab=in}
 N 510 -340 530 -340 {
 lab=out}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -230 3 0 {name=M1
@@ -91,7 +91,7 @@ W=2}
 C {devices/iopin.sym} 465 -230 0 0 {name=p9 lab=vss
 L=1
 W=2}
-C {devices/ipin.sym} 410 -490 0 0 {name=p1 lab=ena}
-C {devices/ipin.sym} 410 -190 2 1 {name=p3 lab=ena_b}
+C {devices/ipin.sym} 410 -190 0 0 {name=p1 lab=ena}
+C {devices/ipin.sym} 410 -490 2 1 {name=p3 lab=ena_b}
 C {devices/ipin.sym} 290 -340 0 0 {name=p2 lab=in}
 C {devices/ipin.sym} 530 -340 0 1 {name=p4 lab=out}

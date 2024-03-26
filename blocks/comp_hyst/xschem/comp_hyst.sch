@@ -503,7 +503,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 525 -460 0 0 {name=M3[0:3]
-L=10
+L=2
 W=4
 nf=1
 mult=1
@@ -517,7 +517,7 @@ model=nfet_g5v0d10v5
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1120 -460 0 1 {name=M4[0:3]
-L=10
+L=2
 W=4
 nf=1
 mult=1
@@ -647,8 +647,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 160 -445 1 0 {name=p1 sig_type=std_logic lab=ena_b}
-C {devices/lab_pin.sym} 160 -345 3 0 {name=p4 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 160 -345 1 1 {name=p1 sig_type=std_logic lab=ena_b}
+C {devices/lab_pin.sym} 160 -445 1 0 {name=p4 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 240 -345 3 0 {name=p17 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 240 -445 3 1 {name=p18 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 225 -730 0 0 {name=p19 sig_type=std_logic lab=dvdd}
