@@ -141,9 +141,9 @@ default_conditions {
 	description:	Bandgap reference voltage
 	display:	Vbg
 	unit:		V
-#	minimum:	1.18
+	minimum:	1.18
 	typical:	1.20
-#	maximum:	1.22
+	maximum:	1.22
 	
 	+
 	name:		Ibias
@@ -182,8 +182,8 @@ electrical_parameters {
 	unit: 		{micro}A
 	spec {
 		minimum:	any
-		typical:	any
-		maximum:	any
+		typical:	1.00
+		maximum:	1.50	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -191,8 +191,12 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name: 		ena
-		typical: 	1
+		name:		ena
+		typical:	1
+		
+		+
+		name: 		Vbg
+		typical: 	1.20
 	}
 
 	+
@@ -200,11 +204,11 @@ electrical_parameters {
 	status:		skip
 	description:	Current draw through analog and digital supplies, comparator disabled
 	display:	DC Current (disabled)
-	unit: 		{micro}A
+	unit: 		nA
 	spec {
 		minimum:	any
 		typical:	any
-		maximum:	any
+		maximum:	1.00	fail
 	}
 	simulate {
 		tool:		ngspice
@@ -212,8 +216,12 @@ electrical_parameters {
 		format:		ascii .data result
 	}
 	conditions {
-		name: 		ena
-		typical: 	0
+		name:		ena
+		typical:	0
+		
+		+
+		name: 		Vbg
+		typical: 	1.20
 	}
 
 	+
@@ -242,17 +250,17 @@ electrical_parameters {
 	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
 	display:	Hysteresis Voltage (corners)
-	unit:		V
+	unit:		mV
 	spec {
-		minimum:	any
-		typical:	any
-		maximum:	any
+		minimum:	37.0	fail
+		typical:	51.0
+		maximum:	65.0	fail
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_vhyst.spice
 		format:		ascii .data result
-	}
+	}	
 	conditions {
 		name: 		ena
 		typical: 	1

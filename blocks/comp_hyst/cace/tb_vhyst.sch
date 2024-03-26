@@ -99,7 +99,7 @@ C {devices/code_shown.sym} 0 -1040 0 0 {name=SETUP only_toplevel=false value="* 
 .option warn=1
 "}
 C {devices/code_shown.sym} 0 -860 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 100u 150m 1m
+tran 100u 150m 1m uic
 meas tran vth FIND V(vin) WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 meas tran vtl FIND V(vin) WHEN V(ovout) = [\{Vdvdd\} / 2] FALL=1
 let vhyst = $&vth - $&vtl
