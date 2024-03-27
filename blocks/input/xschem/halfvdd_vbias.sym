@@ -1,0 +1,28 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=XVBIAS1"
+}
+V {}
+S {}
+E {}
+L 4 50 -90 50 -30 {}
+L 4 190 -90 190 -30 {}
+L 4 190 -60 210 -60 {}
+L 4 30 -60 50 -60 {}
+L 4 50 -30 190 -30 {}
+L 4 50 -90 190 -90 {}
+L 4 120 -110 120 -90 {}
+L 4 120 -30 120 -10 {}
+B 5 117.5 -112.5 122.5 -107.5 {name=avdd dir=inout}
+B 5 207.5 -62.5 212.5 -57.5 {name=bias dir=out}
+B 5 27.5 -62.5 32.5 -57.5 {name=ena dir=in}
+B 5 117.5 -12.5 122.5 -7.5 {name=vss dir=inout}
+T {Half-Vdd} 83.5 -66 0 0 0.3 0.3 {}
+T {@name} 195 -102 0 0 0.2 0.2 {}
+T {avdd} 135 -84 0 1 0.2 0.2 {}
+T {bias} 185 -64 0 1 0.2 0.2 {}
+T {ena} 55 -64 0 0 0.2 0.2 {}
+T {vss} 125 -44 0 1 0.2 0.2 {}
