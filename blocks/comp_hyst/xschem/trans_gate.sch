@@ -26,9 +26,9 @@ T {2024-03-26} 690 -110 2 1 0.4 0.4 {}
 T {Version 2} 700 -70 2 1 0.4 0.4 {}
 T {Design under the Apache License Version 2.0 (Jan. 2004)} 115 35 2 1 0.4 0.4 {}
 N 440 -250 510 -250 {
-lab=out}
+lab=xxx}
 N 440 -430 510 -430 {
-lab=out}
+lab=xxx}
 N 410 -315 410 -250 {
 lab=vss}
 N 410 -315 465 -315 {
@@ -48,15 +48,15 @@ lab=in}
 N 310 -430 310 -250 {
 lab=in}
 N 510 -430 510 -250 {
-lab=out}
+lab=xxx}
 N 410 -210 410 -190 {
 lab=ena}
 N 410 -490 410 -470 {
-lab=#net1}
+lab=ena_b}
 N 290 -340 310 -340 {
 lab=in}
 N 510 -340 530 -340 {
-lab=out}
+lab=xxx}
 C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -230 3 0 {name=M1
 L=5
 W=1
@@ -94,4 +94,4 @@ W=2}
 C {devices/ipin.sym} 410 -190 0 0 {name=p1 lab=ena}
 C {devices/ipin.sym} 410 -490 2 1 {name=p3 lab=ena_b}
 C {devices/ipin.sym} 290 -340 0 0 {name=p2 lab=in}
-C {devices/ipin.sym} 530 -340 0 1 {name=p4 lab=out}
+C {devices/opin.sym} 530 -340 0 0 {name=p4 lab=out}

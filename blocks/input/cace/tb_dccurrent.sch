@@ -5,17 +5,18 @@ K {}
 V {}
 S {}
 E {}
-L 4 570 -140 1230 -140 {}
-L 4 570 -100 1230 -100 {}
-L 4 1090 -140 1090 -100 {}
+L 4 1180 -140 1180 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 430 0 1230 0 {}
-L 4 1230 -140 1230 0 {}
-L 4 140 0 430 0 {}
-L 4 140 -100 570 -100 {}
-L 4 140 -140 570 -140 {}
+L 4 1320 -140 1320 0 {}
+L 4 1180 -100 1180 -60 {}
+L 4 1180 -60 1320 -60 {}
+L 4 500 0 1320 0 {}
+L 4 500 -140 1320 -140 {}
+L 4 640 -100 1320 -100 {}
+L 4 0 -140 500 -140 {}
+L 4 0 0 500 0 {}
+L 4 140 -100 640 -100 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -23,112 +24,116 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
+T {2024-03-28} 1190 -110 2 1 0.4 0.4 {}
+T {Version 2} 1200 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 365 35 2 1 0.4 0.4 {}
 T {DC Current Consumption Testbench} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
-N 800 -580 800 -560 {
+N 830 -530 830 -510 {
 lab=ovout}
-N 720 -580 800 -580 {
+N 750 -530 830 -530 {
 lab=ovout}
-N 720 -580 720 -560 {
+N 750 -530 750 -510 {
 lab=ovout}
-N 70 -280 70 -260 {
+N 70 -290 70 -270 {
 lab=#net1}
-N 70 -260 180 -260 {
+N 70 -270 180 -270 {
 lab=#net1}
-N 180 -260 280 -260 {
+N 180 -270 280 -270 {
 lab=#net1}
-N 380 -280 380 -260 {
+N 380 -290 380 -270 {
 lab=#net1}
-N 560 -280 560 -260 {
+N 560 -290 560 -270 {
 lab=#net1}
-N 740 -280 740 -260 {
+N 740 -290 740 -270 {
 lab=#net1}
-N 70 -360 70 -340 {
+N 70 -370 70 -350 {
 lab=avdd}
-N 180 -360 180 -340 {
+N 180 -370 180 -350 {
 lab=dvdd}
-N 380 -360 380 -340 {
+N 380 -370 380 -350 {
 lab=ena}
-N 560 -360 560 -340 {
+N 560 -370 560 -350 {
 lab=A}
-N 740 -360 740 -340 {
+N 740 -370 740 -350 {
 lab=B}
-N 560 -260 740 -260 {
+N 560 -270 740 -270 {
 lab=#net1}
-N 740 -260 920 -260 {
+N 740 -270 920 -270 {
 lab=#net1}
-N 920 -260 1100 -260 {
+N 920 -270 1100 -270 {
 lab=#net1}
-N 920 -280 920 -260 {
+N 920 -290 920 -270 {
 lab=#net1}
-N 1100 -280 1100 -260 {
+N 1100 -290 1100 -270 {
 lab=#net1}
-N 920 -360 920 -340 {
+N 920 -370 920 -350 {
 lab=C}
-N 1100 -360 1100 -340 {
+N 1100 -370 1100 -350 {
 lab=D}
-N 380 -260 560 -260 {
+N 380 -270 560 -270 {
 lab=#net1}
-N 280 -280 280 -260 {
+N 280 -290 280 -270 {
 lab=#net1}
-N 280 -360 280 -340 {
+N 280 -370 280 -350 {
 lab=vbg}
-N 280 -260 380 -260 {
+N 280 -270 380 -270 {
 lab=#net1}
-N 280 -260 280 -240 {
+N 280 -270 280 -250 {
 lab=#net1}
-N 180 -280 180 -260 {
+N 180 -290 180 -270 {
 lab=#net1}
-N 720 -500 720 -480 {
+N 750 -450 750 -430 {
 lab=GND}
-N 720 -480 800 -480 {
+N 750 -430 830 -430 {
 lab=GND}
-N 800 -500 800 -480 {
+N 830 -450 830 -430 {
 lab=GND}
-N 685 -580 720 -580 {
-lab=ovout}
-N 370 -640 390 -640 {
+N 330 -580 350 -580 {
 lab=ena}
-N 370 -620 390 -620 {
+N 330 -560 350 -560 {
 lab=A}
-N 370 -600 390 -600 {
+N 330 -540 350 -540 {
 lab=B}
-N 370 -580 390 -580 {
+N 330 -520 350 -520 {
 lab=C}
-N 370 -560 390 -560 {
+N 330 -500 350 -500 {
 lab=D}
-N 690 -640 710 -640 {
+N 650 -580 670 -580 {
 lab=avdd}
-N 690 -620 710 -620 {
+N 650 -560 670 -560 {
 lab=dvdd}
-N 690 -600 710 -600 {
+N 650 -530 750 -530 {
+lab=ovout}
+N 650 -500 650 -430 {
 lab=GND}
-C {devices/capa.sym} 800 -530 0 0 {name=Cout
+N 650 -430 750 -430 {
+lab=GND}
+C {devices/capa.sym} 830 -480 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 720 -530 0 0 {name=Rout
+C {devices/res.sym} 750 -480 0 0 {name=Rout
 value=\{Rout\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/vsource.sym} 70 -310 0 0 {name=Vavdd value="DC \{Vavdd\}" savecurrent=false}
-C {devices/gnd.sym} 280 -180 0 0 {name=l2 lab=GND}
-C {devices/vsource.sym} 180 -310 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
-C {devices/vsource.sym} 380 -310 0 0 {name=Vena value="DC [\{ena\} * \{Vdvdd\}]" savecurrent=false}
-C {devices/vsource.sym} 560 -310 0 0 {name=VA value="DC [\{vtrip[3]\} * \{Vdvdd\}]" savecurrent=false}
-C {devices/lab_pin.sym} 70 -360 0 0 {name=p3 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 180 -360 0 0 {name=p4 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 380 -360 0 0 {name=p5 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 560 -360 0 0 {name=p6 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 740 -360 0 0 {name=p7 sig_type=std_logic lab=B}
-C {devices/vsource.sym} 740 -310 0 0 {name=VB value="DC [\{vtrip[2]\} * \{Vdvdd\}]" savecurrent=false}
-C {devices/vsource.sym} 920 -310 0 0 {name=VC value="DC [\{vtrip[1]\} * \{Vdvdd\}]" savecurrent=false}
-C {devices/vsource.sym} 1100 -310 0 0 {name=VD value="DC [\{vtrip[0]\} * \{Vdvdd\}]" savecurrent=false}
-C {devices/lab_pin.sym} 920 -360 0 0 {name=p10 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 1100 -360 0 0 {name=p11 sig_type=std_logic lab=D}
-C {devices/code_shown.sym} 0 -990 0 0 {name=SETUP only_toplevel=false value="* CACE gensim simulation file \{filename\}_\{N\}
+C {devices/vsource.sym} 70 -320 0 0 {name=Vavdd value="DC \{Vavdd\}" savecurrent=false}
+C {devices/gnd.sym} 280 -190 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} 180 -320 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
+C {devices/vsource.sym} 380 -320 0 0 {name=Vena value="DC [\{ena\} * \{Vdvdd\}]" savecurrent=false}
+C {devices/vsource.sym} 560 -320 0 0 {name=VA value="DC [\{vtrip[3]\} * \{Vdvdd\}]" savecurrent=false}
+C {devices/lab_pin.sym} 70 -370 0 0 {name=p3 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 180 -370 0 0 {name=p4 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 380 -370 0 0 {name=p5 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 560 -370 0 0 {name=p6 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 740 -370 0 0 {name=p7 sig_type=std_logic lab=B}
+C {devices/vsource.sym} 740 -320 0 0 {name=VB value="DC [\{vtrip[2]\} * \{Vdvdd\}]" savecurrent=false}
+C {devices/vsource.sym} 920 -320 0 0 {name=VC value="DC [\{vtrip[1]\} * \{Vdvdd\}]" savecurrent=false}
+C {devices/vsource.sym} 1100 -320 0 0 {name=VD value="DC [\{vtrip[0]\} * \{Vdvdd\}]" savecurrent=false}
+C {devices/lab_pin.sym} 920 -370 0 0 {name=p10 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 1100 -370 0 0 {name=p11 sig_type=std_logic lab=D}
+C {devices/code_shown.sym} 0 -940 0 0 {name=SETUP only_toplevel=false value="* CACE gensim simulation file \{filename\}_\{N\}
 * Generated by CACE gensim, Efabless Corporation (c) 2023
 
 .include \{DUT_path\}
@@ -136,24 +141,23 @@ C {devices/code_shown.sym} 0 -990 0 0 {name=SETUP only_toplevel=false value="* C
 .option TEMP=\{temperature\}
 .option warn=1
 "}
-C {devices/code_shown.sym} 0 -820 0 0 {name=CONTROL only_toplevel=false value=".control
+C {devices/code_shown.sym} 0 -770 0 0 {name=CONTROL only_toplevel=false value=".control
 op
 let itotal = -I(Vmeas)
 echo $&itotal > \{simpath\}/\{filename\}_\{N\}.data
 quit
 .endc
 "}
-C {devices/vsource.sym} 280 -310 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=false}
-C {devices/lab_pin.sym} 280 -360 0 0 {name=p8 sig_type=std_logic lab=vbg}
-C {devices/vsource.sym} 280 -210 0 1 {name=Vmeas value=0 savecurrent=false}
-C {devices/gnd.sym} 760 -480 0 0 {name=l3 lab=GND}
-C {devices/lab_pin.sym} 800 -580 0 1 {name=p16 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Music/push git/sky130_vbl_ip__overvoltage/blocks/input/xschem/input.sym} 540 -600 0 0 {name=x1}
-C {devices/gnd.sym} 710 -600 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 710 -620 0 1 {name=p19 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 710 -640 0 1 {name=p20 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 370 -600 0 0 {name=p21 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 370 -580 0 0 {name=p23 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 370 -560 0 0 {name=p24 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 370 -620 0 0 {name=p25 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 370 -640 0 0 {name=p1 sig_type=std_logic lab=ena}
+C {devices/vsource.sym} 280 -320 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=false}
+C {devices/lab_pin.sym} 280 -370 0 0 {name=p8 sig_type=std_logic lab=vbg}
+C {devices/vsource.sym} 280 -220 0 1 {name=Vmeas value=0 savecurrent=false}
+C {devices/gnd.sym} 790 -430 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} 830 -530 0 1 {name=p16 sig_type=std_logic lab=ovout}
+C {devices/lab_pin.sym} 670 -560 0 1 {name=p19 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 670 -580 0 1 {name=p20 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 330 -540 0 0 {name=p21 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 330 -520 0 0 {name=p23 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 330 -500 0 0 {name=p24 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 330 -560 0 0 {name=p25 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 330 -580 0 0 {name=p1 sig_type=std_logic lab=ena}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/blocks/input/xschem/input.sym} 500 -540 0 0 {name=x1}

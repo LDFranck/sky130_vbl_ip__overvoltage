@@ -230,4 +230,4 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {/home/vblabs/Music/push git/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/comp_hyst.sym} 900 -360 0 0 {name=x1}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/comp_hyst.sym} 900 -360 0 0 {name=x1}

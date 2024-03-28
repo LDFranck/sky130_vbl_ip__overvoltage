@@ -133,4 +133,4 @@ C {devices/gnd.sym} 825 -490 0 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 640 -480 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 590 -440 1 1 {name=p2 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 865 -590 0 1 {name=p3 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Music/push git/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/comp_hyst.sym} 600 -580 0 0 {name=x1}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/comp_hyst.sym} 600 -580 0 0 {name=x1}

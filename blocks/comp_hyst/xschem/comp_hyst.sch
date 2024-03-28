@@ -647,8 +647,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 160 -345 1 1 {name=p1 sig_type=std_logic lab=ena_b}
-C {devices/lab_pin.sym} 160 -445 1 0 {name=p4 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 160 -445 1 0 {name=p1 sig_type=std_logic lab=ena_b}
+C {devices/lab_pin.sym} 160 -345 1 1 {name=p4 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 240 -345 3 0 {name=p17 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 240 -445 3 1 {name=p18 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 225 -730 0 0 {name=p19 sig_type=std_logic lab=dvdd}

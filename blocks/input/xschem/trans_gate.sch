@@ -5,14 +5,15 @@ K {}
 V {}
 S {}
 E {}
-L 4 140 -140 800 -140 {}
-L 4 140 -100 800 -100 {}
-L 4 660 -140 660 -100 {}
+L 4 680 -140 680 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 0 0 800 0 {}
-L 4 800 -140 800 0 {}
+L 4 820 -140 820 0 {}
+L 4 680 -100 680 -60 {}
+L 4 680 -60 820 -60 {}
+L 4 0 0 820 -0 {}
+L 4 0 -140 820 -140 {}
+L 4 140 -100 820 -100 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -20,139 +21,45 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
-T {Half-VDD Voltage Bias} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-17} 670 -110 2 1 0.4 0.4 {}
-N 450 -360 450 -320 {
-lab=#net1}
-N 420 -360 450 -360 {
-lab=#net1}
-N 420 -410 420 -390 {
-lab=#net2}
-N 360 -440 380 -440 {
-lab=#net2}
-N 360 -440 360 -360 {
-lab=#net2}
-N 360 -360 380 -360 {
-lab=#net2}
-N 360 -400 420 -400 {
-lab=#net2}
-N 360 -600 380 -600 {
-lab=#net3}
-N 360 -600 360 -520 {
-lab=#net3}
-N 360 -520 380 -520 {
-lab=#net3}
-N 420 -570 420 -550 {
-lab=#net3}
-N 360 -560 420 -560 {
-lab=#net3}
-N 420 -490 420 -470 {
-lab=bias}
-N 420 -440 450 -440 {
-lab=bias}
-N 450 -480 450 -440 {
-lab=bias}
-N 420 -480 450 -480 {
-lab=bias}
-N 420 -520 450 -520 {
-lab=bias}
-N 450 -520 450 -480 {
-lab=bias}
-N 420 -600 450 -600 {
+T {Transmission Gate} 150 -110 2 1 0.4 0.4 {}
+T {2024-03-26} 690 -110 2 1 0.4 0.4 {}
+T {Version 2} 700 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 115 35 2 1 0.4 0.4 {}
+N 440 -250 510 -250 {
+lab=xxx}
+N 440 -430 510 -430 {
+lab=xxx}
+N 410 -315 410 -250 {
+lab=vss}
+N 410 -315 465 -315 {
+lab=vss}
+N 465 -315 465 -230 {
+lab=vss}
+N 410 -430 410 -365 {
 lab=avdd}
-N 450 -650 450 -600 {
+N 355 -365 410 -365 {
 lab=avdd}
-N 420 -650 450 -650 {
+N 355 -450 355 -365 {
 lab=avdd}
-N 420 -650 420 -630 {
-lab=avdd}
-N 420 -330 420 -310 {
-lab=#net1}
-N 420 -310 450 -310 {
-lab=#net1}
-N 450 -320 450 -310 {
-lab=#net1}
-N 420 -310 420 -290 {
-lab=#net1}
-N 420 -260 440 -260 {
-lab=vss}
-N 420 -230 420 -210 {
-lab=vss}
-N 420 -210 440 -210 {
-lab=vss}
-N 440 -210 450 -210 {
-lab=vss}
-N 450 -260 450 -210 {
-lab=vss}
-N 440 -260 450 -260 {
-lab=vss}
-N 310 -210 420 -210 {
-lab=vss}
-N 310 -260 380 -260 {
+N 310 -250 380 -250 {
+lab=in}
+N 310 -430 380 -430 {
+lab=in}
+N 310 -430 310 -250 {
+lab=in}
+N 510 -430 510 -250 {
+lab=xxx}
+N 410 -210 410 -190 {
 lab=ena}
-N 310 -650 420 -650 {
-lab=avdd}
-N 450 -480 520 -480 {
-lab=bias}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -600 0 0 {name=M1
-L=10
+N 410 -490 410 -470 {
+lab=ena_b}
+N 290 -340 310 -340 {
+lab=in}
+N 510 -340 530 -340 {
+lab=xxx}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -230 3 0 {name=M1
+L=5
 W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -520 2 1 {name=M2
-L=10
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -440 0 0 {name=M3
-L=10
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -360 2 1 {name=M4
-L=10
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_g5v0d10v5
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 400 -260 0 0 {name=M5
-L=3
-W=5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -164,7 +71,27 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/ipin.sym} 310 -260 0 0 {name=p2 lab=ena}
-C {devices/iopin.sym} 310 -210 0 1 {name=p3 lab=vss}
-C {devices/iopin.sym} 310 -650 0 1 {name=p5 lab=avdd}
-C {devices/opin.sym} 520 -480 0 0 {name=p1 lab=bias}
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 410 -450 1 0 {name=M2
+L=5
+W=6
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/iopin.sym} 355 -450 0 1 {name=p107 lab=avdd
+L=1
+W=2}
+C {devices/iopin.sym} 465 -230 0 0 {name=p9 lab=vss
+L=1
+W=2}
+C {devices/ipin.sym} 410 -190 0 0 {name=p1 lab=ena}
+C {devices/ipin.sym} 410 -490 2 1 {name=p3 lab=ena_b}
+C {devices/ipin.sym} 290 -340 0 0 {name=p2 lab=in}
+C {devices/opin.sym} 530 -340 0 0 {name=p4 lab=out}
