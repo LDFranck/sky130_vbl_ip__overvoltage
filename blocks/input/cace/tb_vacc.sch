@@ -78,18 +78,6 @@ N 90 -320 190 -320 {
 lab=GND}
 N 190 -320 290 -320 {
 lab=GND}
-N 780 -540 780 -520 {
-lab=ovout}
-N 700 -540 780 -540 {
-lab=ovout}
-N 700 -540 700 -520 {
-lab=ovout}
-N 700 -460 700 -440 {
-lab=GND}
-N 700 -440 780 -440 {
-lab=GND}
-N 780 -460 780 -440 {
-lab=GND}
 N 280 -590 300 -590 {
 lab=ena}
 N 280 -570 300 -570 {
@@ -101,14 +89,18 @@ lab=C}
 N 280 -510 300 -510 {
 lab=D}
 N 600 -590 620 -590 {
-lab=avdd}
+lab=vtrip}
 N 600 -570 620 -570 {
 lab=dvdd}
-N 600 -540 700 -540 {
+N 660 -540 660 -520 {
 lab=ovout}
+N 660 -460 660 -440 {
+lab=GND}
 N 600 -510 600 -440 {
 lab=GND}
-N 600 -440 700 -440 {
+N 600 -540 690 -540 {
+lab=ovout}
+N 600 -440 660 -440 {
 lab=GND}
 C {devices/gnd.sym} 90 -190 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 90 -370 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
@@ -144,23 +136,18 @@ C {devices/lab_pin.sym} 700 -290 0 0 {name=p23 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 880 -290 0 0 {name=p25 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 290 -420 0 0 {name=p19 sig_type=std_logic lab=vtrip}
 C {devices/vsource.sym} 290 -370 0 0 {name=Vtrip value="DC [(8*\{vtrip[3]\} + 4*\{vtrip[2]\} + 2*\{vtrip[1]\} + 1*\{vtrip[0]\})*0.14667 + 3.3]" savecurrent=false}
-C {devices/capa.sym} 780 -490 0 0 {name=Cout1
-m=1
-value=\{Cout\}
-footprint=1206
-device="ceramic capacitor"}
-C {devices/res.sym} 700 -490 0 0 {name=Rout1
-value=\{Rout\}
-footprint=1206
-device=resistor
-m=1}
-C {devices/gnd.sym} 740 -440 0 0 {name=l2 lab=GND}
-C {devices/lab_pin.sym} 780 -540 0 1 {name=p9 sig_type=std_logic lab=ovout}
 C {devices/lab_pin.sym} 620 -570 0 1 {name=p10 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 620 -590 0 1 {name=p11 sig_type=std_logic lab=avdd}
 C {devices/lab_pin.sym} 280 -550 0 0 {name=p12 sig_type=std_logic lab=B}
 C {devices/lab_pin.sym} 280 -530 0 0 {name=p13 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 280 -510 0 0 {name=p14 sig_type=std_logic lab=D}
 C {devices/lab_pin.sym} 280 -570 0 0 {name=p15 sig_type=std_logic lab=A}
 C {devices/lab_pin.sym} 280 -590 0 0 {name=p18 sig_type=std_logic lab=ena}
 C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/blocks/input/xschem/input.sym} 450 -550 0 0 {name=x2}
+C {devices/capa.sym} 660 -490 0 0 {name=Cout
+m=1
+value=\{Cout\}
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 660 -440 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} 690 -540 0 1 {name=p1 sig_type=std_logic lab=ovout}
+C {devices/lab_pin.sym} 620 -590 0 1 {name=p2 sig_type=std_logic lab=vtrip}
