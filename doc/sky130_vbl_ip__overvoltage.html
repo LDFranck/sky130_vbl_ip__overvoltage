@@ -1,0 +1,338 @@
+<HTML>
+<BODY>
+<H1> CACE 4.0 datasheet </H1>
+
+
+<HR>
+
+<FONT size=+1><B>sky130_vbl_ip__overvoltage</B></FONT>
+
+
+<HR>
+
+<I> Overvoltage detector with 4-bit selectable trip point. </I><BR><BR>
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> PDK:
+<TD> sky130A
+</TR>
+</TBODY>
+</TABLE>
+<BR>
+
+<TABLE border="1" frame="box" rules="none" width="40%" cellspacing="0"
+	cellpadding="2" bgcolor="#ffffdd">
+<TBODY>
+<TR>
+<TD> Designer:
+<TD> Lucas Daudt Franck, William Carrara Orlato, Toni Robert Trigoso Tejada
+</TR>
+<TR>
+<TD> Company:
+<TD> Von Braun Labs
+</TR>
+<TR>
+<TD> Created:
+<TD> March 20, 2024
+</TR>
+<TR>
+<TD> License:
+<TD> Apache 2.0
+</TR>
+</TBODY>
+</TABLE>
+<H2> Project dependencies </H2>
+<BLOCKQUOTE>
+   (<B>sky130_vbl_ip__overvoltage</B> has no external dependencies.)
+</BLOCKQUOTE>
+<H2> Pin names and descriptions </H2>
+
+<BLOCKQUOTE>
+   <CENTER>
+      <IMG SRC=sky130_vbl_ip__overvoltage_sym.svg WIDTH=30%>
+      <BR>
+      <I>Project schematic symbol</I>
+      <BR>
+   </CENTER>
+</BLOCKQUOTE>
+
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#eeeeff">
+<TBODY>
+<TR>
+<TD> <I>pin name</I><TD> <I>description</I><TD> <I>type</I><TD> <I>direction</I><TD> <I>Vmin</I><TD> <I>Vmax</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>avdd</B>
+<TD> Analog power supply
+<TD> power
+<TD> inout
+<TD> 3.0 V
+<TD> 6.0 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>dvdd</B>
+<TD> Digital power supply
+<TD> power
+<TD> inout
+<TD> 1.65 V
+<TD> 1.95 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>vss</B>
+<TD> Ground
+<TD> ground
+<TD> inout
+<TD> -0.3 V
+<TD> 0.3 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>ena</B>
+<TD> Enable input (active high)
+<TD> digital
+<TD> input
+<TD> vss
+<TD> dvdd
+<TD> 
+</TR>
+<TR>
+<TD> <B>vbg</B>
+<TD> Bandgap reference voltage
+<TD> signal
+<TD> input
+<TD> 1.18 V
+<TD> 1.22 V
+<TD> 
+</TR>
+<TR>
+<TD> <B>ibias</B>
+<TD> Input bias current
+<TD> signal
+<TD> input
+<TD> 588 nA
+<TD> 612 nA
+<TD> 
+</TR>
+<TR>
+<TD> <B>ovout</B>
+<TD> Overvoltage alarm output (active high)
+<TD> digital
+<TD> output
+<TD> vss
+<TD> vdd
+<TD> 
+</TR>
+<TR>
+<TD> <B>vtrip[3:0]</B>
+<TD> Digital trip point selection (4 bits)
+<TD> digital
+<TD> input
+<TD> vss
+<TD> dvdd
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Default conditions </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddeeff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>avdd</B>
+<TD> Analog power supply voltage
+<TD> V
+<TD> 3
+<TD> 3.3
+<TD> 6
+<TD> 
+</TR>
+<TR>
+<TD> <B>avss</B>
+<TD> Analog ground
+<TD> V
+<TD> 
+<TD> 0
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>dvdd</B>
+<TD> Digital power supply voltage
+<TD> V
+<TD> 1.65
+<TD> 1.80
+<TD> 1.95
+<TD> 
+</TR>
+<TR>
+<TD> <B>dvss</B>
+<TD> Digital ground
+<TD> V
+<TD> 
+<TD> 0
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>RLoad</B>
+<TD> Output load resistance
+<TD> MΩ
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>CLoad</B>
+<TD> Output load capacitance
+<TD> pF
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>ena</B>
+<TD> Overvoltage detector enable
+<TD> 
+<TD> 
+<TD> 1
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Vbg</B>
+<TD> Bandgap reference voltage
+<TD> V
+<TD> 
+<TD> 1.20
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>Ibias</B>
+<TD> Input bias current
+<TD> nA
+<TD> 
+<TD> 600
+<TD> 
+<TD> 
+</TR>
+<TR>
+<TD> <B>vtrip[3:0]</B>
+<TD> Trip point selection
+<TD> 
+<TD> 0000
+<TD> 1000
+<TD> 1111
+<TD> 
+</TR>
+<TR>
+<TD> <B>Temp</B>
+<TD> Ambient temperature
+<TD> °C
+<TD> -40
+<TD> 25
+<TD> 85
+<TD> 
+</TR>
+<TR>
+<TD> <B>Corner</B>
+<TD> Process corner
+<TD> 
+<TD> 
+<TD> 
+<TD> 
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<H2> Electrical parameters </H2>
+<TABLE border="1" frame="box" rules="all" width="80%" cellspacing="0"
+	cellpadding="2" bgcolor="#ddffff">
+<TBODY>
+<TR>
+<TD> <I>name</I><TD> <I>description</I><TD> <I>unit</I><TD> <I>minimum</I><TD> <I>typical</I><TD> <I>maximum</I><TD> <I>notes</I></TR>
+<TR>
+<TD>
+</TR>
+<TR>
+<TD> <B>DC Current (enabled)</B>
+<TD> Current draw through analog and digital supplies, overvoltage detector enabled
+<TD> µA
+<TD> 2.158
+<TD> 2.416
+<TD> 3.333
+<TD> 
+</TR>
+<TR>
+<TD> <B>DC Current (disabled)</B>
+<TD> Current draw through analog and digital supplies, overvoltage detector disabled
+<TD> nA
+<TD> 0.2376
+<TD> 0.2619
+<TD> 0.5161
+<TD> 
+</TR>
+<TR>
+<TD> <B>Response Time</B>
+<TD> Time to trigger the alarm after exceeding threshold
+<TD> µs
+<TD> 1.352
+<TD> 2.455
+<TD> 4.063
+<TD> 
+</TR>
+<TR>
+<TD> <B>Hysteresis Voltage (corners)</B>
+<TD> Hysteresis Voltage (prevent rapid on/off around threshold)
+<TD> V
+<TD> 0.1071
+<TD> 0.1923
+<TD> 0.2871
+<TD> 
+</TR>
+<TR>
+<TD> <B>Hysteresis Voltage (missmatch)</B>
+<TD> Hysteresis Voltage (prevent rapid on/off around threshold)
+<TD> V
+<TD> 0.1012
+<TD> 0.1941
+<TD> 0.2976
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy (corners)</B>
+<TD> Accuracy at the alarm threshold
+<TD> mV
+<TD> -72.45
+<TD> -23.35
+<TD> 23
+<TD> 
+</TR>
+<TR>
+<TD> <B>Accuracy (missmatch)</B>
+<TD> Accuracy at the alarm threshold
+<TD> mV
+<TD> <FONT COLOR=red>-105.8</FONT>
+<TD> -23.31
+<TD> 46.11
+<TD> 
+</TR>
+</TBODY>
+</TABLE>
+<BR><I>Note:</I> Values taken from Specification<BR>
+</BODY>
+</HTML>

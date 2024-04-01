@@ -5,17 +5,18 @@ K {}
 V {}
 S {}
 E {}
-L 4 570 -140 1230 -140 {}
-L 4 570 -100 1230 -100 {}
-L 4 1090 -140 1090 -100 {}
+L 4 1300 -140 1300 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 430 0 1230 0 {}
-L 4 1230 -140 1230 0 {}
-L 4 140 0 430 0 {}
-L 4 140 -100 570 -100 {}
-L 4 140 -140 570 -140 {}
+L 4 1440 -140 1440 0 {}
+L 4 1300 -100 1300 -60 {}
+L 4 1300 -60 1440 -60 {}
+L 4 620 0 1440 0 {}
+L 4 620 -140 1440 -140 {}
+L 4 760 -100 1440 -100 {}
+L 4 140 -100 760 -100 {}
+L 4 0 -140 620 -140 {}
+L 4 0 0 620 0 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -23,14 +24,10 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
+T {2024-03-31} 1310 -110 2 1 0.4 0.4 {}
+T {Version 2} 1320 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 415 35 2 1 0.4 0.4 {}
 T {DC Current Consumption Testbench} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
-N 840 -660 840 -640 {
-lab=ovout}
-N 760 -660 840 -660 {
-lab=ovout}
-N 760 -660 760 -640 {
-lab=ovout}
 N 70 -280 70 -260 {
 lab=#net1}
 N 70 -260 180 -260 {
@@ -79,13 +76,11 @@ N 380 -280 380 -260 {
 lab=#net1}
 N 380 -360 380 -340 {
 lab=ibias}
-N 580 -790 580 -770 {
+N 700 -790 700 -770 {
 lab=avdd}
-N 620 -790 620 -770 {
+N 740 -790 740 -770 {
 lab=dvdd}
-N 660 -790 660 -770 {
-lab=ibias}
-N 495 -535 515 -535 {
+N 615 -535 635 -535 {
 lab=A}
 N 280 -260 280 -240 {
 lab=#net1}
@@ -93,34 +88,87 @@ N 380 -260 520 -260 {
 lab=#net1}
 N 180 -280 180 -260 {
 lab=#net1}
-N 760 -580 760 -560 {
-lab=GND}
-N 760 -560 840 -560 {
-lab=GND}
-N 840 -580 840 -560 {
-lab=GND}
-N 725 -660 760 -660 {
-lab=ovout}
-N 495 -510 515 -510 {
+N 615 -510 635 -510 {
 lab=B}
-N 495 -485 515 -485 {
+N 615 -485 635 -485 {
 lab=C}
-N 495 -460 515 -460 {
+N 615 -460 635 -460 {
 lab=D}
-N 495 -570 515 -570 {
+N 615 -570 635 -570 {
 lab=ena}
-N 495 -660 515 -660 {
+N 615 -660 635 -660 {
 lab=vbg}
-C {devices/capa.sym} 840 -610 0 0 {name=Cout
+N 845 -660 880 -660 {
+lab=ovout}
+N 880 -660 880 -630 {
+lab=ovout}
+N 880 -570 880 -550 {
+lab=GND}
+N 780 -790 780 -770 {
+lab=#net2}
+N 780 -850 780 -790 {
+lab=#net2}
+N 850 -980 880 -980 {
+lab=#net3}
+N 850 -980 850 -970 {
+lab=#net3}
+N 820 -980 850 -980 {
+lab=#net3}
+N 920 -950 920 -930 {
+lab=#net3}
+N 850 -930 920 -930 {
+lab=#net3}
+N 850 -970 850 -930 {
+lab=#net3}
+N 920 -980 940 -980 {
+lab=dvdd}
+N 940 -1030 940 -980 {
+lab=dvdd}
+N 920 -1030 940 -1030 {
+lab=dvdd}
+N 920 -1030 920 -1010 {
+lab=dvdd}
+N 760 -980 780 -980 {
+lab=dvdd}
+N 760 -1030 760 -980 {
+lab=dvdd}
+N 760 -1030 780 -1030 {
+lab=dvdd}
+N 780 -1030 780 -1010 {
+lab=dvdd}
+N 780 -1030 920 -1030 {
+lab=dvdd}
+N 850 -1050 850 -1030 {
+lab=dvdd}
+N 780 -950 780 -910 {
+lab=#net4}
+N 820 -880 880 -880 {
+lab=ibias}
+N 920 -850 920 -830 {
+lab=ibias}
+N 850 -830 920 -830 {
+lab=ibias}
+N 850 -870 850 -830 {
+lab=ibias}
+N 850 -880 850 -870 {
+lab=ibias}
+N 920 -930 920 -910 {
+lab=#net3}
+N 920 -830 920 -810 {
+lab=ibias}
+N 920 -880 940 -880 {
+lab=dvdd}
+N 940 -980 940 -880 {
+lab=dvdd}
+N 760 -880 780 -880 {
+lab=dvdd}
+N 760 -980 760 -880 {
+lab=dvdd}
+C {devices/capa.sym} 880 -600 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 760 -610 0 0 {name=Rout
-value=\{Rout\}
-footprint=1206
-device=resistor
-m=1}
 C {devices/vsource.sym} 70 -310 0 0 {name=Vavdd value="DC \{Vavdd\}" savecurrent=false}
 C {devices/gnd.sym} 280 -180 0 0 {name=l2 lab=GND}
 C {devices/vsource.sym} 180 -310 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
@@ -153,20 +201,77 @@ quit
 "}
 C {devices/vsource.sym} 280 -310 0 0 {name=Vbg value="DC \{Vbg\}" savecurrent=false}
 C {devices/lab_pin.sym} 280 -360 0 0 {name=p8 sig_type=std_logic lab=vbg}
-C {devices/isource.sym} 380 -310 2 1 {name=Ibias value="DC \{Ibias\}"}
+C {devices/isource.sym} 380 -310 0 0 {name=Ibias value="DC \{Ibias\}"}
 C {devices/lab_pin.sym} 380 -360 0 0 {name=p9 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 580 -790 1 0 {name=p12 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 620 -790 1 0 {name=p13 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 495 -660 0 0 {name=p14 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 660 -790 1 0 {name=p15 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 495 -535 0 0 {name=p17 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 700 -790 1 0 {name=p12 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 740 -790 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 615 -660 0 0 {name=p14 sig_type=std_logic lab=vbg}
+C {devices/lab_pin.sym} 615 -535 0 0 {name=p17 sig_type=std_logic lab=A}
 C {devices/vsource.sym} 280 -210 0 1 {name=Vmeas value=0 savecurrent=false}
-C {devices/gnd.sym} 800 -560 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 620 -415 0 0 {name=l4 lab=GND}
-C {devices/lab_pin.sym} 495 -510 0 0 {name=p1 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 495 -485 0 0 {name=p2 sig_type=std_logic lab=C
+C {devices/gnd.sym} 880 -550 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 740 -415 0 0 {name=l4 lab=GND}
+C {devices/lab_pin.sym} 615 -510 0 0 {name=p1 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 615 -485 0 0 {name=p2 sig_type=std_logic lab=C
 }
-C {devices/lab_pin.sym} 495 -460 0 0 {name=p22 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 495 -570 0 0 {name=p18 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 840 -660 0 1 {name=p16 sig_type=std_logic lab=ovout}
-C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 290 -330 0 0 {name=x1}
+C {devices/lab_pin.sym} 615 -460 0 0 {name=p22 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 615 -570 0 0 {name=p18 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 880 -660 0 1 {name=p16 sig_type=std_logic lab=ovout}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 410 -330 0 0 {name=x1}
+C {devices/lab_pin.sym} 920 -810 3 0 {name=p19 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 850 -1050 0 1 {name=p20 sig_type=std_logic lab=dvdd}
+C {sky130_fd_pr/pfet_01v8.sym} 900 -980 0 0 {name=M1
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 800 -980 0 1 {name=M2
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 900 -880 0 0 {name=M3
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 800 -880 0 1 {name=M4
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}

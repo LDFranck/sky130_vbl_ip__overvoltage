@@ -5,17 +5,21 @@ K {}
 V {}
 S {}
 E {}
-L 4 570 -140 1230 -140 {}
-L 4 570 -100 1230 -100 {}
-L 4 1090 -140 1090 -100 {}
+L 4 1160 -140 1160 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 430 0 1230 0 {}
-L 4 1230 -140 1230 0 {}
-L 4 140 0 430 0 {}
-L 4 140 -100 570 -100 {}
-L 4 140 -140 570 -140 {}
+L 4 1300 -140 1300 0 {}
+L 4 1160 -100 1160 -60 {}
+L 4 1160 -60 1300 -60 {}
+L 4 140 -100 760 -100 {}
+L 4 0 -140 620 -140 {}
+L 4 0 0 620 0 {}
+L 4 620 -140 1040 -140 {}
+L 4 760 -100 1180 -100 {}
+L 4 620 0 1040 0 {}
+L 4 1040 0 1300 0 {}
+L 4 1180 -100 1300 -100 {}
+L 4 1040 -140 1300 -140 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -23,8 +27,10 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
-T {Threshold Accuracy Testbench (missmatch)} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-21} 1100 -110 2 1 0.4 0.4 {}
+T {2024-03-31} 1170 -110 2 1 0.4 0.4 {}
+T {Version 2} 1180 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 355 35 2 1 0.4 0.4 {}
+T {Threshold Accuracy Testbench (mismatch)} 150 -110 2 1 0.4 0.4 {}
 N 160 -310 260 -310 {
 lab=GND}
 N 390 -410 390 -390 {
@@ -147,6 +153,7 @@ meas tran vthr FIND V(avdd)  WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 meas tran vref FIND V(vtrip) WHEN V(ovout) = [\{Vdvdd\} / 2] RISE=1
 let accuracy = $&vthr - $&vref
 echo $&accuracy > \{simpath\}/\{filename\}_\{N\}.data
+echo $&accuracy >> \{simpath\}/accuracy_mm.data
 quit
 .endc
 "}

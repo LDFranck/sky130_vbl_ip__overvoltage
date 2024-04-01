@@ -5,17 +5,21 @@ K {}
 V {}
 S {}
 E {}
-L 4 570 -140 1230 -140 {}
-L 4 570 -100 1230 -100 {}
-L 4 1090 -140 1090 -100 {}
+L 4 1380 -140 1380 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 430 0 1230 0 {}
-L 4 1230 -140 1230 0 {}
-L 4 140 0 430 0 {}
-L 4 140 -100 570 -100 {}
-L 4 140 -140 570 -140 {}
+L 4 1520 -140 1520 0 {}
+L 4 1380 -100 1380 -60 {}
+L 4 1380 -60 1520 -60 {}
+L 4 140 -100 760 -100 {}
+L 4 0 -140 620 -140 {}
+L 4 0 0 620 0 {}
+L 4 1040 -140 1520 -140 {}
+L 4 1180 -100 1520 -100 {}
+L 4 1040 0 1520 0 {}
+L 4 620 -140 1040 -140 {}
+L 4 760 -100 1180 -100 {}
+L 4 620 0 1040 0 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -23,8 +27,10 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
+T {2024-03-31} 1390 -110 2 1 0.4 0.4 {}
+T {Version 2} 1400 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 465 35 2 1 0.4 0.4 {}
 T {Response Time Testbench} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-22} 1100 -110 2 1 0.4 0.4 {}
 N 160 -310 260 -310 {
 lab=GND}
 N 390 -410 390 -390 {
@@ -81,41 +87,47 @@ N 390 -330 390 -310 {
 lab=GND}
 N 90 -310 160 -310 {
 lab=GND}
-N 860 -690 860 -670 {
+N 920 -690 920 -670 {
 lab=ovout}
-N 780 -690 860 -690 {
+N 840 -690 920 -690 {
 lab=ovout}
-N 780 -690 780 -670 {
+N 840 -690 840 -670 {
 lab=ovout}
-N 600 -820 600 -800 {
+N 660 -820 660 -800 {
 lab=avdd}
-N 640 -820 640 -800 {
+N 700 -820 700 -800 {
 lab=dvdd}
-N 680 -820 680 -800 {
+N 740 -820 740 -800 {
 lab=ibias}
-N 515 -565 535 -565 {
+N 575 -565 595 -565 {
 lab=A}
-N 780 -610 780 -590 {
+N 840 -610 840 -590 {
 lab=GND}
-N 780 -590 860 -590 {
+N 840 -590 920 -590 {
 lab=GND}
-N 860 -610 860 -590 {
+N 920 -610 920 -590 {
 lab=GND}
-N 745 -690 780 -690 {
+N 805 -690 840 -690 {
 lab=ovout}
-N 515 -540 535 -540 {
+N 575 -540 595 -540 {
 lab=B}
-N 515 -515 535 -515 {
+N 575 -515 595 -515 {
 lab=C}
-N 515 -490 535 -490 {
+N 575 -490 595 -490 {
 lab=D}
-N 515 -600 535 -600 {
+N 575 -600 595 -600 {
 lab=ena}
-N 515 -690 535 -690 {
+N 575 -690 595 -690 {
 lab=vbg}
 N 360 -310 390 -310 {
 lab=GND}
-C {devices/vsource.sym} 390 -360 0 0 {name=Vavdd value="PWL (0 0 10u 0 10u \{Vavdd|maximum\})" savecurrent=false}
+N 1060 -280 1060 -260 {
+lab=vtrip}
+N 1060 -200 1060 -180 {
+lab=GND}
+N 880 -180 1060 -180 {
+lab=GND}
+C {devices/vsource.sym} 390 -360 0 0 {name=Vavdd value="PWL (0 0 10u 0 \{Tramp\} \{Vavdd|maximum\})" savecurrent=false}
 C {devices/gnd.sym} 90 -180 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} 90 -360 0 0 {name=Vdvdd value="DC \{Vdvdd\}" savecurrent=false}
 C {devices/lab_pin.sym} 390 -410 0 0 {name=p15 sig_type=std_logic lab=avdd}
@@ -130,7 +142,7 @@ C {devices/code_shown.sym} 0 -1030 0 0 {name=SETUP only_toplevel=false value="* 
 "}
 C {devices/code_shown.sym} 0 -860 0 0 {name=CONTROL only_toplevel=false value=".control
 tran 100n 100u 1u
-meas tran ttrip WHEN V(avdd) = [\{Vavdd|maximum\}/2] RISE=1
+meas tran ttrip WHEN V(avdd) = V(vtrip) RISE=1
 meas tran trise WHEN V(ovout) = [\{Vdvdd\}/2] RISE=1
 let resptime = $&trise - $&ttrip
 echo $&resptime > \{simpath\}/\{filename\}_\{N\}.data
@@ -151,27 +163,29 @@ C {devices/vsource.sym} 700 -230 0 0 {name=VC value="DC [\{vtrip[1]\} * \{Vdvdd\
 C {devices/vsource.sym} 880 -230 0 0 {name=VD value="DC [\{vtrip[0]\} * \{Vdvdd\}]" savecurrent=false}
 C {devices/lab_pin.sym} 700 -280 0 0 {name=p23 sig_type=std_logic lab=C}
 C {devices/lab_pin.sym} 880 -280 0 0 {name=p25 sig_type=std_logic lab=D}
-C {devices/capa.sym} 860 -640 0 0 {name=Cout
+C {devices/capa.sym} 920 -640 0 0 {name=Cout
 m=1
 value=\{Cout\}
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 780 -640 0 0 {name=Rout
+C {devices/res.sym} 840 -640 0 0 {name=Rout
 value=\{Rout\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/lab_pin.sym} 600 -820 1 0 {name=p12 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 640 -820 1 0 {name=p13 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 515 -690 0 0 {name=p14 sig_type=std_logic lab=vbg}
-C {devices/lab_pin.sym} 680 -820 1 0 {name=p1 sig_type=std_logic lab=ibias}
-C {devices/lab_pin.sym} 515 -565 0 0 {name=p2 sig_type=std_logic lab=A}
-C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 310 -360 0 0 {name=x1}
-C {devices/gnd.sym} 820 -590 0 0 {name=l3 lab=GND}
-C {devices/gnd.sym} 640 -445 0 0 {name=l1 lab=GND}
-C {devices/lab_pin.sym} 515 -540 0 0 {name=p3 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 515 -515 0 0 {name=p4 sig_type=std_logic lab=C
+C {devices/lab_pin.sym} 660 -820 1 0 {name=p12 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 700 -820 1 0 {name=p13 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 575 -690 0 0 {name=p14 sig_type=std_logic lab=vbg}
+C {devices/lab_pin.sym} 740 -820 1 0 {name=p1 sig_type=std_logic lab=ibias}
+C {devices/lab_pin.sym} 575 -565 0 0 {name=p2 sig_type=std_logic lab=A}
+C {/home/vblabs/Music/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sym} 370 -360 0 0 {name=x1}
+C {devices/gnd.sym} 880 -590 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} 700 -445 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 575 -540 0 0 {name=p3 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 575 -515 0 0 {name=p4 sig_type=std_logic lab=C
 }
-C {devices/lab_pin.sym} 515 -490 0 0 {name=p5 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 515 -600 0 0 {name=p6 sig_type=std_logic lab=ena}
-C {devices/lab_pin.sym} 860 -690 0 1 {name=p7 sig_type=std_logic lab=ovout}
+C {devices/lab_pin.sym} 575 -490 0 0 {name=p5 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 575 -600 0 0 {name=p6 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 920 -690 0 1 {name=p7 sig_type=std_logic lab=ovout}
+C {devices/lab_pin.sym} 1060 -280 0 0 {name=p19 sig_type=std_logic lab=vtrip}
+C {devices/vsource.sym} 1060 -230 0 0 {name=Vtrip value="DC [(8*\{vtrip[3]\} + 4*\{vtrip[2]\} + 2*\{vtrip[1]\} + 1*\{vtrip[0]\})*0.14667 + 3.3]" savecurrent=false}

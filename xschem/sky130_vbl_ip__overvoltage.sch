@@ -5,18 +5,18 @@ K {}
 V {}
 S {}
 E {}
-L 4 1750 -140 2410 -140 {}
-L 4 1750 -100 2410 -100 {}
-L 4 2270 -140 2270 -100 {}
+L 4 1600 -140 1600 -100 {}
 L 4 140 -140 140 0 {}
-L 4 0 -140 140 -140 {}
 L 4 0 -140 0 0 {}
-L 4 1610 0 2410 0 {}
-L 4 2410 -140 2410 0 {}
-L 4 150 -140 1750 -140 {}
-L 4 140 -140 150 -140 {}
-L 4 140 -100 1750 -100 {}
-L 4 140 0 1610 0 {}
+L 4 1740 -140 1740 0 {}
+L 4 1600 -100 1600 -60 {}
+L 4 1600 -60 1740 -60 {}
+L 4 0 0 820 0 {}
+L 4 0 -140 820 -140 {}
+L 4 140 -100 820 -100 {}
+L 4 820 -140 1740 -140 {}
+L 4 820 -100 1740 -100 {}
+L 4 820 0 1740 0 {}
 B 2 0 -140 140 0 {flags=image,unscaled
 alpha=1
 image=/home/vblabs/testesCACE/sky130_vbl_ip__overvoltage/vblabs.png
@@ -25,241 +25,192 @@ T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
 T {sky130_vbl_ip__overvoltage} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-21} 2280 -110 2 1 0.4 0.4 {}
-N 415 -915 545 -915 {
-lab=#net1}
-N 225 -915 235 -915 {
-lab=ena}
-N 325 -865 325 -855 {
-lab=vss}
-N 435 -915 435 -715 {
-lab=#net1}
-N 435 -715 555 -715 {
-lab=#net1}
-N 655 -825 655 -815 {
-lab=vss}
-N 435 -715 435 -535 {
-lab=#net1}
-N 435 -535 435 -525 {
-lab=#net1}
-N 435 -525 555 -525 {
-lab=#net1}
-N 435 -335 555 -335 {
-lab=#net1}
-N 435 -525 435 -335 {
-lab=#net1}
-N 525 -665 555 -665 {
-lab=vtrip[2]}
-N 525 -475 555 -475 {
-lab=vtrip[1]}
-N 525 -285 555 -285 {
-lab=vtrip[0]}
-N 615 -385 625 -385 {
-lab=avdd}
-N 615 -575 625 -575 {
-lab=avdd}
-N 615 -765 625 -765 {
-lab=avdd}
-N 615 -995 615 -965 {
-lab=avdd}
-N 515 -995 615 -995 {
-lab=avdd}
-N 695 -985 695 -965 {
-lab=dvdd}
-N 705 -785 705 -765 {
-lab=dvdd}
-N 705 -595 705 -575 {
-lab=dvdd}
-N 705 -405 705 -385 {
-lab=dvdd}
-N 665 -625 665 -615 {
-lab=vss}
-N 665 -435 665 -425 {
-lab=vss}
-N 665 -425 665 -415 {
-lab=vss}
-N 665 -245 665 -235 {
-lab=vss}
-N 665 -235 665 -225 {
-lab=vss}
-N 765 -915 785 -915 {
+T {2024-03-31} 1610 -110 2 1 0.4 0.4 {}
+T {Version 2} 1620 -70 2 1 0.4 0.4 {}
+T {Design under the Apache License Version 2.0 (Jan. 2004)} 575 35 2 1 0.4 0.4 {}
+N 400 -915 420 -915 {
 lab=A}
-N 775 -865 785 -865 {
+N 410 -865 420 -865 {
 lab=NotA}
-N 765 -865 775 -865 {
+N 400 -865 410 -865 {
 lab=NotA}
-N 775 -715 795 -715 {
-lab=B}
-N 785 -665 795 -665 {
-lab=NotB}
-N 775 -665 785 -665 {
-lab=NotB}
-N 775 -525 795 -525 {
-lab=C}
-N 785 -475 795 -475 {
-lab=NotC}
-N 775 -475 785 -475 {
-lab=NotC}
-N 775 -335 795 -335 {
-lab=D}
-N 785 -285 795 -285 {
-lab=NotD}
-N 775 -285 785 -285 {
-lab=NotD}
-N 1315 -545 1335 -545 {
+N 950 -455 970 -455 {
 lab=A}
-N 1315 -525 1335 -525 {
+N 950 -435 970 -435 {
 lab=NotA}
-N 1315 -505 1335 -505 {
+N 950 -415 970 -415 {
 lab=B}
-N 1315 -485 1325 -485 {
+N 950 -395 960 -395 {
 lab=NotB}
-N 1325 -485 1335 -485 {
+N 960 -395 970 -395 {
 lab=NotB}
-N 1315 -465 1335 -465 {
+N 950 -375 970 -375 {
 lab=C}
-N 1315 -445 1335 -445 {
+N 950 -355 970 -355 {
 lab=NotC}
-N 1315 -425 1335 -425 {
+N 950 -335 970 -335 {
 lab=D}
-N 1315 -405 1335 -405 {
+N 950 -315 970 -315 {
 lab=NotD}
-N 1485 -365 1485 -345 {
+N 1120 -275 1120 -255 {
 lab=vss}
-N 1485 -925 1485 -905 {
+N 1120 -835 1120 -815 {
 lab=avdd}
-N 1475 -925 1485 -925 {
-lab=avdd}
-N 1635 -645 1675 -645 {
+N 710 -435 710 -415 {
+lab=vss}
+N 865 -625 875 -625 {
+lab=#net1}
+N 860 -625 865 -625 {
+lab=#net1}
+N 905 -625 970 -625 {
+lab=#net1}
+N 875 -625 905 -625 {
+lab=#net1}
+N 860 -785 970 -785 {
 lab=#net2}
-N 1075 -525 1075 -505 {
-lab=vss}
-N 915 -725 925 -725 {
-lab=ena}
-N 1230 -715 1240 -715 {
+N 860 -765 970 -765 {
 lab=#net3}
-N 1225 -715 1230 -715 {
-lab=#net3}
-N 1270 -715 1335 -715 {
-lab=#net3}
-N 1240 -715 1270 -715 {
-lab=#net3}
-N 1225 -875 1335 -875 {
+N 860 -745 970 -745 {
 lab=#net4}
-N 1225 -855 1335 -855 {
+N 860 -725 970 -725 {
 lab=#net5}
-N 1225 -835 1335 -835 {
+N 860 -705 970 -705 {
 lab=#net6}
-N 1225 -815 1335 -815 {
+N 860 -685 970 -685 {
 lab=#net7}
-N 1225 -795 1335 -795 {
+N 860 -665 970 -665 {
 lab=#net8}
-N 1225 -775 1335 -775 {
+N 860 -645 970 -645 {
 lab=#net9}
-N 1225 -755 1335 -755 {
+N 860 -605 970 -605 {
 lab=#net10}
-N 1225 -735 1335 -735 {
+N 860 -585 970 -585 {
 lab=#net11}
-N 1225 -695 1335 -695 {
+N 860 -565 970 -565 {
 lab=#net12}
-N 1225 -675 1335 -675 {
+N 860 -545 970 -545 {
 lab=#net13}
-N 1225 -655 1335 -655 {
+N 860 -525 970 -525 {
 lab=#net14}
-N 1225 -635 1335 -635 {
+N 860 -505 970 -505 {
 lab=#net15}
-N 1225 -615 1335 -615 {
+N 860 -485 970 -485 {
 lab=#net16}
-N 1225 -595 1335 -595 {
-lab=#net17}
-N 1225 -575 1335 -575 {
-lab=#net18}
-N 1060 -955 1075 -955 {
-lab=avdd}
-N 1075 -955 1075 -925 {
-lab=avdd}
-N 305 -995 325 -995 {
-lab=avdd}
-N 325 -995 325 -965 {
-lab=avdd}
-N 325 -995 515 -995 {
-lab=avdd}
-N 1675 -645 1735 -645 {
-lab=#net2}
-N 1735 -645 1855 -645 {
-lab=#net2}
-N 2095 -575 2110 -575 {
+N 1595 -485 1610 -485 {
 lab=ovout}
-N 1830 -505 1850 -505 {
+N 1330 -415 1350 -415 {
 lab=vbg}
-N 1935 -725 1935 -705 {
-lab=ibias}
-N 1985 -695 1990 -695 {
+N 1485 -605 1485 -575 {
 lab=dvdd}
-N 1985 -695 1985 -665 {
-lab=dvdd}
-N 1935 -445 1935 -425 {
-lab=ena}
-N 1985 -485 1985 -425 {
-lab=vss}
-N 310 -855 325 -855 {
-lab=vss}
-N 525 -865 545 -865 {
+N 160 -895 180 -895 {
 lab=vtrip[3]}
-N 1925 -760 1935 -760 {
+N 1270 -555 1350 -555 {
+lab=#net17}
+N 1435 -670 1435 -615 {
 lab=ibias}
-N 1935 -760 1935 -725 {
-lab=ibias}
-C {halfvdd_vbias.sym} 205 -855 0 0 {name=XVBIAS1}
-C {devices/lab_pin.sym} 615 -765 0 0 {name=p11 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 615 -575 0 0 {name=p12 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 615 -385 0 0 {name=p13 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 705 -785 0 1 {name=p14 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 705 -595 0 1 {name=p15 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 705 -405 0 1 {name=p16 sig_type=std_logic lab=dvdd}
-C {devices/lab_pin.sym} 785 -915 0 1 {name=p17 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 785 -865 0 1 {name=p18 sig_type=std_logic lab=NotA}
-C {devices/lab_pin.sym} 795 -715 0 1 {name=p19 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 795 -665 0 1 {name=p20 sig_type=std_logic lab=NotB}
-C {devices/lab_pin.sym} 795 -525 0 1 {name=p21 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 795 -475 0 1 {name=p22 sig_type=std_logic lab=NotC}
-C {devices/lab_pin.sym} 795 -335 0 1 {name=p23 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 795 -285 0 1 {name=p24 sig_type=std_logic lab=NotD}
-C {DemuxCompleto.sym} 1485 -645 0 0 {name=x5}
-C {devices/lab_pin.sym} 1315 -545 0 0 {name=p25 sig_type=std_logic lab=A}
-C {devices/lab_pin.sym} 1315 -525 0 0 {name=p26 sig_type=std_logic lab=NotA}
-C {devices/lab_pin.sym} 1315 -505 0 0 {name=p27 sig_type=std_logic lab=B}
-C {devices/lab_pin.sym} 1315 -485 0 0 {name=p28 sig_type=std_logic lab=NotB}
-C {devices/lab_pin.sym} 1315 -465 0 0 {name=p29 sig_type=std_logic lab=C}
-C {devices/lab_pin.sym} 1315 -445 0 0 {name=p30 sig_type=std_logic lab=NotC}
-C {devices/lab_pin.sym} 1315 -425 0 0 {name=p31 sig_type=std_logic lab=D}
-C {devices/lab_pin.sym} 1315 -405 0 0 {name=p32 sig_type=std_logic lab=NotD}
-C {devices/lab_pin.sym} 1475 -925 0 0 {name=p33 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 1060 -955 0 0 {name=p35 sig_type=std_logic lab=avdd}
-C {devices/lab_pin.sym} 915 -725 0 0 {name=p37 sig_type=std_logic lab=ena}
-C {divisor_completo.sym} 685 -485 0 0 {name=x6}
-C {comp_hyst.sym} 1945 -565 0 0 {name=x7}
-C {devices/lab_pin.sym} 1990 -695 0 1 {name=p42 sig_type=std_logic lab=dvdd}
-C {devices/iopin.sym} 305 -995 0 1 {name=p1 lab=avdd}
-C {devices/iopin.sym} 695 -985 0 1 {name=p2 lab=dvdd}
-C {devices/ipin.sym} 225 -915 0 0 {name=p3 lab=ena}
-C {devices/lab_pin.sym} 1935 -425 0 0 {name=p4 sig_type=std_logic lab=ena}
-C {devices/iopin.sym} 310 -855 0 1 {name=p6 lab=vss}
-C {devices/lab_pin.sym} 655 -815 0 0 {name=p7 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 665 -615 0 0 {name=p34 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 665 -415 0 0 {name=p38 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 665 -225 0 0 {name=p44 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 1075 -505 0 0 {name=p45 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 1485 -345 0 0 {name=p46 sig_type=std_logic lab=vss}
-C {devices/lab_pin.sym} 1985 -425 0 1 {name=p47 sig_type=std_logic lab=vss}
-C {devices/ipin.sym} 525 -865 0 0 {name=p10 lab=vtrip[3]}
-C {devices/opin.sym} 2110 -575 0 0 {name=p36 lab=ovout}
-C {devices/ipin.sym} 1830 -505 0 0 {name=p41 lab=vbg}
-C {devices/ipin.sym} 525 -665 0 0 {name=p5 lab=vtrip[2]}
-C {devices/ipin.sym} 525 -475 0 0 {name=p8 lab=vtrip[1]}
-C {devices/ipin.sym} 525 -285 0 0 {name=p9 lab=vtrip[0]}
-C {devices/ipin.sym} 1925 -760 0 0 {name=p39 lab=ibias}
-C {level_shifter.sym} 655 -895 0 0 {name=x1}
-C {level_shifter.sym} 665 -695 0 0 {name=x2}
-C {level_shifter.sym} 665 -505 0 0 {name=x3}
-C {level_shifter.sym} 665 -315 0 0 {name=x4}
+N 1435 -355 1435 -300 {
+lab=ena}
+N 1485 -395 1485 -365 {
+lab=vss}
+N 710 -855 710 -835 {
+lab=avdd}
+N 545 -635 560 -635 {
+lab=ena}
+N 330 -985 330 -965 {
+lab=dvdd}
+N 250 -985 250 -965 {
+lab=avdd}
+N 290 -825 290 -805 {
+lab=vss}
+N 400 -710 420 -710 {
+lab=B}
+N 410 -660 420 -660 {
+lab=NotB}
+N 400 -660 410 -660 {
+lab=NotB}
+N 160 -690 180 -690 {
+lab=vtrip[2]}
+N 330 -780 330 -760 {
+lab=dvdd}
+N 250 -780 250 -760 {
+lab=avdd}
+N 290 -620 290 -600 {
+lab=vss}
+N 400 -505 420 -505 {
+lab=C}
+N 410 -455 420 -455 {
+lab=NotC}
+N 400 -455 410 -455 {
+lab=NotC}
+N 160 -485 180 -485 {
+lab=vtrip[1]}
+N 330 -575 330 -555 {
+lab=dvdd}
+N 250 -575 250 -555 {
+lab=avdd}
+N 290 -415 290 -395 {
+lab=vss}
+N 400 -300 420 -300 {
+lab=D}
+N 410 -250 420 -250 {
+lab=NotD}
+N 400 -250 410 -250 {
+lab=NotD}
+N 160 -280 180 -280 {
+lab=#net18}
+N 330 -370 330 -350 {
+lab=dvdd}
+N 250 -370 250 -350 {
+lab=avdd}
+N 290 -210 290 -190 {
+lab=vss}
+C {devices/lab_pin.sym} 420 -915 0 1 {name=p17 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 420 -865 0 1 {name=p18 sig_type=std_logic lab=NotA}
+C {devices/lab_pin.sym} 950 -455 0 0 {name=p25 sig_type=std_logic lab=A}
+C {devices/lab_pin.sym} 950 -435 0 0 {name=p26 sig_type=std_logic lab=NotA}
+C {devices/lab_pin.sym} 950 -415 0 0 {name=p27 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 950 -395 0 0 {name=p28 sig_type=std_logic lab=NotB}
+C {devices/lab_pin.sym} 950 -375 0 0 {name=p29 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 950 -355 0 0 {name=p30 sig_type=std_logic lab=NotC}
+C {devices/lab_pin.sym} 950 -335 0 0 {name=p31 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 950 -315 0 0 {name=p32 sig_type=std_logic lab=NotD}
+C {devices/lab_pin.sym} 1120 -835 0 0 {name=p33 sig_type=std_logic lab=avdd}
+C {devices/iopin.sym} 710 -855 0 1 {name=p1 lab=avdd}
+C {devices/iopin.sym} 1485 -605 0 0 {name=p2 lab=dvdd}
+C {devices/ipin.sym} 545 -635 0 0 {name=p3 lab=ena}
+C {devices/lab_pin.sym} 1435 -300 0 0 {name=p4 sig_type=std_logic lab=ena}
+C {devices/iopin.sym} 710 -415 0 1 {name=p6 lab=vss}
+C {devices/lab_pin.sym} 1120 -255 0 0 {name=p46 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 1485 -365 0 1 {name=p47 sig_type=std_logic lab=vss}
+C {devices/ipin.sym} 160 -895 0 0 {name=p10 lab=vtrip[3]}
+C {devices/opin.sym} 1610 -485 0 0 {name=p36 lab=ovout}
+C {devices/ipin.sym} 1330 -415 0 0 {name=p41 lab=vbg}
+C {devices/ipin.sym} 160 -690 0 0 {name=p5 lab=vtrip[2]}
+C {devices/ipin.sym} 160 -485 0 0 {name=p8 lab=vtrip[1]}
+C {devices/ipin.sym} 160 -280 0 0 {name=p9 lab=vtrip[0]}
+C {devices/ipin.sym} 1435 -670 0 0 {name=p39 lab=ibias}
+C {comp_hyst.sym} 1445 -475 0 0 {name=x1}
+C {multiplexer.sym} 1120 -555 0 0 {name=x2}
+C {voltage_divider.sym} 710 -635 0 0 {name=x3}
+C {level_shifter.sym} 290 -895 0 0 {name=x4}
+C {devices/lab_pin.sym} 250 -985 0 0 {name=p7 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 330 -985 0 1 {name=p35 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 290 -805 0 1 {name=p37 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 420 -710 0 1 {name=p11 sig_type=std_logic lab=B}
+C {devices/lab_pin.sym} 420 -660 0 1 {name=p12 sig_type=std_logic lab=NotB}
+C {level_shifter.sym} 290 -690 0 0 {name=x5}
+C {devices/lab_pin.sym} 250 -780 0 0 {name=p14 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 330 -780 0 1 {name=p15 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 290 -600 0 1 {name=p16 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 420 -505 0 1 {name=p19 sig_type=std_logic lab=C}
+C {devices/lab_pin.sym} 420 -455 0 1 {name=p20 sig_type=std_logic lab=NotC}
+C {level_shifter.sym} 290 -485 0 0 {name=x6}
+C {devices/lab_pin.sym} 250 -575 0 0 {name=p34 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 330 -575 0 1 {name=p38 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 290 -395 0 1 {name=p40 sig_type=std_logic lab=vss}
+C {devices/lab_pin.sym} 420 -300 0 1 {name=p21 sig_type=std_logic lab=D}
+C {devices/lab_pin.sym} 420 -250 0 1 {name=p22 sig_type=std_logic lab=NotD}
+C {level_shifter.sym} 290 -280 0 0 {name=x7}
+C {devices/lab_pin.sym} 250 -370 0 0 {name=p42 sig_type=std_logic lab=avdd}
+C {devices/lab_pin.sym} 330 -370 0 1 {name=p43 sig_type=std_logic lab=dvdd}
+C {devices/lab_pin.sym} 290 -190 0 1 {name=p44 sig_type=std_logic lab=vss}
