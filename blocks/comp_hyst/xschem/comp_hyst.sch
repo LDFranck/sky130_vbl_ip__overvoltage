@@ -367,6 +367,94 @@ N 615 -720 615 -700 {
 lab=dvdd}
 N 595 -720 595 -670 {
 lab=dvdd}
+N 1280 -720 1280 -670 {
+lab=dvdd}
+N 1280 -720 1320 -720 {
+lab=dvdd}
+N 1320 -720 1320 -700 {
+lab=dvdd}
+N 1280 -640 1320 -640 {
+lab=dvdd}
+N 1280 -670 1280 -640 {
+lab=dvdd}
+N 1200 -720 1280 -720 {
+lab=dvdd}
+N 1470 -720 1470 -700 {
+lab=dvdd}
+N 1320 -720 1470 -720 {
+lab=dvdd}
+N 1430 -640 1470 -640 {
+lab=dvdd}
+N 1430 -670 1430 -640 {
+lab=dvdd}
+N 1430 -720 1430 -670 {
+lab=dvdd}
+N 1470 -720 1610 -720 {
+lab=dvdd}
+N 1610 -720 1610 -710 {
+lab=dvdd}
+N 1570 -650 1610 -650 {
+lab=dvdd}
+N 1570 -720 1570 -650 {
+lab=dvdd}
+N 1610 -720 1730 -720 {
+lab=dvdd}
+N 1730 -720 1730 -710 {
+lab=dvdd}
+N 1690 -680 1690 -650 {
+lab=dvdd}
+N 1690 -650 1730 -650 {
+lab=dvdd}
+N 1470 -670 1490 -670 {
+lab=dvdd}
+N 1490 -720 1490 -670 {
+lab=dvdd}
+N 1610 -680 1630 -680 {
+lab=dvdd}
+N 1630 -720 1630 -680 {
+lab=dvdd}
+N 1320 -670 1340 -670 {
+lab=dvdd}
+N 1340 -720 1340 -670 {
+lab=dvdd}
+N 1690 -720 1690 -680 {
+lab=dvdd}
+N 1730 -720 1880 -720 {
+lab=dvdd}
+N 1880 -720 1880 -710 {
+lab=dvdd}
+N 1840 -680 1840 -650 {
+lab=#net6}
+N 1840 -650 1880 -650 {
+lab=#net6}
+N 1730 -680 1760 -680 {
+lab=xxx}
+N 1760 -680 1760 -620 {
+lab=xxx}
+N 1740 -620 1760 -620 {
+lab=xxx}
+N 1880 -680 1910 -680 {
+lab=xxx}
+N 1910 -680 1910 -620 {
+lab=xxx}
+N 1760 -620 1910 -620 {
+lab=xxx}
+N 1880 -720 2040 -720 {
+lab=dvdd}
+N 2040 -720 2040 -710 {
+lab=dvdd}
+N 2000 -650 2040 -650 {
+lab=dvdd}
+N 2000 -680 2000 -650 {
+lab=dvdd}
+N 2000 -720 2000 -680 {
+lab=dvdd}
+N 2040 -680 2070 -680 {
+lab=xxx}
+N 2070 -680 2070 -620 {
+lab=xxx}
+N 1910 -620 2070 -620 {
+lab=xxx}
 C {devices/iopin.sym} 425 -720 0 1 {name=p13 lab=dvdd}
 C {devices/ipin.sym} 505 -460 0 0 {name=p3 lab=vref}
 C {devices/ipin.sym} 1140 -460 0 1 {name=p2 lab=vin}
@@ -653,3 +741,88 @@ C {devices/lab_pin.sym} 240 -345 3 0 {name=p17 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 240 -445 3 1 {name=p18 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 225 -730 0 0 {name=p19 sig_type=std_logic lab=dvdd}
 C {trans_gate.sym} 205 -395 0 0 {name=x1}
+C {sky130_fd_pr/pfet_01v8.sym} 1300 -670 0 0 {name=MD[0:3]
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1450 -670 0 0 {name=MD1[0:15]
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1590 -680 0 0 {name=MD16[0:5]
+L=8
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1710 -680 0 0 {name=MDN8[0:3]
+L=8
+W=1.3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1860 -680 0 0 {name=MDN1[0:3]
+L=1
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/lab_pin.sym} 1740 -620 0 0 {name=p20 sig_type=std_logic lab=xxx}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 2020 -680 0 0 {name=MDN13[0:3]
+L=1
+W=1.3
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
