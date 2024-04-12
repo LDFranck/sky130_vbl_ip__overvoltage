@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1712925798
+timestamp 1712947935
 << locali >>
 rect 1298 510 2658 522
 rect 1298 442 1315 510
@@ -130,15 +130,15 @@ transform 1 0 1978 0 1 -389
 box -758 -897 758 897
 << labels >>
 flabel metal2 2573 -1349 2655 -1273 0 FreeSans 640 0 0 0 out
-port 5 nsew
-flabel metal1 1296 -1349 1373 -1273 0 FreeSans 640 0 0 0 in
 port 6 nsew
+flabel metal1 1296 -1349 1373 -1273 0 FreeSans 640 0 0 0 in
+port 1 nsew
 flabel metal3 1247 -1908 1409 -1832 0 FreeSans 640 0 0 0 ena
-port 2 nsew
+port 3 nsew
 flabel metal3 2498 249 2658 325 0 FreeSans 640 0 0 0 ena_b
-port 7 nsew
+port 2 nsew
 flabel metal1 1295 -2096 2655 -2004 0 FreeSans 1280 0 0 0 vss
-port 8 nsew
+port 5 nsew
 flabel metal1 1298 430 2658 522 0 FreeSans 1280 0 0 0 avdd
-port 9 nsew
+port 4 nsew
 << end >>

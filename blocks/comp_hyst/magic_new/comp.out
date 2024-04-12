@@ -95,9 +95,9 @@ Flattening unmatched subcell sky130_fd_pr__pfet_01v8_CDT3CS in circuit comp_hyst
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_CD9S2Z in circuit comp_hyst (0)(4 instances)
 Flattening unmatched subcell sky130_fd_pr__diode_pw2nd_05v5_F6RBXN in circuit comp_hyst (0)(3 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_3HBZVM in circuit comp_hyst (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_697RXD in circuit comp_hyst (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_4T6WVE in circuit comp_hyst (0)(8 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_6975WM in circuit comp_hyst (0)(4 instances)
-Flattening unmatched subcell sky130_fd_pr__nfet_01v8_697RXD in circuit comp_hyst (0)(1 instance)
 Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_DEN7YK in circuit comp_hyst (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_G3L97A in circuit comp_hyst (0)(2 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_C8TQ3N in circuit comp_hyst (0)(1 instance)
@@ -115,7 +115,7 @@ sky130_fd_pr__diode_pw2nd_05v5 (3)         |sky130_fd_pr__diode_pw2nd_05v5 (3)
 Number of devices: 25                      |Number of devices: 25                      
 Number of nets: 13                         |Number of nets: 13                         
 ---------------------------------------------------------------------------------------
-Netlists match uniquely with port errors.
+Netlists match uniquely.
 
 Subcircuit pins:
 Circuit 1: comp_hyst                       |Circuit 2: comp_hyst                       
@@ -124,11 +124,12 @@ vin                                        |vin
 vref                                       |vref                                       
 ibias                                      |ibias                                      
 ena                                        |ena                                        
+out                                        |out                                        
 vss                                        |vss                                        
-(no matching pin)                          |dvdd                                       
-(no matching pin)                          |out                                        
+dvdd                                       |dvdd                                       
 ---------------------------------------------------------------------------------------
-Cell pin lists for comp_hyst and comp_hyst altered to match.
+Cell pin lists are equivalent.
 Device classes comp_hyst and comp_hyst are equivalent.
 
-Final result: Top level cell failed pin matching.
+Final result: Circuits match uniquely.
+.
