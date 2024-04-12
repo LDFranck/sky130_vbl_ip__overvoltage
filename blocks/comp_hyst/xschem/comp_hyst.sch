@@ -367,100 +367,112 @@ N 615 -720 615 -700 {
 lab=dvdd}
 N 595 -720 595 -670 {
 lab=dvdd}
-N 1280 -720 1280 -670 {
+N 1200 -720 1280 -720 {
+lab=dvdd}
+N 1240 -720 1240 -690 {
+lab=dvdd}
+N 1280 -690 1320 -690 {
+lab=dvdd}
+N 1320 -720 1320 -690 {
 lab=dvdd}
 N 1280 -720 1320 -720 {
 lab=dvdd}
-N 1320 -720 1320 -700 {
+N 1240 -660 1280 -660 {
 lab=dvdd}
-N 1280 -640 1320 -640 {
+N 1240 -690 1240 -660 {
 lab=dvdd}
-N 1280 -670 1280 -640 {
+N 1370 -720 1370 -690 {
 lab=dvdd}
-N 1200 -720 1280 -720 {
+N 1320 -720 1370 -720 {
 lab=dvdd}
-N 1470 -720 1470 -700 {
+N 1370 -720 1410 -720 {
 lab=dvdd}
-N 1320 -720 1470 -720 {
+N 1410 -690 1450 -690 {
 lab=dvdd}
-N 1430 -640 1470 -640 {
+N 1450 -720 1450 -690 {
 lab=dvdd}
-N 1430 -670 1430 -640 {
+N 1410 -720 1450 -720 {
 lab=dvdd}
-N 1430 -720 1430 -670 {
+N 1370 -660 1410 -660 {
 lab=dvdd}
-N 1470 -720 1610 -720 {
+N 1370 -690 1370 -660 {
 lab=dvdd}
-N 1610 -720 1610 -710 {
+N 1450 -720 1540 -720 {
 lab=dvdd}
-N 1570 -650 1610 -650 {
+N 1500 -720 1500 -690 {
 lab=dvdd}
-N 1570 -720 1570 -650 {
+N 1540 -690 1580 -690 {
 lab=dvdd}
-N 1610 -720 1730 -720 {
+N 1580 -720 1580 -690 {
 lab=dvdd}
-N 1730 -720 1730 -710 {
+N 1540 -720 1580 -720 {
 lab=dvdd}
-N 1690 -680 1690 -650 {
+N 1500 -660 1540 -660 {
 lab=dvdd}
-N 1690 -650 1730 -650 {
+N 1500 -690 1500 -660 {
 lab=dvdd}
-N 1470 -670 1490 -670 {
-lab=dvdd}
-N 1490 -720 1490 -670 {
-lab=dvdd}
-N 1610 -680 1630 -680 {
-lab=dvdd}
-N 1630 -720 1630 -680 {
-lab=dvdd}
-N 1320 -670 1340 -670 {
-lab=dvdd}
-N 1340 -720 1340 -670 {
-lab=dvdd}
-N 1690 -720 1690 -680 {
-lab=dvdd}
-N 1730 -720 1880 -720 {
-lab=dvdd}
-N 1880 -720 1880 -710 {
-lab=dvdd}
-N 1840 -680 1840 -650 {
-lab=#net6}
-N 1840 -650 1880 -650 {
-lab=#net6}
-N 1730 -680 1760 -680 {
-lab=xxx}
-N 1760 -680 1760 -620 {
-lab=xxx}
-N 1740 -620 1760 -620 {
-lab=xxx}
-N 1880 -680 1910 -680 {
-lab=xxx}
-N 1910 -680 1910 -620 {
-lab=xxx}
-N 1760 -620 1910 -620 {
-lab=xxx}
-N 1880 -720 2040 -720 {
-lab=dvdd}
-N 2040 -720 2040 -710 {
-lab=dvdd}
-N 2000 -650 2040 -650 {
-lab=dvdd}
-N 2000 -680 2000 -650 {
-lab=dvdd}
-N 2000 -720 2000 -680 {
-lab=dvdd}
-N 2040 -680 2070 -680 {
-lab=xxx}
-N 2070 -680 2070 -620 {
-lab=xxx}
-N 1910 -620 2070 -620 {
-lab=xxx}
+N 1360 -200 1440 -200 {
+lab=vss}
+N 1400 -230 1400 -200 {
+lab=vss}
+N 1400 -260 1440 -260 {
+lab=vss}
+N 1400 -260 1400 -230 {
+lab=vss}
+N 1440 -230 1490 -230 {
+lab=vss}
+N 1490 -230 1490 -200 {
+lab=vss}
+N 1440 -200 1490 -200 {
+lab=vss}
+N 1490 -200 1600 -200 {
+lab=vss}
+N 1560 -230 1560 -200 {
+lab=vss}
+N 1560 -260 1560 -230 {
+lab=vss}
+N 1560 -260 1600 -260 {
+lab=vss}
+N 1600 -230 1650 -230 {
+lab=vss}
+N 1650 -230 1650 -200 {
+lab=vss}
+N 1600 -200 1650 -200 {
+lab=vss}
+N 1720 -230 1720 -200 {
+lab=vss}
+N 1650 -200 1720 -200 {
+lab=vss}
+N 1720 -200 1760 -200 {
+lab=vss}
+N 1720 -260 1720 -230 {
+lab=vss}
+N 1720 -260 1760 -260 {
+lab=vss}
+N 1760 -230 1810 -230 {
+lab=vss}
+N 1810 -230 1810 -200 {
+lab=vss}
+N 1760 -200 1810 -200 {
+lab=vss}
+N 140 -645 160 -645 {
+lab=ena}
+N 40 -200 120 -200 {
+lab=vss}
+N 120 -200 210 -200 {
+lab=vss}
+N 325 -200 325 -185 {
+lab=vss}
+N 120 -185 325 -185 {
+lab=vss}
+N 120 -200 120 -185 {
+lab=vss}
 C {devices/iopin.sym} 425 -720 0 1 {name=p13 lab=dvdd}
 C {devices/ipin.sym} 505 -460 0 0 {name=p3 lab=vref}
 C {devices/ipin.sym} 1140 -460 0 1 {name=p2 lab=vin}
 C {devices/opin.sym} 1380 -460 0 0 {name=p9 lab=out}
 C {devices/ipin.sym} 95 -395 0 0 {name=p10 lab=ibias}
-C {devices/ipin.sym} 160 -635 0 0 {name=p5 lab=ena}
+C {devices/ipin.sym} 140 -645 0 0 {name=p5 lab=ena}
 C {devices/lab_pin.sym} 245 -635 2 0 {name=p6 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 675 -250 0 0 {name=p12 sig_type=std_logic lab=ena_b}
 C {devices/lab_pin.sym} 1320 -370 0 0 {name=p16 sig_type=std_logic lab=ena_b}
@@ -735,13 +747,27 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 160 -345 1 1 {name=p1 sig_type=std_logic lab=ena_b}
-C {devices/lab_pin.sym} 160 -445 1 0 {name=p4 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 160 -445 3 1 {name=p1 sig_type=std_logic lab=ena_b}
+C {devices/lab_pin.sym} 160 -345 3 0 {name=p4 sig_type=std_logic lab=ena}
 C {devices/lab_pin.sym} 240 -345 3 0 {name=p17 sig_type=std_logic lab=vss}
 C {devices/lab_pin.sym} 240 -445 3 1 {name=p18 sig_type=std_logic lab=dvdd}
 C {devices/lab_pin.sym} 225 -730 0 0 {name=p19 sig_type=std_logic lab=dvdd}
 C {trans_gate.sym} 205 -395 0 0 {name=x1}
-C {sky130_fd_pr/pfet_01v8.sym} 1300 -670 0 0 {name=MD[0:3]
+C {sky130_fd_pr/pfet_01v8.sym} 1260 -690 0 0 {name=MD16[0:5]
+L=16
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8.sym} 1390 -690 0 0 {name=MD8[0:1]
 L=8
 W=1
 nf=1
@@ -755,8 +781,8 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1450 -670 0 0 {name=MD1[0:15]
-L=8
+C {sky130_fd_pr/pfet_01v8.sym} 1520 -690 0 0 {name=MD1[0:19]
+L=1
 W=1
 nf=1
 mult=1
@@ -769,23 +795,9 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 1590 -680 0 0 {name=MD16[0:5]
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1420 -230 0 0 {name=MDN8[0:1]
 L=8
 W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1710 -680 0 0 {name=MDN8[0:3]
-L=8
-W=1.3
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -797,7 +809,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1860 -680 0 0 {name=MDN1[0:3]
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1580 -230 0 0 {name=MDN1[0:3]
 L=1
 W=1
 nf=1
@@ -811,10 +823,9 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 1740 -620 0 0 {name=p20 sig_type=std_logic lab=xxx}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 2020 -680 0 0 {name=MDN13[0:3]
-L=1
-W=1.3
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 1740 -230 0 0 {name=MDN2[0:7]
+L=1.3
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -826,3 +837,22 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
+C {sky130_fd_pr/lvsdiode.sym} 40 -230 0 0 {name=D3
+model=diode_pw2nd_05v5
+area=0.315e12
+pj=2.3e6
+}
+C {sky130_fd_pr/lvsdiode.sym} 210 -230 0 0 {name=D1
+model=diode_pw2nd_05v5
+area=0.315e12
+pj=2.3e6
+}
+C {sky130_fd_pr/lvsdiode.sym} 120 -230 0 0 {name=D2
+model=diode_pw2nd_05v5
+area=0.315e12
+pj=2.3e6
+}
+C {devices/lab_pin.sym} 40 -260 0 0 {name=p23 sig_type=std_logic lab=ena}
+C {devices/lab_pin.sym} 120 -260 0 0 {name=p24 sig_type=std_logic lab=vref
+}
+C {devices/lab_pin.sym} 210 -260 0 0 {name=p25 sig_type=std_logic lab=vin}
