@@ -1,0 +1,81 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1712940760
+<< locali >>
+rect -145 1371 875 1429
+rect -145 1321 29 1371
+rect -145 875 -114 1321
+rect -60 875 29 1321
+rect -145 847 29 875
+rect 897 507 1071 535
+rect 897 79 985 507
+rect 1041 79 1071 507
+rect 897 29 1071 79
+rect 51 -29 1071 29
+<< viali >>
+rect -114 875 -60 1321
+rect 985 79 1041 507
+<< metal1 >>
+rect -145 1321 -29 1555
+rect 357 1476 363 1534
+rect 563 1476 569 1534
+rect -145 875 -114 1321
+rect -60 875 -29 1321
+rect -145 -55 -29 875
+rect 91 998 163 1198
+rect 91 741 139 998
+rect 363 911 563 1476
+rect 763 998 835 1198
+rect 787 741 835 998
+rect 55 641 65 741
+rect 265 641 275 741
+rect 651 641 661 741
+rect 861 641 871 741
+rect 91 393 139 641
+rect 91 193 163 393
+rect 363 -76 563 471
+rect 787 393 835 641
+rect 763 193 835 393
+rect 955 507 1071 1495
+rect 955 79 985 507
+rect 1041 79 1071 507
+rect 357 -134 363 -76
+rect 563 -134 569 -76
+rect 955 -145 1071 79
+<< via1 >>
+rect 363 1476 563 1534
+rect 65 641 265 741
+rect 661 641 861 741
+rect 363 -134 563 -76
+<< metal2 >>
+rect 363 1534 563 1540
+rect 363 1470 563 1476
+rect 65 741 265 751
+rect 65 631 265 641
+rect 661 741 861 751
+rect 661 631 861 641
+rect 363 -76 563 -70
+rect 363 -140 563 -134
+use sky130_fd_pr__nfet_g5v0d10v5_CY564Z  sky130_fd_pr__nfet_g5v0d10v5_CY564Z_0 paramcells
+timestamp 1712691572
+transform 1 0 463 0 1 293
+box -528 -358 528 358
+use sky130_fd_pr__pfet_g5v0d10v5_6H9SQ3  sky130_fd_pr__pfet_g5v0d10v5_6H9SQ3_1 paramcells
+timestamp 1712692000
+transform 1 0 463 0 1 1098
+box -558 -397 558 397
+<< labels >>
+flabel metal2 65 641 265 741 0 FreeSans 800 0 0 0 in
+port 1 nsew
+flabel metal2 661 641 861 741 0 FreeSans 800 0 0 0 out
+port 6 nsew
+flabel metal1 985 1439 1041 1495 5 FreeSans 800 0 0 0 vss
+port 5 s
+flabel metal2 363 1476 563 1534 0 FreeSans 800 0 0 0 ena_b
+port 2 nsew
+flabel metal2 363 -134 563 -76 0 FreeSans 800 0 0 0 ena
+port 3 nsew
+flabel metal1 -115 -55 -59 1 1 FreeSans 800 0 0 0 avdd
+port 4 n
+<< end >>

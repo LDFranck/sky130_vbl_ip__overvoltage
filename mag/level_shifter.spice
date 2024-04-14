@@ -1,0 +1,12 @@
+** sch_path: /home/vblabs/sky130_vbl_ip__overvoltage/blocks/Level-Shifter/xschen/level_shifter.sch
+.subckt level_shifter avdd out_b out avss dvdd in dvss
+*.PININFO avdd:B out_b:O out:O avss:B dvdd:B in:I dvss:B
+XM1 in_b in dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+XM2 in_b in dvdd dvdd sky130_fd_pr__pfet_01v8 L=3 W=1 nf=1 m=1
+XM3 out_b out avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+XM4 out out_b avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+XM6 out in_b avss avss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=2 nf=1 m=1
+XM5 out_b in avss avss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=2 nf=1 m=1
+D1 dvss in sky130_fd_pr__diode_pw2nd_05v5 area=0.315e12 pj=2.3e6
+.ends
+.end

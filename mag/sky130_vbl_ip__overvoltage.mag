@@ -1,0 +1,73 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1713114828
+<< checkpaint >>
+rect 22327 10490 40259 17826
+rect 14020 5187 40259 10490
+rect -1260 -766 40259 5187
+rect -1260 -5260 54363 -766
+<< metal1 >>
+rect 0 0 200 200
+rect 0 -400 200 -200
+rect 0 -800 200 -600
+rect 0 -1200 200 -1000
+rect 0 -1600 200 -1400
+rect 0 -2000 200 -1800
+rect 0 -2400 200 -2200
+rect 0 -2800 200 -2600
+rect 0 -3200 200 -3000
+rect 0 -3600 200 -3400
+rect 0 -4000 200 -3800
+use comp_hyst  x1
+timestamp 1713018105
+transform 1 0 -1667 0 1 1363
+box 1667 -5363 16947 2564
+use multiplexer  x2
+timestamp 1712946774
+transform 1 0 15479 0 1 -3865
+box -199 -135 8108 13095
+use voltage_divider  x3
+timestamp 1712948350
+transform 1 0 24846 0 1 -2562
+box -1259 -1438 14153 19128
+use level_shifter  x4
+timestamp 1713031225
+transform 1 0 37894 0 1 -1686
+box 1105 -2314 4631 -340
+use level_shifter  x5
+timestamp 1713031225
+transform 1 0 41420 0 1 -1686
+box 1105 -2314 4631 -340
+use level_shifter  x6
+timestamp 1713031225
+transform 1 0 44946 0 1 -1686
+box 1105 -2314 4631 -340
+use level_shifter  x7
+timestamp 1713031225
+transform 1 0 48472 0 1 -1686
+box 1105 -2314 4631 -340
+<< labels >>
+flabel metal1 0 0 200 200 0 FreeSans 256 0 0 0 avdd
+port 0 nsew
+flabel metal1 0 -400 200 -200 0 FreeSans 256 0 0 0 dvdd
+port 1 nsew
+flabel metal1 0 -800 200 -600 0 FreeSans 256 0 0 0 ena
+port 2 nsew
+flabel metal1 0 -1200 200 -1000 0 FreeSans 256 0 0 0 {vtrip\[3\]}
+port 3 nsew
+flabel metal1 0 -1600 200 -1400 0 FreeSans 256 0 0 0 vss
+port 4 nsew
+flabel metal1 0 -2000 200 -1800 0 FreeSans 256 0 0 0 ibias
+port 5 nsew
+flabel metal1 0 -2400 200 -2200 0 FreeSans 256 0 0 0 {vtrip\[2\]}
+port 6 nsew
+flabel metal1 0 -2800 200 -2600 0 FreeSans 256 0 0 0 ovout
+port 7 nsew
+flabel metal1 0 -3200 200 -3000 0 FreeSans 256 0 0 0 vbg
+port 8 nsew
+flabel metal1 0 -3600 200 -3400 0 FreeSans 256 0 0 0 {vtrip\[1\]}
+port 9 nsew
+flabel metal1 0 -4000 200 -3800 0 FreeSans 256 0 0 0 {vtrip\[0\]}
+port 10 nsew
+<< end >>
