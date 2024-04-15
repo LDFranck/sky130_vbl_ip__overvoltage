@@ -11,7 +11,7 @@ L 4 0 -140 0 0 {}
 L 4 820 -140 820 0 {}
 L 4 680 -100 680 -60 {}
 L 4 680 -60 820 -60 {}
-L 4 0 0 820 0 {}
+L 4 0 0 820 -0 {}
 L 4 0 -140 820 -140 {}
 L 4 140 -100 820 -100 {}
 B 2 0 -140 140 0 {flags=image,unscaled
@@ -21,207 +21,45 @@ image_data=iVBORw0KGgoAAAANSUhEUgAAAIwAAACMCAIAAAAhotZpAAAABmJLR0QA/wD/AP+gvaeTA
 T {Von Braun Labs} 150 -70 2 1 0.4 0.4 {}
 T {Lucas Daudt Franck and William Carrara Orlato} 150 -40 2 1 0.4 0.4 {}
 T {Supervisor: Toni Robert Trigoso Tejada} 150 -10 2 1 0.4 0.4 {}
-T {Voltage Divider} 150 -110 2 1 0.4 0.4 {}
-T {2024-03-28} 690 -110 2 1 0.4 0.4 {}
+T {Transmission Gate} 150 -110 2 1 0.4 0.4 {}
+T {2024-03-26} 690 -110 2 1 0.4 0.4 {}
 T {Version 2} 700 -70 2 1 0.4 0.4 {}
 T {Design under the Apache License Version 2.0 (Jan. 2004)} 115 35 2 1 0.4 0.4 {}
-N 410 -420 410 -400 {
-lab=res[28:0]}
-N 410 -620 430 -620 {
-lab=out_1111}
-N 410 -700 430 -700 {
-lab=out_1110}
-N 410 -780 430 -780 {
-lab=out_1101}
-N 410 -860 430 -860 {
-lab=out_1100}
-N 410 -940 430 -940 {
-lab=out_1011}
-N 410 -1020 430 -1020 {
-lab=out_1010}
-N 410 -1100 430 -1100 {
-lab=out_1001}
-N 410 -1180 430 -1180 {
-lab=out_1000}
-N 410 -1260 430 -1260 {
-lab=out_0111}
-N 410 -1420 430 -1420 {
-lab=out_0110}
-N 410 -1500 430 -1500 {
-lab=out_0101}
-N 410 -1660 430 -1660 {
-lab=out_0100}
-N 410 -1740 430 -1740 {
-lab=out_0011}
-N 410 -780 430 -780 {
-lab=out_1101}
-N 410 -1900 430 -1900 {
-lab=out_0010}
-N 410 -2060 430 -2060 {
-lab=out_0001}
-N 410 -2220 430 -2220 {
-lab=out_0000}
-N 410 -370 410 -340 {
-lab=res[0]}
-N 340 -310 370 -310 {
-lab=ena}
-N 410 -310 440 -310 {
-lab=avss}
-N 440 -310 440 -260 {
-lab=avss}
-N 410 -260 440 -260 {
-lab=avss}
-N 410 -500 410 -480 {
-lab=res[29:1]}
-N 410 -550 410 -530 {
-lab=res[29]}
-N 410 -630 410 -610 {
-lab=out_1111}
-N 410 -710 410 -690 {
-lab=out_1110}
-N 410 -790 410 -770 {
-lab=out_1101}
-N 410 -870 410 -850 {
-lab=out_1100}
-N 410 -950 410 -930 {
-lab=out_1011}
-N 410 -1030 410 -1010 {
-lab=out_1010}
-N 410 -1110 410 -1090 {
-lab=out_1001}
-N 410 -1190 410 -1170 {
-lab=out_1000}
-N 410 -1270 410 -1250 {
-lab=out_0111}
-N 410 -1350 410 -1330 {
-lab=#net1}
-N 410 -1430 410 -1410 {
-lab=out_0110}
-N 410 -1510 410 -1490 {
-lab=out_0101}
-N 410 -1590 410 -1570 {
-lab=#net2}
-N 410 -1670 410 -1650 {
-lab=out_0100}
-N 410 -1750 410 -1730 {
-lab=out_0011}
-N 410 -1830 410 -1810 {
-lab=#net3}
-N 410 -1910 410 -1890 {
-lab=out_0010}
-N 410 -1990 410 -1970 {
-lab=#net4}
-N 410 -2070 410 -2050 {
-lab=out_0001}
-N 410 -2150 410 -2130 {
-lab=#net5}
-N 410 -2230 410 -2210 {
-lab=out_0000}
-N 410 -2310 410 -2290 {
-lab=res[30]}
-N 410 -2360 410 -2340 {
-lab=res[115:30]}
-N 410 -2440 410 -2420 {
-lab=res[116:31]}
-N 410 -2490 410 -2470 {
-lab=res[116]}
-N 410 -2570 410 -2550 {
+N 440 -250 510 -250 {
+lab=out}
+N 440 -430 510 -430 {
+lab=out}
+N 410 -315 410 -250 {
+lab=vss}
+N 410 -315 465 -315 {
+lab=vss}
+N 465 -315 465 -230 {
+lab=vss}
+N 410 -430 410 -365 {
 lab=avdd}
-N 410 -280 410 -240 {
-lab=avss}
-N 390 -450 390 -430 {
-lab=vss}
-N 390 -580 390 -450 {
-lab=vss}
-N 390 -660 390 -580 {
-lab=vss}
-N 390 -740 390 -660 {
-lab=vss}
-N 390 -820 390 -740 {
-lab=vss}
-N 390 -900 390 -820 {
-lab=vss}
-N 390 -980 390 -900 {
-lab=vss}
-N 390 -1060 390 -980 {
-lab=vss}
-N 390 -1140 390 -1060 {
-lab=vss}
-N 390 -1220 390 -1140 {
-lab=vss}
-N 390 -1300 390 -1220 {
-lab=vss}
-N 390 -1380 390 -1300 {
-lab=vss}
-N 390 -1460 390 -1380 {
-lab=vss}
-N 390 -1540 390 -1460 {
-lab=vss}
-N 390 -1620 390 -1540 {
-lab=vss}
-N 390 -1700 390 -1620 {
-lab=vss}
-N 390 -1780 390 -1700 {
-lab=vss}
-N 390 -1860 390 -1780 {
-lab=vss}
-N 390 -1940 390 -1860 {
-lab=vss}
-N 390 -2020 390 -1940 {
-lab=vss}
-N 390 -2100 390 -2020 {
-lab=vss}
-N 390 -2180 390 -2100 {
-lab=vss}
-N 390 -2260 390 -2180 {
-lab=vss}
-N 390 -2390 390 -2260 {
-lab=vss}
-N 390 -2520 390 -2390 {
-lab=vss}
-N 250 -200 270 -200 {
-lab=avss}
-N 270 -220 270 -200 {
-lab=avss}
-N 270 -200 410 -200 {
-lab=avss}
-N 410 -240 410 -200 {
-lab=avss}
-N 250 -310 270 -310 {
+N 355 -365 410 -365 {
+lab=avdd}
+N 355 -450 355 -365 {
+lab=avdd}
+N 310 -250 380 -250 {
+lab=in}
+N 310 -430 380 -430 {
+lab=in}
+N 310 -430 310 -250 {
+lab=in}
+N 510 -430 510 -250 {
+lab=out}
+N 410 -210 410 -190 {
 lab=ena}
-N 270 -310 270 -280 {
-lab=ena}
-N 270 -310 340 -310 {
-lab=ena}
-N 410 -200 510 -200 {
-lab=avss}
-N 510 -220 510 -200 {
-lab=avss}
-N 490 -250 490 -200 {
-lab=avss}
-N 510 -300 510 -280 {
-lab=avss}
-N 490 -300 510 -300 {
-lab=avss}
-N 490 -300 490 -250 {
-lab=avss}
-N 550 -200 650 -200 {
-lab=avss}
-N 650 -220 650 -200 {
-lab=avss}
-N 630 -250 630 -200 {
-lab=avss}
-N 650 -300 650 -280 {
-lab=avss}
-N 630 -300 650 -300 {
-lab=avss}
-N 630 -300 630 -250 {
-lab=avss}
-N 510 -200 550 -200 {
-lab=avss}
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 390 -310 0 0 {name=M1
+N 410 -490 410 -470 {
+lab=ena_b}
+N 290 -340 310 -340 {
+lab=in}
+N 510 -340 530 -340 {
+lab=out}
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -230 3 0 {name=M1
 L=3
-W=3
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -233,198 +71,27 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/ipin.sym} 250 -310 0 0 {name=p3 lab=ena}
-C {devices/iopin.sym} 250 -200 0 1 {name=p4 lab=avss}
-C {devices/iopin.sym} 410 -2570 2 0 {name=p9 lab=avdd}
-C {devices/lab_pin.sym} 410 -400 0 1 {name=p6 sig_type=std_logic lab=res[28:0]}
-C {devices/opin.sym} 430 -620 0 0 {name=p24 lab=out_1111}
-C {devices/opin.sym} 430 -700 0 0 {name=p25 lab=out_1110}
-C {devices/opin.sym} 430 -780 0 0 {name=p26 lab=out_1101}
-C {devices/opin.sym} 430 -860 0 0 {name=p27 lab=out_1100}
-C {devices/opin.sym} 430 -940 0 0 {name=p28 lab=out_1011}
-C {devices/opin.sym} 430 -1020 0 0 {name=p29 lab=out_1010}
-C {devices/opin.sym} 430 -1100 0 0 {name=p30 lab=out_1001}
-C {devices/opin.sym} 430 -1180 0 0 {name=p31 lab=out_1000}
-C {devices/opin.sym} 430 -1260 0 0 {name=p32 lab=out_0111}
-C {devices/opin.sym} 430 -1420 0 0 {name=p33 lab=out_0110}
-C {devices/opin.sym} 430 -1500 0 0 {name=p34 lab=out_0101}
-C {devices/opin.sym} 430 -1660 0 0 {name=p35 lab=out_0100}
-C {devices/opin.sym} 430 -1740 0 0 {name=p36 lab=out_0011}
-C {devices/opin.sym} 430 -1900 0 0 {name=p38 lab=out_0010}
-C {devices/opin.sym} 430 -2060 0 0 {name=p39 lab=out_0001}
-C {devices/opin.sym} 430 -2220 0 0 {name=p42 lab=out_0000}
-C {devices/lab_pin.sym} 410 -370 2 0 {name=p46 sig_type=std_logic lab=res[0]}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -450 0 0 {name=RA[28:0]
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 410 -450 1 0 {name=M2
+L=3
+W=1
+nf=1
 mult=1
-}
-C {devices/lab_pin.sym} 410 -500 0 1 {name=p1 sig_type=std_logic lab=res[29:1]}
-C {devices/lab_pin.sym} 410 -530 0 1 {name=p2 sig_type=std_logic lab=res[29]}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -580 0 0 {name=R1
-L=14.1
-model=res_xhigh_po_1p41
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
 spiceprefix=X
-mult=1
 }
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -660 0 0 {name=R2
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -740 0 0 {name=R3
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -820 0 0 {name=R4
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -900 0 0 {name=R5
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -980 0 0 {name=R6
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1060 0 0 {name=R7
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1140 0 0 {name=R8
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1220 0 0 {name=R9
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1300 0 0 {name=R10
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1380 0 0 {name=R11
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1460 0 0 {name=R12
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1540 0 0 {name=R13
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1620 0 0 {name=R14
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1700 0 0 {name=R15
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1780 0 0 {name=R16
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1860 0 0 {name=R17
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -1940 0 0 {name=R18
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2020 0 0 {name=R19
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2100 0 0 {name=R20
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2180 0 0 {name=R21
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2260 0 0 {name=R22
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {devices/lab_pin.sym} 410 -2310 0 1 {name=p5 sig_type=std_logic lab=res[30]}
-C {devices/lab_pin.sym} 410 -2340 0 1 {name=p7 sig_type=std_logic lab=res[115:30]}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2390 0 0 {name=RB[85:0]
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {devices/lab_pin.sym} 410 -2440 0 1 {name=p8 sig_type=std_logic lab=res[116:31]}
-C {devices/lab_pin.sym} 410 -2470 0 1 {name=p10 sig_type=std_logic lab=res[116]}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 410 -2520 0 0 {name=R23
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=1
-}
-C {devices/lab_pin.sym} 390 -430 0 0 {name=p11 sig_type=std_logic lab=avss}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 510 -250 0 0 {name=Rdummy1
-L=14.1
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=6
-}
-C {sky130_fd_pr/res_xhigh_po_1p41.sym} 650 -250 0 0 {name=Rdummy2
-L=1.41
-model=res_xhigh_po_1p41
-spiceprefix=X
-mult=96
-}
-C {sky130_fd_pr/lvsdiode.sym} 270 -250 0 0 {name=D1
-model=diode_pw2nd_05v5
-area=3.15e11
-pj=2.3e6
-}
+C {devices/iopin.sym} 355 -450 0 1 {name=p107 lab=avdd
+L=1
+W=2}
+C {devices/iopin.sym} 465 -230 0 0 {name=p9 lab=vss
+L=1
+W=2}
+C {devices/ipin.sym} 410 -190 0 0 {name=p1 lab=ena}
+C {devices/ipin.sym} 410 -490 2 1 {name=p3 lab=ena_b}
+C {devices/ipin.sym} 290 -340 0 0 {name=p2 lab=in}
+C {devices/opin.sym} 530 -340 0 0 {name=p4 lab=out}

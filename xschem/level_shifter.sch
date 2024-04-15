@@ -36,13 +36,13 @@ lab=in}
 N 160 -250 190 -250 {
 lab=in}
 N 230 -250 250 -250 {
-lab=vss}
+lab=dvss}
 N 250 -250 250 -200 {
-lab=vss}
+lab=dvss}
 N 230 -200 250 -200 {
-lab=vss}
+lab=dvss}
 N 230 -220 230 -200 {
-lab=vss}
+lab=dvss}
 N 230 -350 250 -350 {
 lab=dvdd}
 N 250 -400 250 -350 {
@@ -52,53 +52,51 @@ lab=dvdd}
 N 230 -400 230 -380 {
 lab=dvdd}
 N 630 -370 650 -370 {
-lab=#net1}
+lab=avdd}
 N 650 -420 650 -370 {
-lab=#net1}
+lab=avdd}
 N 630 -420 650 -420 {
-lab=#net1}
+lab=avdd}
 N 630 -420 630 -400 {
-lab=#net1}
+lab=avdd}
 N 410 -370 430 -370 {
-lab=#net1}
+lab=avdd}
 N 410 -420 410 -370 {
-lab=#net1}
+lab=avdd}
 N 410 -420 480 -420 {
-lab=#net1}
+lab=avdd}
 N 490 -420 630 -420 {
-lab=#net1}
+lab=avdd}
 N 430 -300 430 -280 {
 lab=out_b}
 N 630 -300 630 -280 {
 lab=out}
 N 430 -420 430 -400 {
-lab=#net1}
+lab=avdd}
 N 480 -420 490 -420 {
-lab=#net1}
+lab=avdd}
 N 530 -440 530 -420 {
-lab=#net1}
+lab=avdd}
 N 430 -250 450 -250 {
-lab=vss}
+lab=avss}
 N 450 -250 450 -200 {
-lab=vss}
+lab=avss}
 N 430 -200 450 -200 {
-lab=vss}
+lab=avss}
 N 430 -220 430 -200 {
-lab=vss}
+lab=avss}
 N 450 -200 630 -200 {
-lab=vss}
+lab=avss}
 N 630 -220 630 -200 {
-lab=vss}
+lab=avss}
 N 610 -250 630 -250 {
-lab=vss}
+lab=avss}
 N 610 -250 610 -200 {
-lab=vss}
-N 250 -200 430 -200 {
-lab=vss}
+lab=avss}
 N 230 -420 230 -400 {
 lab=dvdd}
 N 530 -200 530 -180 {
-lab=vss}
+lab=avss}
 N 430 -300 450 -300 {
 lab=out_b}
 N 610 -300 630 -300 {
@@ -129,6 +127,8 @@ N 560 -320 630 -320 {
 lab=out}
 N 430 -320 500 -320 {
 lab=out_b}
+N 230 -200 230 -180 {
+lab=dvss}
 C {sky130_fd_pr/nfet_01v8.sym} 210 -250 0 0 {name=M1
 L=3
 W=1
@@ -216,9 +216,17 @@ spiceprefix=X
 C {devices/iopin.sym} 530 -440 0 1 {name=p1 lab=avdd}
 C {devices/opin.sym} 450 -300 0 0 {name=p3 lab=out_b}
 C {devices/opin.sym} 610 -300 0 1 {name=p4 lab=out}
-C {devices/iopin.sym} 530 -180 0 1 {name=p5 lab=vss}
+C {devices/iopin.sym} 530 -180 0 1 {name=p5 lab=avss}
 C {devices/iopin.sym} 230 -420 0 1 {name=p6 lab=dvdd}
 C {devices/lab_pin.sym} 250 -300 0 1 {name=p7 sig_type=std_logic lab=in_b}
 C {devices/lab_pin.sym} 670 -250 0 1 {name=p8 sig_type=std_logic lab=in_b}
 C {devices/lab_pin.sym} 390 -250 0 0 {name=p9 sig_type=std_logic lab=in}
 C {devices/ipin.sym} 140 -300 0 0 {name=p10 lab=in}
+C {devices/iopin.sym} 230 -180 0 1 {name=p2 lab=dvss}
+C {sky130_fd_pr/lvsdiode.sym} 870 -260 0 0 {name=D3
+model=diode_pw2nd_05v5
+area=0.315e12
+pj=2.3e6
+}
+C {devices/lab_pin.sym} 870 -230 0 0 {name=p11 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 870 -290 0 0 {name=p12 sig_type=std_logic lab=in}
