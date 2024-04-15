@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713205655
+timestamp 1713221383
 << pwell >>
 rect -1259 717 12781 18089
 rect -1259 -369 12733 717
@@ -372,80 +372,28 @@ rect 13361 89 14080 131
 rect 13151 79 14080 89
 rect 12889 -111 12961 -99
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_0
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 13970 0 1 189
 box -183 -208 183 208
 use sky130_fd_pr__nfet_g5v0d10v5_SB5CJ8  sky130_fd_pr__nfet_g5v0d10v5_SB5CJ8_0
-timestamp 1712669216
+timestamp 1713221383
 transform 1 0 13261 0 1 189
 box -528 -558 528 558
 use sky130_fd_pr__res_xhigh_po_1p41_H3F4MM  sky130_fd_pr__res_xhigh_po_1p41_H3F4MM_0
-timestamp 1712629466
+timestamp 1713221383
 transform 0 -1 5761 1 0 8845
 box -9024 -5582 9024 5582
 use sky130_fd_pr__res_xhigh_po_1p41_LV9PDH  sky130_fd_pr__res_xhigh_po_1p41_LV9PDH_0
-timestamp 1712629466
+timestamp 1713221383
 transform 0 -1 -482 1 0 8845
 box -9024 -557 9024 557
 use sky130_fd_pr__res_xhigh_po_1p41_LV9PDH  sky130_fd_pr__res_xhigh_po_1p41_LV9PDH_2
-timestamp 1712629466
+timestamp 1713221383
 transform 0 -1 12004 1 0 8845
 box -9024 -557 9024 557
 << labels >>
 flabel metal1 -1259 18480 -859 18880 3 FreeSans 3200 0 -1200 0 avdd
 port 1 e
-flabel metal1 -1259 -1191 -859 -791 3 FreeSans 3200 0 -1200 0 vss
-port 18 e
-flabel pwell 7709 215 8106 465 0 FreeSans 1280 0 0 0 1
-flabel pwell 3953 215 4350 465 0 FreeSans 1280 0 0 0 2
-flabel pwell 197 215 594 465 0 FreeSans 1280 0 0 0 3
-flabel pwell 3416 593 3813 843 0 FreeSans 1280 0 0 0 4
-flabel pwell 7172 593 7569 843 0 FreeSans 1280 0 0 0 5
-flabel pwell 10928 593 11325 843 0 FreeSans 1280 0 0 0 6
-flabel pwell 7709 971 8106 1221 0 FreeSans 1280 0 0 0 7
-flabel pwell 3953 971 4350 1221 0 FreeSans 1280 0 0 0 8
-flabel pwell 197 971 594 1221 0 FreeSans 1280 0 0 0 9
-flabel pwell 3416 1349 3813 1599 0 FreeSans 1280 0 0 0 10
-flabel pwell 7172 1349 7569 1599 0 FreeSans 1280 0 0 0 11
-flabel pwell 10928 1349 11325 1599 0 FreeSans 1280 0 0 0 12
-flabel pwell 7709 1727 8106 1977 0 FreeSans 1280 0 0 0 13
-flabel pwell 3953 1727 4350 1977 0 FreeSans 1280 0 0 0 14
-flabel pwell 197 1727 594 1977 0 FreeSans 1280 0 0 0 15
-flabel pwell 3416 2105 3813 2355 0 FreeSans 1280 0 0 0 16
-flabel pwell 7172 2105 7569 2355 0 FreeSans 1280 0 0 0 17
-flabel pwell 10928 2105 11325 2355 0 FreeSans 1280 0 0 0 18
-flabel pwell 7709 2483 8106 2733 0 FreeSans 1280 0 0 0 19
-flabel pwell 3953 2483 4350 2733 0 FreeSans 1280 0 0 0 20
-flabel pwell 197 2483 594 2733 0 FreeSans 1280 0 0 0 21
-flabel pwell 3416 2861 3813 3111 0 FreeSans 1280 0 0 0 22
-flabel pwell 7172 2861 7569 3111 0 FreeSans 1280 0 0 0 23
-flabel pwell 10928 2861 11325 3111 0 FreeSans 1280 0 0 0 24
-flabel pwell 7709 3239 8106 3489 0 FreeSans 1280 0 0 0 25
-flabel pwell 3953 3239 4350 3489 0 FreeSans 1280 0 0 0 26
-flabel pwell 197 3239 594 3489 0 FreeSans 1280 0 0 0 27
-flabel pwell 3416 3617 3813 3867 0 FreeSans 1280 0 0 0 28
-flabel pwell 7172 3617 7569 3867 0 FreeSans 1280 0 0 0 29
-flabel pwell 10928 3617 11325 3867 0 FreeSans 1280 0 0 0 30
-flabel pwell 7709 3995 8106 4245 0 FreeSans 1280 0 0 0 31
-flabel pwell 10928 4373 11325 4623 0 FreeSans 1280 0 0 0 32
-flabel pwell 7709 4751 8106 5001 0 FreeSans 1280 0 0 0 33
-flabel pwell 10928 5129 11325 5379 0 FreeSans 1280 0 0 0 34
-flabel pwell 7709 5507 8106 5757 0 FreeSans 1280 0 0 0 35
-flabel pwell 10928 5885 11325 6135 0 FreeSans 1280 0 0 0 36
-flabel pwell 7709 6263 8106 6513 0 FreeSans 1280 0 0 0 37
-flabel pwell 10928 6641 11325 6891 0 FreeSans 1280 0 0 0 38
-flabel pwell 7709 7019 8106 7269 0 FreeSans 1280 0 0 0 39
-flabel pwell 10928 7397 11325 7647 0 FreeSans 1280 0 0 0 40
-flabel pwell 7709 7775 8106 8025 0 FreeSans 1280 0 0 0 41
-flabel pwell 10928 8153 11325 8403 0 FreeSans 1280 0 0 0 42
-flabel pwell 7709 8531 8106 8781 0 FreeSans 1280 0 0 0 43
-flabel pwell 10928 8909 11325 9159 0 FreeSans 1280 0 0 0 44
-flabel pwell 7709 9287 8106 9537 0 FreeSans 1280 0 0 0 45
-flabel pwell 10928 9665 11325 9915 0 FreeSans 1280 0 0 0 46
-flabel pwell 7709 10043 8106 10293 0 FreeSans 1280 0 0 0 47
-flabel pwell 10928 10421 11325 10671 0 FreeSans 1280 0 0 0 48
-flabel pwell 7709 10799 8106 11049 0 FreeSans 1280 0 0 0 49
-flabel pwell 10928 11177 11325 11427 0 FreeSans 1280 0 0 0 50
 flabel metal2 12781 3591 13083 3893 3 FreeSans 1280 0 -800 0 out_1111
 port 17 e
 flabel metal2 12781 3969 13083 4271 3 FreeSans 1280 0 -800 0 out_1110
@@ -481,91 +429,143 @@ port 2 e
 flabel metal2 13860 79 14080 299 0 FreeSans 1280 0 0 0 ena
 port 19 nsew
 flabel metal1 7709 11555 8106 11805 0 FreeSans 1280 0 0 0 51
-flabel pwell 7709 12311 8106 12561 0 FreeSans 1280 0 0 0 53
-flabel pwell 7709 13067 8106 13317 0 FreeSans 1280 0 0 0 55
-flabel pwell 7709 13823 8106 14073 0 FreeSans 1280 0 0 0 57
-flabel pwell 7709 14579 8106 14829 0 FreeSans 1280 0 0 0 59
-flabel pwell 7709 15335 8106 15585 0 FreeSans 1280 0 0 0 61
-flabel pwell 7709 16091 8106 16341 0 FreeSans 1280 0 0 0 63
-flabel pwell 7709 16847 8106 17097 0 FreeSans 1280 0 0 0 65
-flabel pwell 10928 11932 11325 12182 0 FreeSans 1280 0 0 0 52
-flabel pwell 10928 12689 11325 12939 0 FreeSans 1280 0 0 0 54
-flabel pwell 10928 13445 11325 13695 0 FreeSans 1280 0 0 0 56
-flabel pwell 10928 14201 11325 14451 0 FreeSans 1280 0 0 0 58
-flabel pwell 10928 14957 11325 15207 0 FreeSans 1280 0 0 0 60
-flabel pwell 10928 15713 11325 15963 0 FreeSans 1280 0 0 0 62
-flabel pwell 10928 16469 11325 16719 0 FreeSans 1280 0 0 0 64
-flabel pwell 3953 16847 4350 17097 0 FreeSans 1280 0 0 0 66
-flabel pwell 7172 16469 7569 16719 0 FreeSans 1280 0 0 0 67
-flabel pwell 7172 15713 7569 15963 0 FreeSans 1280 0 0 0 69
-flabel pwell 3953 16091 4350 16341 0 FreeSans 1280 0 0 0 68
-flabel pwell 3953 15335 4350 15585 0 FreeSans 1280 0 0 0 70
-flabel pwell 7172 14957 7569 15207 0 FreeSans 1280 0 0 0 71
-flabel pwell 3953 14579 4350 14829 0 FreeSans 1280 0 0 0 72
-flabel pwell 7172 14201 7569 14451 0 FreeSans 1280 0 0 0 73
-flabel pwell 3953 13823 4350 14073 0 FreeSans 1280 0 0 0 74
-flabel pwell 7172 13445 7569 13695 0 FreeSans 1280 0 0 0 75
-flabel pwell 3953 13067 4350 13317 0 FreeSans 1280 0 0 0 76
-flabel pwell 7172 12689 7569 12939 0 FreeSans 1280 0 0 0 77
-flabel pwell 3953 12311 4350 12561 0 FreeSans 1280 0 0 0 78
-flabel pwell 7172 11933 7569 12183 0 FreeSans 1280 0 0 0 79
-flabel pwell 3953 11555 4350 11805 0 FreeSans 1280 0 0 0 80
-flabel pwell 7172 11177 7569 11427 0 FreeSans 1280 0 0 0 81
-flabel pwell 3953 10799 4350 11049 0 FreeSans 1280 0 0 0 82
-flabel pwell 7172 10421 7569 10671 0 FreeSans 1280 0 0 0 83
-flabel pwell 3953 10043 4350 10293 0 FreeSans 1280 0 0 0 84
-flabel pwell 7172 9665 7569 9915 0 FreeSans 1280 0 0 0 85
-flabel pwell 3953 9287 4350 9537 0 FreeSans 1280 0 0 0 86
-flabel pwell 7172 8909 7569 9159 0 FreeSans 1280 0 0 0 87
-flabel pwell 3953 8531 4350 8781 0 FreeSans 1280 0 0 0 88
-flabel pwell 7172 8153 7569 8403 0 FreeSans 1280 0 0 0 89
-flabel pwell 3953 7775 4350 8025 0 FreeSans 1280 0 0 0 90
-flabel pwell 7172 7397 7569 7647 0 FreeSans 1280 0 0 0 91
-flabel pwell 3953 7019 4350 7269 0 FreeSans 1280 0 0 0 92
-flabel pwell 7172 6641 7569 6891 0 FreeSans 1280 0 0 0 93
-flabel pwell 3953 6263 4350 6513 0 FreeSans 1280 0 0 0 94
-flabel pwell 7172 5885 7569 6135 0 FreeSans 1280 0 0 0 95
-flabel pwell 3953 5507 4350 5757 0 FreeSans 1280 0 0 0 96
-flabel pwell 7172 5129 7569 5379 0 FreeSans 1280 0 0 0 97
-flabel pwell 3953 4751 4350 5001 0 FreeSans 1280 0 0 0 98
-flabel pwell 7172 4373 7569 4623 0 FreeSans 1280 0 0 0 99
-flabel pwell 3953 3995 4350 4245 0 FreeSans 1280 0 0 0 100
-flabel pwell 197 3995 594 4245 0 FreeSans 1280 0 0 0 101
-flabel pwell 3416 4373 3813 4623 0 FreeSans 1280 0 0 0 102
-flabel pwell 197 4751 594 5001 0 FreeSans 1280 0 0 0 103
-flabel pwell 3416 5129 3813 5379 0 FreeSans 1280 0 0 0 104
-flabel pwell 197 5507 594 5757 0 FreeSans 1280 0 0 0 105
-flabel pwell 3416 5885 3813 6135 0 FreeSans 1280 0 0 0 106
-flabel pwell 197 6263 594 6513 0 FreeSans 1280 0 0 0 107
-flabel pwell 3416 6641 3813 6891 0 FreeSans 1280 0 0 0 108
-flabel pwell 197 7019 594 7269 0 FreeSans 1280 0 0 0 109
-flabel pwell 3416 7397 3813 7647 0 FreeSans 1280 0 0 0 110
-flabel pwell 197 7775 594 8025 0 FreeSans 1280 0 0 0 111
-flabel pwell 3416 8153 3813 8403 0 FreeSans 1280 0 0 0 112
-flabel pwell 197 8531 594 8781 0 FreeSans 1280 0 0 0 113
-flabel pwell 3416 8909 3813 9159 0 FreeSans 1280 0 0 0 114
-flabel pwell 197 9287 594 9537 0 FreeSans 1280 0 0 0 115
-flabel pwell 3416 9665 3813 9915 0 FreeSans 1280 0 0 0 116
-flabel pwell 197 10043 594 10293 0 FreeSans 1280 0 0 0 117
-flabel pwell 3416 10421 3813 10671 0 FreeSans 1280 0 0 0 118
-flabel pwell 197 10799 594 11049 0 FreeSans 1280 0 0 0 119
-flabel pwell 3416 11177 3813 11427 0 FreeSans 1280 0 0 0 120
-flabel pwell 197 11555 594 11805 0 FreeSans 1280 0 0 0 121
-flabel pwell 3416 11933 3813 12183 0 FreeSans 1280 0 0 0 122
-flabel pwell 197 12311 594 12561 0 FreeSans 1280 0 0 0 123
-flabel pwell 3416 12689 3813 12939 0 FreeSans 1280 0 0 0 124
-flabel pwell 197 13067 594 13317 0 FreeSans 1280 0 0 0 125
-flabel pwell 3416 13445 3813 13695 0 FreeSans 1280 0 0 0 126
-flabel pwell 197 13823 594 14073 0 FreeSans 1280 0 0 0 127
-flabel pwell 3416 14201 3813 14451 0 FreeSans 1280 0 0 0 128
-flabel pwell 197 14579 594 14829 0 FreeSans 1280 0 0 0 129
-flabel pwell 3416 14957 3813 15207 0 FreeSans 1280 0 0 0 130
-flabel pwell 197 15335 594 15585 0 FreeSans 1280 0 0 0 131
-flabel pwell 3416 15713 3813 15963 0 FreeSans 1280 0 0 0 132
-flabel pwell 197 16091 594 16341 0 FreeSans 1280 0 0 0 133
-flabel pwell 3416 16469 3813 16719 0 FreeSans 1280 0 0 0 134
-flabel pwell 197 16847 594 17097 0 FreeSans 1280 0 0 0 135
-flabel pwell 3416 17225 3813 17475 0 FreeSans 1280 0 0 0 136
-flabel pwell 7172 17225 7569 17475 0 FreeSans 1280 0 0 0 137
 flabel via1 10928 17225 11325 17475 0 FreeSans 1280 0 0 0 138
+flabel pwell 7172 17225 7569 17475 0 FreeSans 1280 0 0 0 137
+flabel pwell 3416 17225 3813 17475 0 FreeSans 1280 0 0 0 136
+flabel pwell 197 16847 594 17097 0 FreeSans 1280 0 0 0 135
+flabel pwell 3416 16469 3813 16719 0 FreeSans 1280 0 0 0 134
+flabel pwell 197 16091 594 16341 0 FreeSans 1280 0 0 0 133
+flabel pwell 3416 15713 3813 15963 0 FreeSans 1280 0 0 0 132
+flabel pwell 197 15335 594 15585 0 FreeSans 1280 0 0 0 131
+flabel pwell 3416 14957 3813 15207 0 FreeSans 1280 0 0 0 130
+flabel pwell 197 14579 594 14829 0 FreeSans 1280 0 0 0 129
+flabel pwell 3416 14201 3813 14451 0 FreeSans 1280 0 0 0 128
+flabel pwell 197 13823 594 14073 0 FreeSans 1280 0 0 0 127
+flabel pwell 3416 13445 3813 13695 0 FreeSans 1280 0 0 0 126
+flabel pwell 197 13067 594 13317 0 FreeSans 1280 0 0 0 125
+flabel pwell 3416 12689 3813 12939 0 FreeSans 1280 0 0 0 124
+flabel pwell 197 12311 594 12561 0 FreeSans 1280 0 0 0 123
+flabel pwell 3416 11933 3813 12183 0 FreeSans 1280 0 0 0 122
+flabel pwell 197 11555 594 11805 0 FreeSans 1280 0 0 0 121
+flabel pwell 3416 11177 3813 11427 0 FreeSans 1280 0 0 0 120
+flabel pwell 197 10799 594 11049 0 FreeSans 1280 0 0 0 119
+flabel pwell 3416 10421 3813 10671 0 FreeSans 1280 0 0 0 118
+flabel pwell 197 10043 594 10293 0 FreeSans 1280 0 0 0 117
+flabel pwell 3416 9665 3813 9915 0 FreeSans 1280 0 0 0 116
+flabel pwell 197 9287 594 9537 0 FreeSans 1280 0 0 0 115
+flabel pwell 3416 8909 3813 9159 0 FreeSans 1280 0 0 0 114
+flabel pwell 197 8531 594 8781 0 FreeSans 1280 0 0 0 113
+flabel pwell 3416 8153 3813 8403 0 FreeSans 1280 0 0 0 112
+flabel pwell 197 7775 594 8025 0 FreeSans 1280 0 0 0 111
+flabel pwell 3416 7397 3813 7647 0 FreeSans 1280 0 0 0 110
+flabel pwell 197 7019 594 7269 0 FreeSans 1280 0 0 0 109
+flabel pwell 3416 6641 3813 6891 0 FreeSans 1280 0 0 0 108
+flabel pwell 197 6263 594 6513 0 FreeSans 1280 0 0 0 107
+flabel pwell 3416 5885 3813 6135 0 FreeSans 1280 0 0 0 106
+flabel pwell 197 5507 594 5757 0 FreeSans 1280 0 0 0 105
+flabel pwell 3416 5129 3813 5379 0 FreeSans 1280 0 0 0 104
+flabel pwell 197 4751 594 5001 0 FreeSans 1280 0 0 0 103
+flabel pwell 3416 4373 3813 4623 0 FreeSans 1280 0 0 0 102
+flabel pwell 197 3995 594 4245 0 FreeSans 1280 0 0 0 101
+flabel pwell 3953 3995 4350 4245 0 FreeSans 1280 0 0 0 100
+flabel pwell 7172 4373 7569 4623 0 FreeSans 1280 0 0 0 99
+flabel pwell 3953 4751 4350 5001 0 FreeSans 1280 0 0 0 98
+flabel pwell 7172 5129 7569 5379 0 FreeSans 1280 0 0 0 97
+flabel pwell 3953 5507 4350 5757 0 FreeSans 1280 0 0 0 96
+flabel pwell 7172 5885 7569 6135 0 FreeSans 1280 0 0 0 95
+flabel pwell 3953 6263 4350 6513 0 FreeSans 1280 0 0 0 94
+flabel pwell 7172 6641 7569 6891 0 FreeSans 1280 0 0 0 93
+flabel pwell 3953 7019 4350 7269 0 FreeSans 1280 0 0 0 92
+flabel pwell 7172 7397 7569 7647 0 FreeSans 1280 0 0 0 91
+flabel pwell 3953 7775 4350 8025 0 FreeSans 1280 0 0 0 90
+flabel pwell 7172 8153 7569 8403 0 FreeSans 1280 0 0 0 89
+flabel pwell 3953 8531 4350 8781 0 FreeSans 1280 0 0 0 88
+flabel pwell 7172 8909 7569 9159 0 FreeSans 1280 0 0 0 87
+flabel pwell 3953 9287 4350 9537 0 FreeSans 1280 0 0 0 86
+flabel pwell 7172 9665 7569 9915 0 FreeSans 1280 0 0 0 85
+flabel pwell 3953 10043 4350 10293 0 FreeSans 1280 0 0 0 84
+flabel pwell 7172 10421 7569 10671 0 FreeSans 1280 0 0 0 83
+flabel pwell 3953 10799 4350 11049 0 FreeSans 1280 0 0 0 82
+flabel pwell 7172 11177 7569 11427 0 FreeSans 1280 0 0 0 81
+flabel pwell 3953 11555 4350 11805 0 FreeSans 1280 0 0 0 80
+flabel pwell 7172 11933 7569 12183 0 FreeSans 1280 0 0 0 79
+flabel pwell 3953 12311 4350 12561 0 FreeSans 1280 0 0 0 78
+flabel pwell 7172 12689 7569 12939 0 FreeSans 1280 0 0 0 77
+flabel pwell 3953 13067 4350 13317 0 FreeSans 1280 0 0 0 76
+flabel pwell 7172 13445 7569 13695 0 FreeSans 1280 0 0 0 75
+flabel pwell 3953 13823 4350 14073 0 FreeSans 1280 0 0 0 74
+flabel pwell 7172 14201 7569 14451 0 FreeSans 1280 0 0 0 73
+flabel pwell 3953 14579 4350 14829 0 FreeSans 1280 0 0 0 72
+flabel pwell 7172 14957 7569 15207 0 FreeSans 1280 0 0 0 71
+flabel pwell 3953 15335 4350 15585 0 FreeSans 1280 0 0 0 70
+flabel pwell 3953 16091 4350 16341 0 FreeSans 1280 0 0 0 68
+flabel pwell 7172 15713 7569 15963 0 FreeSans 1280 0 0 0 69
+flabel pwell 7172 16469 7569 16719 0 FreeSans 1280 0 0 0 67
+flabel pwell 3953 16847 4350 17097 0 FreeSans 1280 0 0 0 66
+flabel pwell 10928 16469 11325 16719 0 FreeSans 1280 0 0 0 64
+flabel pwell 10928 15713 11325 15963 0 FreeSans 1280 0 0 0 62
+flabel pwell 10928 14957 11325 15207 0 FreeSans 1280 0 0 0 60
+flabel pwell 10928 14201 11325 14451 0 FreeSans 1280 0 0 0 58
+flabel pwell 10928 13445 11325 13695 0 FreeSans 1280 0 0 0 56
+flabel pwell 10928 12689 11325 12939 0 FreeSans 1280 0 0 0 54
+flabel pwell 10928 11932 11325 12182 0 FreeSans 1280 0 0 0 52
+flabel pwell 7709 16847 8106 17097 0 FreeSans 1280 0 0 0 65
+flabel pwell 7709 16091 8106 16341 0 FreeSans 1280 0 0 0 63
+flabel pwell 7709 15335 8106 15585 0 FreeSans 1280 0 0 0 61
+flabel pwell 7709 14579 8106 14829 0 FreeSans 1280 0 0 0 59
+flabel pwell 7709 13823 8106 14073 0 FreeSans 1280 0 0 0 57
+flabel pwell 7709 13067 8106 13317 0 FreeSans 1280 0 0 0 55
+flabel pwell 7709 12311 8106 12561 0 FreeSans 1280 0 0 0 53
+flabel pwell 10928 11177 11325 11427 0 FreeSans 1280 0 0 0 50
+flabel pwell 7709 10799 8106 11049 0 FreeSans 1280 0 0 0 49
+flabel pwell 10928 10421 11325 10671 0 FreeSans 1280 0 0 0 48
+flabel pwell 7709 10043 8106 10293 0 FreeSans 1280 0 0 0 47
+flabel pwell 10928 9665 11325 9915 0 FreeSans 1280 0 0 0 46
+flabel pwell 7709 9287 8106 9537 0 FreeSans 1280 0 0 0 45
+flabel pwell 10928 8909 11325 9159 0 FreeSans 1280 0 0 0 44
+flabel pwell 7709 8531 8106 8781 0 FreeSans 1280 0 0 0 43
+flabel pwell 10928 8153 11325 8403 0 FreeSans 1280 0 0 0 42
+flabel pwell 7709 7775 8106 8025 0 FreeSans 1280 0 0 0 41
+flabel pwell 10928 7397 11325 7647 0 FreeSans 1280 0 0 0 40
+flabel pwell 7709 7019 8106 7269 0 FreeSans 1280 0 0 0 39
+flabel pwell 10928 6641 11325 6891 0 FreeSans 1280 0 0 0 38
+flabel pwell 7709 6263 8106 6513 0 FreeSans 1280 0 0 0 37
+flabel pwell 10928 5885 11325 6135 0 FreeSans 1280 0 0 0 36
+flabel pwell 7709 5507 8106 5757 0 FreeSans 1280 0 0 0 35
+flabel pwell 10928 5129 11325 5379 0 FreeSans 1280 0 0 0 34
+flabel pwell 7709 4751 8106 5001 0 FreeSans 1280 0 0 0 33
+flabel pwell 10928 4373 11325 4623 0 FreeSans 1280 0 0 0 32
+flabel pwell 7709 3995 8106 4245 0 FreeSans 1280 0 0 0 31
+flabel pwell 10928 3617 11325 3867 0 FreeSans 1280 0 0 0 30
+flabel pwell 7172 3617 7569 3867 0 FreeSans 1280 0 0 0 29
+flabel pwell 3416 3617 3813 3867 0 FreeSans 1280 0 0 0 28
+flabel pwell 197 3239 594 3489 0 FreeSans 1280 0 0 0 27
+flabel pwell 3953 3239 4350 3489 0 FreeSans 1280 0 0 0 26
+flabel pwell 7709 3239 8106 3489 0 FreeSans 1280 0 0 0 25
+flabel pwell 10928 2861 11325 3111 0 FreeSans 1280 0 0 0 24
+flabel pwell 7172 2861 7569 3111 0 FreeSans 1280 0 0 0 23
+flabel pwell 3416 2861 3813 3111 0 FreeSans 1280 0 0 0 22
+flabel pwell 197 2483 594 2733 0 FreeSans 1280 0 0 0 21
+flabel pwell 3953 2483 4350 2733 0 FreeSans 1280 0 0 0 20
+flabel pwell 7709 2483 8106 2733 0 FreeSans 1280 0 0 0 19
+flabel pwell 10928 2105 11325 2355 0 FreeSans 1280 0 0 0 18
+flabel pwell 7172 2105 7569 2355 0 FreeSans 1280 0 0 0 17
+flabel pwell 3416 2105 3813 2355 0 FreeSans 1280 0 0 0 16
+flabel pwell 197 1727 594 1977 0 FreeSans 1280 0 0 0 15
+flabel pwell 3953 1727 4350 1977 0 FreeSans 1280 0 0 0 14
+flabel pwell 7709 1727 8106 1977 0 FreeSans 1280 0 0 0 13
+flabel pwell 10928 1349 11325 1599 0 FreeSans 1280 0 0 0 12
+flabel pwell 7172 1349 7569 1599 0 FreeSans 1280 0 0 0 11
+flabel pwell 3416 1349 3813 1599 0 FreeSans 1280 0 0 0 10
+flabel pwell 197 971 594 1221 0 FreeSans 1280 0 0 0 9
+flabel pwell 3953 971 4350 1221 0 FreeSans 1280 0 0 0 8
+flabel pwell 7709 971 8106 1221 0 FreeSans 1280 0 0 0 7
+flabel pwell 10928 593 11325 843 0 FreeSans 1280 0 0 0 6
+flabel pwell 7172 593 7569 843 0 FreeSans 1280 0 0 0 5
+flabel pwell 3416 593 3813 843 0 FreeSans 1280 0 0 0 4
+flabel pwell 197 215 594 465 0 FreeSans 1280 0 0 0 3
+flabel pwell 3953 215 4350 465 0 FreeSans 1280 0 0 0 2
+flabel pwell 7709 215 8106 465 0 FreeSans 1280 0 0 0 1
+flabel metal1 -1259 -1191 -859 -791 3 FreeSans 3200 0 -1200 0 avss
+port 18 e
 << end >>

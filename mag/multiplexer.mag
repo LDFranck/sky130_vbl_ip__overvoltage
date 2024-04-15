@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713185670
+timestamp 1713221383
 << locali >>
 rect 1217 12802 1293 12838
 rect 1217 12248 1225 12802
@@ -35,13 +35,15 @@ rect 6237 6203 6289 6757
 rect 1225 148 1287 702
 rect 2903 148 2965 702
 << metal1 >>
-rect 1 12910 117 13026
+rect 1 13195 1851 13311
+rect 1 12910 117 13195
+rect 1735 13132 1851 13195
 rect 1101 12910 1217 13026
 rect 1479 12949 1607 13095
 rect 1479 12891 1485 12949
 rect 1601 12891 1607 12949
-rect 1635 12910 1751 13026
-rect 2735 12910 2851 13026
+rect 1635 13016 5097 13132
+rect 1635 12910 1751 13016
 rect 3157 12949 3285 12955
 rect 1217 12802 1293 12838
 rect 1217 12248 1225 12802
@@ -49,8 +51,7 @@ rect 1287 12248 1293 12802
 rect 1479 12744 1607 12891
 rect 3157 12891 3163 12949
 rect 3279 12891 3285 12949
-rect 3313 12910 3429 13026
-rect 4413 12910 4529 13026
+rect 3313 12910 3429 13016
 rect 1335 12738 1607 12744
 rect 1335 12622 1341 12738
 rect 1457 12622 1607 12738
@@ -115,14 +116,15 @@ rect 4557 12160 4763 12166
 rect 4557 12052 4563 12160
 rect 4757 12052 4763 12160
 rect 4557 10550 4763 12052
+rect 4981 11523 5097 13016
 rect 4557 10442 4563 10550
 rect 4757 10442 4763 10550
 rect 4557 10436 4763 10442
 rect 4825 11339 4953 11485
 rect 4825 11281 4831 11339
 rect 4947 11281 4953 11339
-rect 4981 11300 5097 11416
-rect 6081 11300 6197 11416
+rect 4981 11407 6774 11523
+rect 4981 11300 5097 11407
 rect 3157 9671 3163 9729
 rect 3279 9671 3285 9729
 rect 2879 8940 3085 8946
@@ -213,8 +215,7 @@ rect 6225 7216 6431 7222
 rect 6502 8119 6630 8125
 rect 6502 8061 6508 8119
 rect 6624 8061 6630 8119
-rect 6658 8080 6774 8196
-rect 7758 8080 7874 8196
+rect 6658 8080 6774 11407
 rect 4825 6451 4831 6509
 rect 4947 6451 4953 6509
 rect 4825 6389 4953 6451
@@ -244,8 +245,7 @@ rect 1335 212 1341 328
 rect 1457 212 1607 328
 rect 1335 206 1607 212
 rect 1217 112 1293 148
-rect 1 -26 117 90
-rect 1101 -26 1217 90
+rect 1101 -97 1217 90
 rect 1479 69 1607 206
 rect 2851 702 2971 738
 rect 2851 148 2903 702
@@ -300,8 +300,12 @@ rect 6225 2386 6431 2392
 rect 4825 1621 4831 1679
 rect 4947 1621 4953 1679
 rect 4825 1615 4953 1621
-rect 4981 1584 5097 1700
-rect 6081 1584 6197 1700
+rect 6081 1674 6197 1700
+rect 7774 1674 7857 4804
+rect 6081 1591 6109 1674
+rect 6192 1591 6198 1674
+rect 6081 1584 6197 1591
+rect 7774 1585 7857 1591
 rect 4557 782 4563 890
 rect 4757 782 4763 890
 rect 4557 776 4763 782
@@ -314,13 +318,20 @@ rect 1479 11 1485 69
 rect 1601 11 1607 69
 rect 1479 5 1607 11
 rect 1635 -26 1751 90
-rect 2735 -26 2851 90
+rect 2735 -97 2851 90
+rect 1101 -213 2851 -97
 rect 3157 69 3285 206
 rect 3157 11 3163 69
 rect 3279 11 3285 69
 rect 3157 -135 3285 11
-rect 3313 -26 3429 90
-rect 4413 -26 4529 90
+rect 2735 -243 2851 -213
+rect 4413 -243 4529 90
+rect 2735 -248 4637 -243
+rect 2735 -356 4375 -248
+rect 4569 -356 4637 -248
+rect 2735 -359 4637 -356
+rect 6109 -279 6192 1584
+rect 6109 -368 6192 -362
 << via1 >>
 rect 1485 12891 1601 12949
 rect 3163 12891 3279 12949
@@ -383,10 +394,14 @@ rect 7908 5612 8102 5720
 rect 6508 4841 6624 4899
 rect 6231 2392 6425 2500
 rect 4831 1621 4947 1679
+rect 6109 1591 6192 1674
+rect 7774 1591 7857 1674
 rect 4563 782 4757 890
 rect 3019 212 3135 328
 rect 1485 11 1601 69
 rect 3163 11 3279 69
+rect 4375 -356 4569 -248
+rect 6109 -362 6192 -279
 << metal2 >>
 rect 709 12949 2343 12955
 rect 709 12891 1485 12949
@@ -675,8 +690,12 @@ rect 4825 1679 5689 1685
 rect 4825 1621 4831 1679
 rect 4947 1621 5689 1679
 rect 4825 1615 5689 1621
+rect 6109 1674 6192 1680
+rect 6192 1591 7774 1674
+rect 7857 1591 7863 1674
 rect 1293 1397 1303 1587
 rect 1393 1397 1403 1587
+rect 6109 1585 6192 1591
 rect -199 776 211 896
 rect 1007 890 1451 896
 rect 1007 782 1251 890
@@ -716,6 +735,12 @@ rect 3157 69 4021 75
 rect 3157 11 3163 69
 rect 3279 11 4021 69
 rect 3157 5 4021 11
+rect 4369 -248 4652 -241
+rect 4369 -356 4375 -248
+rect 4569 -279 4652 -248
+rect 4569 -356 6109 -279
+rect 4369 -362 6109 -356
+rect 6192 -362 6198 -279
 << via2 >>
 rect 1316 12428 1454 12439
 rect 1316 12312 1327 12428
@@ -1094,171 +1119,171 @@ rect -99 786 1845 886
 rect 2045 786 2046 886
 rect -99 785 2046 786
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_0
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 1406 0 1 12680
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_1
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 1406 0 1 12370
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_2
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 1406 0 -1 580
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_3
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 1406 0 -1 270
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_4
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 3084 0 -1 270
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_5
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 3084 0 -1 580
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_6
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 3084 0 1 12370
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_7
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 3084 0 1 12680
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_8
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 4740 0 -1 6635
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_9
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 4740 0 -1 6325
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_10
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 6417 0 -1 6635
 box -183 -208 183 208
 use sky130_fd_pr__diode_pw2nd_05v5_F6RBXN  sky130_fd_pr__diode_pw2nd_05v5_F6RBXN_11
-timestamp 1712943998
+timestamp 1713221383
 transform 1 0 6417 0 -1 6325
 box -183 -208 183 208
 use trans_gate_m  trans_gate_m_0
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 11415
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_1
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 9805
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_2
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 8195
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_3
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 6585
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_4
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 3365
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_5
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 4975
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_6
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 1755
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_7
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 1780 0 1 145
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_8
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 145
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_9
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 1755
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_10
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 4975
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_11
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 3365
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_12
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 6585
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_13
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 8195
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_14
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 9805
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_15
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 146 0 1 11415
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_18
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 1755
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_19
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 145
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_20
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 5126 0 1 9805
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_21
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 3365
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_23
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 4975
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_25
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 6585
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_27
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 8195
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_28
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 5126 0 1 6585
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_29
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 9805
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_31
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 3458 0 1 11415
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_32
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 5126 0 1 4975
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_33
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 6803 0 1 6585
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_34
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 6803 0 1 4975
 box -145 -145 1071 1555
 use trans_gate_m  trans_gate_m_37
-timestamp 1712940760
+timestamp 1713221383
 transform 1 0 5126 0 1 1755
 box -145 -145 1071 1555
 << labels >>
@@ -1302,16 +1327,10 @@ flabel metal1 1131 12970 1187 13026 0 FreeSans 800 0 0 0 vss
 port 9 nsew
 flabel metal1 31 12970 87 13026 0 FreeSans 800 0 0 0 avdd
 port 8 nsew
-flabel metal1 1665 12970 1721 13026 0 FreeSans 800 0 0 0 avdd
-flabel metal1 2765 12970 2821 13026 0 FreeSans 800 0 0 0 vss
-flabel metal1 3343 12970 3399 13026 0 FreeSans 800 0 0 0 avdd
-flabel metal1 4443 12970 4499 13026 0 FreeSans 800 0 0 0 vss
 flabel metal3 3186 -65 3256 5 0 FreeSans 800 0 0 0 vtrip_1_b
 port 17 nsew
 flabel metal1 3186 -135 3256 -65 0 FreeSans 800 0 0 0 vtrip_1
 port 15 nsew
-flabel metal1 5011 11360 5067 11416 0 FreeSans 800 0 0 0 avdd
-flabel metal1 6111 11360 6167 11416 0 FreeSans 800 0 0 0 vss
 flabel metal1 4854 11415 4924 11485 0 FreeSans 800 0 0 0 vtrip_2
 port 13 nsew
 flabel metal3 4854 11345 4924 11415 0 FreeSans 800 0 0 0 vtrip_2_b
@@ -1320,8 +1339,6 @@ flabel metal1 6531 4695 6601 4765 0 FreeSans 800 0 0 0 vtrip_3
 port 11 nsew
 flabel metal3 6531 4765 6601 4835 0 FreeSans 800 0 0 0 vtrip_3_b
 port 12 nsew
-flabel metal1 6688 8140 6744 8196 0 FreeSans 800 0 0 0 avdd
-flabel metal1 7788 8140 7844 8196 0 FreeSans 800 0 0 0 vss
 flabel metal1 8008 6430 8108 6530 0 FreeSans 800 0 0 0 out
 port 16 nsew
 << end >>
