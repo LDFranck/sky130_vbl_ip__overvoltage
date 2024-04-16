@@ -44,7 +44,7 @@ pins {
 	type:		power
 	direction:	inout
 	Vmin:		3.0 V
-	Vmax:		6.0 V
+	Vmax:		5.5 V
 	
 	+
 	name:		dvdd
@@ -55,8 +55,16 @@ pins {
 	Vmax:		1.95 V
 	
 	+
-	name:		vss
-	description:	Ground
+	name:		avss
+	description:	Analog ground
+	type:		ground
+	direction:	inout
+	Vmin:		-0.3 V
+	Vmax:		0.3 V
+	
+	+
+	name:		dvss
+	description:	Digital ground
 	type:		ground
 	direction:	inout
 	Vmin:		-0.3 V
@@ -111,16 +119,9 @@ default_conditions {
 	description:	Analog power supply voltage
 	display:	avdd
 	unit:		V
-	minimum:	3
+	minimum:	3.0
 	typical:	3.3
-	maximum:	6
-
-	+
-	name:		Vavss
-	description:	Analog ground
-	display:	avss
-	unit:		V
-	typical:	0
+	maximum:	6.0
 
 	+
 	name:		Vdvdd
@@ -130,13 +131,6 @@ default_conditions {
 	minimum:	1.65
 	typical:	1.80
 	maximum:	1.95
-	
-	+
-	name:		Vdvss
-	description:	Digital ground
-	display:	dvss
-	unit:		V
-	typical:	0
 	
 	+
 	name:		Rout
@@ -163,14 +157,18 @@ default_conditions {
 	description:	Bandgap reference voltage
 	display:	Vbg
 	unit:		V
+#	minimum:	1.18
 	typical:	1.20
+#	maximum:	1.22
 	
 	+
 	name:		Ibias
 	description:	Input bias current
 	display:	Ibias
 	unit:		nA
+#	minimum:	588
 	typical:	600
+#	maximum:	612
 	
 	+
 	name:		vtrip[3:0]
@@ -218,7 +216,7 @@ electrical_parameters {
 		name:		ena
 		typical:	1
 	}
-
+	
 	+
 	name:		idc_disabled
 	status:		skip
@@ -226,8 +224,8 @@ electrical_parameters {
 	display:	DC Current (disabled)
 	unit: 		nA
 	spec {
-		minimum:	any
-		typical:	any
+		minimum:	0.1
+		typical:	0.5
 		maximum:	1	fail
 	}
 	simulate {
@@ -239,7 +237,7 @@ electrical_parameters {
 		name: 		ena
 		typical: 	0
 	}
-
+	
 	+
 	name:		resptime
 	status:		skip
@@ -265,12 +263,12 @@ electrical_parameters {
 		typical:	35
 		maximum:	60
 	}
-	
+
 	+
 	name:		vhyst
 	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
-	display:	Hysteresis Voltage (corners)
+	display:	Hysteresis Voltage
 	unit:		V
 	spec {
 		minimum:	0.1	fail
@@ -286,21 +284,21 @@ electrical_parameters {
 		name: 		vtrip[3:0]
 		enumerate: 	0000 1111
 	}
-
+	
 	+
 	name:		vhyst_mm
 	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
-	display:	Hysteresis Voltage (missmatch)
+	display:	Hysteresis Voltage (MM)
 	unit:		V
 	spec {
-		minimum:	0.1	fail
+		minimum:	0.1	fail	std3n-above
 		typical:	0.2
-		maximum:	0.3	fail
+		maximum:	0.3	fail	std3p-below
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vhyst_mm.spice
+		template:	tb_vhyst.spice
 		format:		ascii .data result
 	}
 	conditions {
@@ -309,27 +307,61 @@ electrical_parameters {
 
 		+
 		name: 		corner
-		minimum:	ss_mm
-		typical:	tt_mm
-		maximum:	ff_mm
+		enumerate:	ss_mm tt_mm ff_mm
 		
 		+
-		name:		Vdummy
-		description:	Dummy voltage for performing iterations
-		display:	vdummy
-		unit:		V
-		enumerate:	1 2 3 4 5 6 7 8 9 10
+		name:		iterations
+		description:	Iterations to run
+		display:	Iterations
+		minimum:	1
+		maximum:	100
+		step:		linear
+		stepsize:	1
 	}
+	
+	+
+	name:		vhyst_mc
+	status:		skip
+	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
+	display:	Hysteresis Voltage (MC)
+	unit:		V
+	spec {
+		minimum:	0.1	fail	std3n-above
+		typical:	0.2
+		maximum:	0.3	fail	std3p-below
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vhyst.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		vtrip[3:0]
+		enumerate: 	0000 1111
 
+		+
+		name: 		corner
+		typical:	mc
+		
+		+
+		name:		iterations
+		description:	Iterations to run
+		display:	Iterations
+		minimum:	1
+		maximum:	100
+		step:		linear
+		stepsize:	1
+	}
+	
 	+
 	name:		vacc
 	status:		skip
 	description:	Accuracy at the alarm threshold
-	display:	Accuracy (corners)
+	display:	Accuracy
 	unit:		mV
 	spec {
 		minimum:	-100	fail
-		typical:	any
+		typical:	0
 		maximum:	100	fail
 	}
 	simulate {
@@ -349,16 +381,16 @@ electrical_parameters {
 	name:		vacc_mm
 	status:		skip
 	description:	Accuracy at the alarm threshold
-	display:	Accuracy (missmatch)
+	display:	Accuracy (MM)
 	unit:		mV
 	spec {
-		minimum:	-100	fail
-		typical:	any
-		maximum:	100	fail
+		minimum:	-100	fail	std3n-above
+		typical:	0
+		maximum:	100	fail	std3p-below
 	}
 	simulate {
 		tool:		ngspice
-		template:	tb_vacc_mm.spice
+		template:	tb_vacc.spice
 		format:		ascii .data result
 	}
 	conditions {
@@ -370,16 +402,53 @@ electrical_parameters {
 			   	
 		+
 		name: 		corner
-		minimum:	ss_mm
-		typical:	tt_mm
-		maximum:	ff_mm
+		enumerate:	ss_mm tt_mm ff_mm
 		
 		+
-		name:		Vdummy
-		description:	Dummy voltage for performing iterations
-		display:	vdummy
-		unit:		V
-		enumerate:	1 2 3 4 5 6 7 8 9 10
+		name:		iterations
+		description:	Iterations to run
+		display:	Iterations
+		minimum:	1
+		maximum:	100
+		step:		linear
+		stepsize:	1
 	}
+	
+	+
+	name:		vacc_mc
+	status:		skip
+	description:	Accuracy at the alarm threshold
+	display:	Accuracy (MC)
+	unit:		mV
+	spec {
+		minimum:	-100	fail	std3n-above
+		typical:	0
+		maximum:	100	fail	std3p-below
+	}
+	simulate {
+		tool:		ngspice
+		template:	tb_vacc.spice
+		format:		ascii .data result
+	}
+	conditions {
+		name: 		vtrip[3:0]
+		enumerate: 	0000 0001 0010 0011 \
+			   	0100 0101 0110 0111 \
+			   	1000 1001 1010 1011 \
+			   	1100 1101 1110 1111
+			   	
+		+
+		name: 		corner
+		typical:	mc
+		
+		+
+		name:		iterations
+		description:	Iterations to run
+		display:	Iterations
+		minimum:	1
+		maximum:	100
+		step:		linear
+		stepsize:	1
+	}	
 }
 # List of physical parameters to be measured and their specified limits
