@@ -352,7 +352,7 @@ Xsky130_fd_pr__nfet_g5v0d10v5_CY564Z_0 out vss in ena sky130_fd_pr__nfet_g5v0d10
 
 .subckt multiplexer in_0000 in_0001 in_0010 in_0011 in_0100 in_0101 in_0110 in_0111
 + vtrip_3 vtrip_3_b vtrip_2 vtrip_1 out vtrip_1_b vtrip_0 in_1000 in_1001 in_1010
-+ in_1011 in_1100 in_1101 in_1110 in_1111 vtrip_0_b vtrip_2_b vss avdd
++ in_1011 in_1100 in_1101 in_1110 in_1111 vtrip_2_b vtrip_0_b vss avdd
 Xsky130_fd_pr__diode_pw2nd_05v5_F6RBXN_3 vss vtrip_0 sky130_fd_pr__diode_pw2nd_05v5_F6RBXN
 Xsky130_fd_pr__diode_pw2nd_05v5_F6RBXN_2 vss vtrip_0_b sky130_fd_pr__diode_pw2nd_05v5_F6RBXN
 Xsky130_fd_pr__diode_pw2nd_05v5_F6RBXN_4 vss vtrip_1 sky130_fd_pr__diode_pw2nd_05v5_F6RBXN
@@ -596,8 +596,8 @@ XXMD16[1] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8_XTWSDC
 XXM11 dvss net5 net5 dvss sky130_fd_pr__nfet_01v8_7ZF23Z
 .ends
 
-.subckt toplevel vtrip[3] vtrip[2] vtrip[1] vtrip[0] vbg ovout ibias avdd dvss ena
-+ avss dvdd
+.subckt toplevel vtrip[3] vtrip[2] vtrip[1] vtrip[0] vbg ibias avdd dvss ena avss
++ dvdd ovout
 Xvoltage_divider_0 multiplexer_0/in_0000 multiplexer_0/in_0001 multiplexer_0/in_0010
 + multiplexer_0/in_0011 multiplexer_0/in_0100 multiplexer_0/in_0101 multiplexer_0/in_0110
 + multiplexer_0/in_0111 multiplexer_0/in_1000 multiplexer_0/in_1001 multiplexer_0/in_1010
@@ -608,7 +608,7 @@ Xmultiplexer_0 multiplexer_0/in_0000 multiplexer_0/in_0001 multiplexer_0/in_0010
 + level_shifter_3/out level_shifter_3/out_b level_shifter_2/out level_shifter_1/out
 + vin level_shifter_1/out_b level_shifter_0/out multiplexer_0/in_1000 multiplexer_0/in_1001
 + multiplexer_0/in_1010 multiplexer_0/in_1011 multiplexer_0/in_1100 multiplexer_0/in_1101
-+ multiplexer_0/in_1110 multiplexer_0/in_1111 level_shifter_0/out_b level_shifter_2/out_b
++ multiplexer_0/in_1110 multiplexer_0/in_1111 level_shifter_2/out_b level_shifter_0/out_b
 + avss avdd multiplexer
 Xlevel_shifter_0 vtrip[0] level_shifter_0/out level_shifter_0/out_b dvss avss dvdd
 + avdd level_shifter
