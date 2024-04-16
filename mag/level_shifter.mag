@@ -1,9 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713227142
-<< checkpaint >>
-rect -960 -4409 9490 3681
+timestamp 1713228232
 << error_s >>
 rect 5151 -502 6458 -251
 rect 5151 -1140 5384 -502
@@ -278,11 +276,11 @@ timestamp 1713221383
 transform 1 0 5880 0 1 -1500
 box -496 -310 496 310
 use sky130_fd_pr__nfet_g5v0d10v5_EEVBR7  sky130_fd_pr__nfet_g5v0d10v5_EEVBR7_0
-timestamp 1713221383
+timestamp 1713228232
 transform -1 0 2799 0 1 -1705
 box -528 -458 528 458
 use sky130_fd_pr__nfet_g5v0d10v5_EEVBR7  sky130_fd_pr__nfet_g5v0d10v5_EEVBR7_1
-timestamp 1713221383
+timestamp 1713228232
 transform -1 0 2799 0 1 -919
 box -528 -458 528 458
 use sky130_fd_pr__pfet_01v8_J2L9Q3  sky130_fd_pr__pfet_01v8_J2L9Q3_0
