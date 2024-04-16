@@ -431,14 +431,14 @@ X0 a_300_n100# a_n300_n188# a_n358_n100# a_n460_n274# sky130_fd_pr__nfet_01v8 ad
 X0 a_300_n100# a_n300_n197# a_n358_n100# w_n496_n319# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=3
 .ends
 
-.subckt level_shifter in out out_b dvss avss dvdd avdd
+.subckt level_shifter in out out_b dvss avss li_5238_n1104# avdd
 Xsky130_fd_pr__pfet_g5v0d10v5_YHAZV5_0 out_b out avdd avdd sky130_fd_pr__pfet_g5v0d10v5_YHAZV5
 Xsky130_fd_pr__pfet_g5v0d10v5_YHAZV5_1 out out_b avdd avdd sky130_fd_pr__pfet_g5v0d10v5_YHAZV5
 Xsky130_fd_pr__diode_pw2nd_05v5_37RBXE_0 dvss in sky130_fd_pr__diode_pw2nd_05v5_37RBXE
 Xsky130_fd_pr__nfet_g5v0d10v5_EEVBR7_0 in_b out avss avss sky130_fd_pr__nfet_g5v0d10v5_EEVBR7
 Xsky130_fd_pr__nfet_g5v0d10v5_EEVBR7_1 in out_b avss avss sky130_fd_pr__nfet_g5v0d10v5_EEVBR7
 Xsky130_fd_pr__nfet_01v8_MG6U6H_0 dvss in_b in dvss sky130_fd_pr__nfet_01v8_MG6U6H
-Xsky130_fd_pr__pfet_01v8_J2L9Q3_0 in in_b dvdd dvdd sky130_fd_pr__pfet_01v8_J2L9Q3
+Xsky130_fd_pr__pfet_01v8_J2L9Q3_0 in in_b li_5238_n1104# li_5238_n1104# sky130_fd_pr__pfet_01v8_J2L9Q3
 .ends
 
 .subckt sky130_fd_pr__pfet_01v8_XTWSDC a_n1600_n197# a_1600_n100# a_n1658_n100# w_n1796_n319#
@@ -596,8 +596,8 @@ XXMD16[1] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8_XTWSDC
 XXM11 dvss net5 net5 dvss sky130_fd_pr__nfet_01v8_7ZF23Z
 .ends
 
-.subckt toplevel avdd vtrip[3] vtrip[2] vtrip[1] vtrip[0] dvdd avss vbg ovout ibias
-+ dvss ena
+.subckt toplevel vtrip[3] vtrip[2] vtrip[1] vtrip[0] vbg ovout ibias avdd dvss ena
++ avss dvdd
 Xvoltage_divider_0 multiplexer_0/in_0000 multiplexer_0/in_0001 multiplexer_0/in_0010
 + multiplexer_0/in_0011 multiplexer_0/in_0100 multiplexer_0/in_0101 multiplexer_0/in_0110
 + multiplexer_0/in_0111 multiplexer_0/in_1000 multiplexer_0/in_1001 multiplexer_0/in_1010

@@ -1,16 +1,18 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713221383
+timestamp 1713227142
+<< checkpaint >>
+rect -960 -4409 9490 3681
 << error_s >>
-rect 5113 -502 6469 -217
-rect 5113 -1140 5384 -502
-rect 6376 -1140 6469 -502
-rect 5113 -2201 5399 -1140
-rect 6183 -2201 6469 -1140
-rect 5113 -2487 6469 -2201
+rect 5151 -502 6458 -251
+rect 5151 -1140 5384 -502
+rect 6376 -1140 6458 -502
+rect 5151 -2113 5437 -1140
+rect 6172 -2113 6458 -1140
+rect 5151 -2399 6458 -2113
 << dnwell >>
-rect 5193 -2407 6389 -297
+rect 5231 -2319 6378 -331
 << locali >>
 rect 1183 -370 2143 -340
 rect 1183 -493 1223 -370
@@ -313,8 +315,4 @@ flabel metal3 5330 -2015 5491 -1926 0 FreeSans 1600 0 0 0 in
 port 3 nsew
 flabel metal1 5237 -2313 6341 -2244 0 FreeSans 1600 0 0 0 dvss
 port 7 nsew
-flabel dnwell 5421 -538 6381 -340 0 FreeSans 1600 0 0 0 dvdd
-port 2 nsew
-flabel dnwell 5385 -1810 6377 -1190 0 FreeSans 1600 0 0 0 M1
-flabel dnwell 5385 -1140 6377 -502 0 FreeSans 1600 0 0 0 M2
 << end >>

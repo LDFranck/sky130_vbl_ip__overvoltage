@@ -220,7 +220,7 @@ Netlists match uniquely.
 Subcircuit pins:
 Circuit 1: level_shifter                   |Circuit 2: level_shifter                   
 -------------------------------------------|-------------------------------------------
-dvdd                                       |dvdd                                       
+li_5238_n1104#                             |dvdd **Mismatch**                          
 in                                         |in                                         
 avdd                                       |avdd                                       
 avss                                       |avss                                       
@@ -228,7 +228,7 @@ dvss                                       |dvss
 out_b                                      |out_b                                      
 out                                        |out                                        
 ---------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
+Cell pin lists for level_shifter and level_shifter altered to match.
 Device classes level_shifter and level_shifter are equivalent.
 Flattening unmatched subcell sky130_fd_pr__pfet_01v8_XTWSDC in circuit comp_hyst (0)(9 instances)
 Flattening unmatched subcell sky130_fd_pr__nfet_01v8_7ZF23Z in circuit comp_hyst (0)(2 instances)
