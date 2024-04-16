@@ -25,111 +25,113 @@ T {Level Shifter} 150 -110 2 1 0.4 0.4 {}
 T {2024-03-28} 690 -110 2 1 0.4 0.4 {}
 T {Version 2} 700 -70 2 1 0.4 0.4 {}
 T {Design under the Apache License Version 2.0 (Jan. 2004)} 115 35 2 1 0.4 0.4 {}
-N 230 -300 230 -280 {
+N 150 -300 150 -280 {
 lab=in_b}
-N 230 -320 230 -300 {
+N 150 -320 150 -300 {
 lab=in_b}
-N 160 -350 190 -350 {
+N 80 -350 110 -350 {
 lab=in}
-N 160 -350 160 -250 {
+N 80 -350 80 -250 {
 lab=in}
-N 160 -250 190 -250 {
+N 80 -250 110 -250 {
 lab=in}
-N 230 -250 250 -250 {
+N 150 -250 170 -250 {
 lab=dvss}
-N 250 -250 250 -200 {
+N 170 -250 170 -200 {
 lab=dvss}
-N 230 -200 250 -200 {
+N 150 -200 170 -200 {
 lab=dvss}
-N 230 -220 230 -200 {
+N 150 -220 150 -200 {
 lab=dvss}
-N 230 -350 250 -350 {
+N 150 -350 170 -350 {
 lab=dvdd}
-N 250 -400 250 -350 {
+N 170 -400 170 -350 {
 lab=dvdd}
-N 230 -400 250 -400 {
+N 150 -400 170 -400 {
 lab=dvdd}
-N 230 -400 230 -380 {
+N 150 -400 150 -380 {
 lab=dvdd}
-N 630 -370 650 -370 {
+N 550 -370 570 -370 {
 lab=avdd}
-N 650 -420 650 -370 {
+N 570 -420 570 -370 {
 lab=avdd}
-N 630 -420 650 -420 {
+N 550 -420 570 -420 {
 lab=avdd}
-N 630 -420 630 -400 {
+N 550 -420 550 -400 {
 lab=avdd}
-N 410 -370 430 -370 {
+N 330 -370 350 -370 {
 lab=avdd}
-N 410 -420 410 -370 {
+N 330 -420 330 -370 {
 lab=avdd}
-N 410 -420 480 -420 {
+N 330 -420 400 -420 {
 lab=avdd}
-N 490 -420 630 -420 {
+N 410 -420 550 -420 {
 lab=avdd}
-N 430 -300 430 -280 {
+N 350 -300 350 -280 {
 lab=out_b}
-N 630 -300 630 -280 {
+N 550 -300 550 -280 {
 lab=out}
-N 430 -420 430 -400 {
+N 350 -420 350 -400 {
 lab=avdd}
-N 480 -420 490 -420 {
+N 400 -420 410 -420 {
 lab=avdd}
-N 530 -440 530 -420 {
+N 450 -440 450 -420 {
 lab=avdd}
-N 430 -250 450 -250 {
+N 350 -250 370 -250 {
 lab=avss}
-N 450 -250 450 -200 {
+N 370 -250 370 -200 {
 lab=avss}
-N 430 -200 450 -200 {
+N 350 -200 370 -200 {
 lab=avss}
-N 430 -220 430 -200 {
+N 350 -220 350 -200 {
 lab=avss}
-N 450 -200 630 -200 {
+N 370 -200 550 -200 {
 lab=avss}
-N 630 -220 630 -200 {
+N 550 -220 550 -200 {
 lab=avss}
-N 610 -250 630 -250 {
+N 530 -250 550 -250 {
 lab=avss}
-N 610 -250 610 -200 {
+N 530 -250 530 -200 {
 lab=avss}
-N 230 -420 230 -400 {
+N 150 -420 150 -400 {
 lab=dvdd}
-N 530 -200 530 -180 {
+N 450 -200 450 -180 {
 lab=avss}
-N 430 -300 450 -300 {
+N 350 -300 370 -300 {
 lab=out_b}
-N 610 -300 630 -300 {
+N 530 -300 550 -300 {
 lab=out}
-N 230 -300 250 -300 {
+N 150 -300 170 -300 {
 lab=in_b}
-N 140 -300 160 -300 {
+N 60 -300 80 -300 {
 lab=in}
-N 430 -340 430 -320 {
+N 350 -340 350 -320 {
 lab=out_b}
-N 630 -340 630 -320 {
+N 550 -340 550 -320 {
 lab=out}
-N 630 -320 630 -300 {
+N 550 -320 550 -300 {
 lab=out}
-N 430 -320 430 -300 {
+N 350 -320 350 -300 {
 lab=out_b}
-N 560 -370 590 -370 {
+N 480 -370 510 -370 {
 lab=out_b}
-N 550 -370 560 -370 {
+N 470 -370 480 -370 {
 lab=out_b}
-N 470 -370 510 -370 {
+N 390 -370 430 -370 {
 lab=out}
-N 510 -370 560 -320 {
+N 430 -370 480 -320 {
 lab=out}
-N 500 -320 550 -370 {
+N 420 -320 470 -370 {
 lab=out_b}
-N 560 -320 630 -320 {
+N 480 -320 550 -320 {
 lab=out}
-N 430 -320 500 -320 {
+N 350 -320 420 -320 {
 lab=out_b}
-N 230 -200 230 -180 {
+N 150 -200 150 -180 {
 lab=dvss}
-C {sky130_fd_pr/nfet_01v8.sym} 210 -250 0 0 {name=M1
+N 750 -220 750 -200 {}
+N 750 -300 750 -280 {}
+C {sky130_fd_pr/nfet_01v8.sym} 130 -250 0 0 {name=M1
 L=3
 W=1
 nf=1 
@@ -143,7 +145,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_01v8.sym} 210 -350 0 0 {name=M2
+C {sky130_fd_pr/pfet_01v8.sym} 130 -350 0 0 {name=M2
 L=3
 W=1
 nf=1
@@ -157,7 +159,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 450 -370 0 1 {name=M3
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 370 -370 0 1 {name=M3
 L=3
 W=1
 nf=1
@@ -171,7 +173,7 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/pfet_g5v0d10v5.sym} 610 -370 0 0 {name=M4
+C {sky130_fd_pr/pfet_g5v0d10v5.sym} 530 -370 0 0 {name=M4
 L=3
 W=1
 nf=1
@@ -185,7 +187,7 @@ sa=0 sb=0 sd=0
 model=pfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 650 -250 0 1 {name=M8
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 570 -250 0 1 {name=M8
 L=3
 W=2
 nf=1
@@ -199,7 +201,7 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_g5v0d10v5.sym} 410 -250 0 0 {name=M7
+C {sky130_fd_pr/nfet_g5v0d10v5.sym} 330 -250 0 0 {name=M7
 L=3
 W=2
 nf=1
@@ -213,20 +215,20 @@ sa=0 sb=0 sd=0
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/iopin.sym} 530 -440 0 1 {name=p1 lab=avdd}
-C {devices/opin.sym} 450 -300 0 0 {name=p3 lab=out_b}
-C {devices/opin.sym} 610 -300 0 1 {name=p4 lab=out}
-C {devices/iopin.sym} 530 -180 0 1 {name=p5 lab=avss}
-C {devices/iopin.sym} 230 -420 0 1 {name=p6 lab=dvdd}
-C {devices/lab_pin.sym} 250 -300 0 1 {name=p7 sig_type=std_logic lab=in_b}
-C {devices/lab_pin.sym} 670 -250 0 1 {name=p8 sig_type=std_logic lab=in_b}
-C {devices/lab_pin.sym} 390 -250 0 0 {name=p9 sig_type=std_logic lab=in}
-C {devices/ipin.sym} 140 -300 0 0 {name=p10 lab=in}
-C {devices/iopin.sym} 230 -180 0 1 {name=p2 lab=dvss}
-C {sky130_fd_pr/lvsdiode.sym} 870 -260 0 0 {name=D3
+C {devices/iopin.sym} 450 -440 0 1 {name=p1 lab=avdd}
+C {devices/opin.sym} 370 -300 0 0 {name=p3 lab=out_b}
+C {devices/opin.sym} 530 -300 0 1 {name=p4 lab=out}
+C {devices/iopin.sym} 450 -180 0 1 {name=p5 lab=avss}
+C {devices/iopin.sym} 150 -420 0 1 {name=p6 lab=dvdd}
+C {devices/lab_pin.sym} 170 -300 0 1 {name=p7 sig_type=std_logic lab=in_b}
+C {devices/lab_pin.sym} 590 -250 0 1 {name=p8 sig_type=std_logic lab=in_b}
+C {devices/lab_pin.sym} 310 -250 0 0 {name=p9 sig_type=std_logic lab=in}
+C {devices/ipin.sym} 60 -300 0 0 {name=p10 lab=in}
+C {devices/iopin.sym} 150 -180 0 1 {name=p2 lab=dvss}
+C {sky130_fd_pr/lvsdiode.sym} 750 -250 0 0 {name=D3
 model=diode_pw2nd_05v5
 area=0.315e12
 pj=2.3e6
 }
-C {devices/lab_pin.sym} 870 -230 0 0 {name=p11 sig_type=std_logic lab=dvss}
-C {devices/lab_pin.sym} 870 -290 0 0 {name=p12 sig_type=std_logic lab=in}
+C {devices/lab_pin.sym} 750 -200 0 0 {name=p11 sig_type=std_logic lab=dvss}
+C {devices/lab_pin.sym} 750 -300 0 0 {name=p12 sig_type=std_logic lab=in}

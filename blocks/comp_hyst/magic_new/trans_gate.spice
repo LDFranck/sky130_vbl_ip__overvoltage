@@ -1,7 +1,0 @@
-** sch_path: /home/vblabs/sky130_vbl_ip__overvoltage/blocks/comp_hyst/xschem/trans_gate.sch
-.subckt trans_gate in ena_b ena avdd vss out
-*.PININFO avdd:B vss:B ena:I ena_b:I in:I out:O
-XM1 in ena out vss sky130_fd_pr__nfet_g5v0d10v5 L=5 W=1 nf=1 m=1
-XM2 in ena_b out avdd sky130_fd_pr__pfet_g5v0d10v5 L=5 W=6 nf=1 m=1
-.ends
-.end
