@@ -281,14 +281,15 @@ electrical_parameters {
 	display:	Hysteresis Voltage (MM)
 	unit:		V
 	spec {
-		minimum:	0.1	fail	std3n-above
+		minimum:	0.1	fail
 		typical:	0.2
-		maximum:	0.3	fail	std3p-below
+		maximum:	0.3	fail
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_vhyst.spice
 		format:		ascii .data result
+		collate:	iterations
 	}
 	conditions {
 		name: 		vtrip[3:0]
@@ -314,14 +315,15 @@ electrical_parameters {
 	display:	Hysteresis Voltage (MC)
 	unit:		V
 	spec {
-		minimum:	0.1	fail	std3n-above
+		minimum:	0.1	fail
 		typical:	0.2
-		maximum:	0.3	fail	std3p-below
+		maximum:	0.3	fail
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_vhyst.spice
 		format:		ascii .data result
+		collate:	iterations
 	}
 	conditions {
 		name: 		vtrip[3:0]
@@ -370,14 +372,15 @@ electrical_parameters {
 	display:	Accuracy (MM)
 	unit:		mV
 	spec {
-		minimum:	-100	fail	std3n-above
+		minimum:	-100	fail
 		typical:	0
-		maximum:	100	fail	std3p-below
+		maximum:	100	fail
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_vacc.spice
 		format:		ascii .data result
+		collate:	iterations
 	}
 	conditions {
 		name: 		vtrip[3:0]
@@ -406,14 +409,15 @@ electrical_parameters {
 	display:	Accuracy (MC)
 	unit:		mV
 	spec {
-		minimum:	-100	fail	std3n-above
+		minimum:	-100	fail
 		typical:	0
-		maximum:	100	fail	std3p-below
+		maximum:	100	fail
 	}
 	simulate {
 		tool:		ngspice
 		template:	tb_vacc.spice
 		format:		ascii .data result
+		collate:	iterations
 	}
 	conditions {
 		name: 		vtrip[3:0]
