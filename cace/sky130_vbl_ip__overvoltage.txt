@@ -121,16 +121,14 @@ default_conditions {
 	unit:		V
 	minimum:	3.0
 	typical:	3.3
-	maximum:	6.0
+	maximum:	5.6
 
 	+
 	name:		Vdvdd
 	description:	Digital power supply voltage
 	display:	dvdd
 	unit:		V
-	minimum:	1.65
 	typical:	1.80
-	maximum:	1.95
 	
 	+
 	name:		Rout
@@ -157,18 +155,14 @@ default_conditions {
 	description:	Bandgap reference voltage
 	display:	Vbg
 	unit:		V
-#	minimum:	1.18
 	typical:	1.20
-#	maximum:	1.22
 	
 	+
 	name:		Ibias
 	description:	Input bias current
 	display:	Ibias
 	unit:		nA
-#	minimum:	588
 	typical:	600
-#	maximum:	612
 	
 	+
 	name:		vtrip[3:0]
