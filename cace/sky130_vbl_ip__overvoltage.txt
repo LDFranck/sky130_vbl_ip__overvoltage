@@ -192,7 +192,6 @@ default_conditions {
 
 electrical_parameters {
 	name:		idc_enabled
-	status:		skip
 	description:	Current draw through analog and digital supplies, overvoltage detector enabled
 	display:	DC Current (enabled)
 	unit: 		{micro}A
@@ -213,7 +212,6 @@ electrical_parameters {
 	
 	+
 	name:		idc_disabled
-	status:		skip
 	description:	Current draw through analog and digital supplies, overvoltage detector disabled
 	display:	DC Current (disabled)
 	unit: 		nA
@@ -234,7 +232,6 @@ electrical_parameters {
 	
 	+
 	name:		resptime
-	status:		skip
 	description:	Time to trigger the alarm after exceeding threshold
 	display:	Response Time
 	unit:		{micro}s
@@ -260,7 +257,6 @@ electrical_parameters {
 
 	+
 	name:		vhyst
-	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
 	display:	Hysteresis Voltage
 	unit:		V
@@ -281,7 +277,6 @@ electrical_parameters {
 	
 	+
 	name:		vhyst_mm
-	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
 	display:	Hysteresis Voltage (MM)
 	unit:		V
@@ -315,7 +310,6 @@ electrical_parameters {
 	
 	+
 	name:		vhyst_mc
-	status:		skip
 	description:	Hysteresis Voltage (prevent rapid on/off around threshold)
 	display:	Hysteresis Voltage (MC)
 	unit:		V
@@ -349,7 +343,6 @@ electrical_parameters {
 	
 	+
 	name:		vacc
-	status:		skip
 	description:	Accuracy at the alarm threshold
 	display:	Accuracy
 	unit:		mV
@@ -373,7 +366,6 @@ electrical_parameters {
 
 	+
 	name:		vacc_mm
-	status:		skip
 	description:	Accuracy at the alarm threshold
 	display:	Accuracy (MM)
 	unit:		mV
@@ -410,7 +402,6 @@ electrical_parameters {
 	
 	+
 	name:		vacc_mc
-	status:		skip
 	description:	Accuracy at the alarm threshold
 	display:	Accuracy (MC)
 	unit:		mV
