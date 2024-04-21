@@ -1,0 +1,334 @@
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/sky130_vbl_ip__overvoltage.sch
+.subckt sky130_vbl_ip__overvoltage avdd dvdd ena vtrip[3] ibias vtrip[2] ovout vbg vtrip[1] vtrip[0] dvss avss
+*.PININFO avdd:B dvdd:B ena:I avss:B vtrip[3]:I ovout:O vbg:I vtrip[2]:I vtrip[1]:I vtrip[0]:I ibias:I dvss:B
+x1 dvdd ovout vbg net17 ena ibias dvss comp_hyst
+x2 net2 net3 net4 net5 net6 net7 net8 avdd avss net9 A NotA B NotB C net17 NotC D NotD net1 net10 net11 net12 net13 net14 net15
++ net16 multiplexer
+x3 avdd net2 net3 net4 net5 net6 net7 net8 net9 net1 net10 net11 net12 net13 net14 net15 net16 avss ena voltage_divider
+x4 avdd dvdd vtrip[3] A NotA avss dvss level_shifter
+x5 avdd dvdd vtrip[2] B NotB avss dvss level_shifter
+x6 avdd dvdd vtrip[1] C NotC avss dvss level_shifter
+x7 avdd dvdd vtrip[0] D NotD avss dvss level_shifter
+.ends
+
+* expanding   symbol:  comp_hyst.sym # of pins=7
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/comp_hyst.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/comp_hyst.sch
+.subckt comp_hyst dvdd out vref vin ena ibias dvss
+*.PININFO dvdd:B vref:I vin:I out:O ibias:I ena:I dvss:B
+XM5[0] net3 net4 dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XM5[1] net3 net4 dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XM3[0] net4 net4 dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XM3[1] net4 net4 dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XM7 net2 net4 dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XM4[0] net3 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM4[1] net3 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM11 net5 net5 dvss dvss sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 m=1
+XM12 net1 net5 dvss dvss sky130_fd_pr__nfet_01v8 L=20 W=1 nf=1 m=1
+XM9 out net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=3 nf=1 m=1
+XM10 out net2 dvss dvss sky130_fd_pr__nfet_01v8 L=1 W=3 nf=1 m=1
+XM17 out ena_b dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+XM1[0] net4 vref net1 dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1.3 nf=1 m=1
+XM1[1] net4 vref net1 dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1.3 nf=1 m=1
+XM2[0] net3 vin net1 dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1.3 nf=1 m=1
+XM2[1] net3 vin net1 dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1.3 nf=1 m=1
+XM13 net5 ena_b dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+XM6[0] net4 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM6[1] net4 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM6[2] net4 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM6[3] net4 net3 dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XM8 net2 net2 dvss dvss sky130_fd_pr__nfet_01v8 L=8 W=1 nf=1 m=1
+XM16 net3 ena dvdd dvdd sky130_fd_pr__pfet_01v8 L=3 W=1 nf=1 m=1
+XM15 net4 ena dvdd dvdd sky130_fd_pr__pfet_01v8 L=3 W=1 nf=1 m=1
+XM14 net2 ena_b dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+XM18 ena_b ena dvdd dvdd sky130_fd_pr__pfet_01v8 L=3 W=1 nf=1 m=1
+XM19 ena_b ena dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+x1 ibias ena_b ena dvdd dvss net5 trans_gate
+XMD16[0] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD16[1] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD16[2] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD16[3] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD16[4] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD16[5] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=16 W=1 nf=1 m=1
+XMD8[0] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XMD8[1] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 m=1
+XMD1[0] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[1] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[2] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[3] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[4] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[5] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[6] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[7] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[8] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[9] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[10] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[11] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[12] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[13] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[14] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[15] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[16] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[17] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[18] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMD1[19] dvdd dvdd dvdd dvdd sky130_fd_pr__pfet_01v8 L=1 W=1 nf=1 m=1
+XMDN8[0] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1 nf=1 m=1
+XMDN8[1] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=8 W=1 nf=1 m=1
+XMDN1[0] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1 nf=1 m=1
+XMDN1[1] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1 nf=1 m=1
+XMDN1[2] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1 nf=1 m=1
+XMDN1[3] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1 nf=1 m=1
+XMDN2[0] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[1] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[2] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[3] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[4] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[5] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[6] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XMDN2[7] dvss dvss dvss dvss sky130_fd_pr__nfet_g5v0d10v5 L=1 W=1.3 nf=1 m=1
+XD3 dvss vin sky130_fd_pr__diode_pw2nd_05v5 area=0.315e12 perim=4e6
+XD1 dvss vref sky130_fd_pr__diode_pw2nd_05v5 area=0.315e12 perim=4e6
+XD2 dvss ena sky130_fd_pr__diode_pw2nd_05v5 area=0.315e12 perim=4e6
+.ends
+
+
+* expanding   symbol:  multiplexer.sym # of pins=27
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/multiplexer.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/multiplexer.sch
+.subckt multiplexer in_0000 in_0001 in_0010 in_0011 in_0100 in_0101 in_0110 avdd vss in_0111 vtrip_3 vtrip_3_b vtrip_2 vtrip_2_b
++ vtrip_1 out vtrip_1_b vtrip_0 vtrip_0_b in_1000 in_1001 in_1010 in_1011 in_1100 in_1101 in_1110 in_1111
+*.PININFO in_0000:I in_0001:I in_0010:I in_0011:I in_0100:I in_0101:I in_0110:I in_0111:I in_1000:I in_1001:I in_1010:I in_1011:I
+*+ in_1110:I in_1111:I in_1100:I in_1101:I out:O vtrip_3:I vtrip_3_b:I vtrip_2:I vtrip_2_b:I vtrip_1:I vtrip_1_b:I vtrip_0:I vtrip_0_b:I
+*+ avdd:B vss:B
+x1 net5 vtrip_3 vtrip_3_b avdd vss out trans_gate_mux
+x2 net6 vtrip_3_b vtrip_3 avdd vss out trans_gate_mux
+x3 net2 vtrip_2 vtrip_2_b avdd vss net6 trans_gate_mux
+x4 net4 vtrip_2_b vtrip_2 avdd vss net5 trans_gate_mux
+x5 net3 vtrip_2_b vtrip_2 avdd vss net6 trans_gate_mux
+x6 net1 vtrip_2 vtrip_2_b avdd vss net5 trans_gate_mux
+x7 net7 vtrip_1 vtrip_1_b avdd vss net1 trans_gate_mux
+x8 net8 vtrip_1_b vtrip_1 avdd vss net1 trans_gate_mux
+x9 net9 vtrip_1 vtrip_1_b avdd vss net4 trans_gate_mux
+x10 net10 vtrip_1_b vtrip_1 avdd vss net4 trans_gate_mux
+x11 net11 vtrip_1 vtrip_1_b avdd vss net2 trans_gate_mux
+x12 net12 vtrip_1_b vtrip_1 avdd vss net2 trans_gate_mux
+x13 net13 vtrip_1 vtrip_1_b avdd vss net3 trans_gate_mux
+x14 net14 vtrip_1_b vtrip_1 avdd vss net3 trans_gate_mux
+x15 in_0000 vtrip_0 vtrip_0_b avdd vss net7 trans_gate_mux
+x16 in_0001 vtrip_0_b vtrip_0 avdd vss net7 trans_gate_mux
+x17 in_0010 vtrip_0 vtrip_0_b avdd vss net8 trans_gate_mux
+x18 in_0011 vtrip_0_b vtrip_0 avdd vss net8 trans_gate_mux
+x19 in_0100 vtrip_0 vtrip_0_b avdd vss net9 trans_gate_mux
+x20 in_0101 vtrip_0_b vtrip_0 avdd vss net9 trans_gate_mux
+x21 in_0110 vtrip_0 vtrip_0_b avdd vss net10 trans_gate_mux
+x22 in_0111 vtrip_0_b vtrip_0 avdd vss net10 trans_gate_mux
+x23 in_1000 vtrip_0 vtrip_0_b avdd vss net11 trans_gate_mux
+x24 in_1001 vtrip_0_b vtrip_0 avdd vss net11 trans_gate_mux
+x25 in_1010 vtrip_0 vtrip_0_b avdd vss net12 trans_gate_mux
+x26 in_1011 vtrip_0_b vtrip_0 avdd vss net12 trans_gate_mux
+x27 in_1100 vtrip_0 vtrip_0_b avdd vss net13 trans_gate_mux
+x28 in_1101 vtrip_0_b vtrip_0 avdd vss net13 trans_gate_mux
+x29 in_1110 vtrip_0 vtrip_0_b avdd vss net14 trans_gate_mux
+x30 in_1111 vtrip_0_b vtrip_0 avdd vss net14 trans_gate_mux
+XD1 vss vtrip_0 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD2 vss vtrip_0 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD3 vss vtrip_0_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD4 vss vtrip_0_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD5 vss vtrip_1 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD6 vss vtrip_1 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD7 vss vtrip_1_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD8 vss vtrip_1_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD9 vss vtrip_2 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD11 vss vtrip_2_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD10 vss vtrip_3 sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+XD12 vss vtrip_3_b sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+.ends
+
+
+* expanding   symbol:  voltage_divider.sym # of pins=19
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/voltage_divider.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/voltage_divider.sch
+.subckt voltage_divider avdd out_0000 out_0001 out_0010 out_0011 out_0100 out_0101 out_0110 out_0111 out_1000 out_1001 out_1010
++ out_1011 out_1100 out_1101 out_1110 out_1111 avss ena
+*.PININFO ena:I avss:B avdd:B out_1111:O out_1110:O out_1101:O out_1100:O out_1011:O out_1010:O out_1001:O out_1000:O out_0111:O
+*+ out_0110:O out_0101:O out_0100:O out_0011:O out_0010:O out_0001:O out_0000:O
+XM1 res[0] ena avss avss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=3 nf=1 m=1
+XRA[28] res[28] res[29] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[27] res[27] res[28] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[26] res[26] res[27] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[25] res[25] res[26] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[24] res[24] res[25] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[23] res[23] res[24] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[22] res[22] res[23] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[21] res[21] res[22] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[20] res[20] res[21] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[19] res[19] res[20] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[18] res[18] res[19] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[17] res[17] res[18] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[16] res[16] res[17] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[15] res[15] res[16] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[14] res[14] res[15] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[13] res[13] res[14] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[12] res[12] res[13] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[11] res[11] res[12] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[10] res[10] res[11] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[9] res[9] res[10] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[8] res[8] res[9] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[7] res[7] res[8] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[6] res[6] res[7] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[5] res[5] res[6] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[4] res[4] res[5] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[3] res[3] res[4] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[2] res[2] res[3] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[1] res[1] res[2] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRA[0] res[0] res[1] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR1 res[29] out_1111 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR2 out_1111 out_1110 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR3 out_1110 out_1101 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR4 out_1101 out_1100 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR5 out_1100 out_1011 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR6 out_1011 out_1010 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR7 out_1010 out_1001 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR8 out_1001 out_1000 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR9 out_1000 out_0111 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR10 out_0111 net1 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR11 net1 out_0110 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR12 out_0110 out_0101 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR13 out_0101 net2 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR14 net2 out_0100 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR15 out_0100 out_0011 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR16 out_0011 net3 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR17 net3 out_0010 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR18 out_0010 net4 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR19 net4 out_0001 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR20 out_0001 net5 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR21 net5 out_0000 avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR22 out_0000 res[30] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[85] res[115] res[116] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[84] res[114] res[115] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[83] res[113] res[114] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[82] res[112] res[113] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[81] res[111] res[112] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[80] res[110] res[111] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[79] res[109] res[110] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[78] res[108] res[109] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[77] res[107] res[108] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[76] res[106] res[107] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[75] res[105] res[106] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[74] res[104] res[105] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[73] res[103] res[104] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[72] res[102] res[103] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[71] res[101] res[102] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[70] res[100] res[101] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[69] res[99] res[100] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[68] res[98] res[99] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[67] res[97] res[98] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[66] res[96] res[97] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[65] res[95] res[96] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[64] res[94] res[95] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[63] res[93] res[94] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[62] res[92] res[93] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[61] res[91] res[92] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[60] res[90] res[91] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[59] res[89] res[90] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[58] res[88] res[89] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[57] res[87] res[88] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[56] res[86] res[87] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[55] res[85] res[86] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[54] res[84] res[85] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[53] res[83] res[84] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[52] res[82] res[83] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[51] res[81] res[82] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[50] res[80] res[81] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[49] res[79] res[80] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[48] res[78] res[79] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[47] res[77] res[78] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[46] res[76] res[77] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[45] res[75] res[76] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[44] res[74] res[75] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[43] res[73] res[74] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[42] res[72] res[73] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[41] res[71] res[72] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[40] res[70] res[71] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[39] res[69] res[70] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[38] res[68] res[69] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[37] res[67] res[68] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[36] res[66] res[67] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[35] res[65] res[66] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[34] res[64] res[65] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[33] res[63] res[64] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[32] res[62] res[63] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[31] res[61] res[62] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[30] res[60] res[61] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[29] res[59] res[60] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[28] res[58] res[59] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[27] res[57] res[58] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[26] res[56] res[57] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[25] res[55] res[56] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[24] res[54] res[55] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[23] res[53] res[54] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[22] res[52] res[53] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[21] res[51] res[52] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[20] res[50] res[51] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[19] res[49] res[50] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[18] res[48] res[49] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[17] res[47] res[48] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[16] res[46] res[47] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[15] res[45] res[46] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[14] res[44] res[45] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[13] res[43] res[44] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[12] res[42] res[43] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[11] res[41] res[42] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[10] res[40] res[41] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[9] res[39] res[40] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[8] res[38] res[39] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[7] res[37] res[38] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[6] res[36] res[37] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[5] res[35] res[36] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[4] res[34] res[35] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[3] res[33] res[34] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[2] res[32] res[33] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[1] res[31] res[32] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRB[0] res[30] res[31] avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XR23 res[116] avdd avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=1 m=1
+XRdummy1 avss avss avss sky130_fd_pr__res_xhigh_po_1p41 L=14.1 mult=6 m=6
+XRdummy2 avss avss avss sky130_fd_pr__res_xhigh_po_1p41 L=1.41 mult=96 m=96
+XD1 avss ena sky130_fd_pr__diode_pw2nd_05v5 area=3.15e11 perim=4e6
+.ends
+
+
+* expanding   symbol:  level_shifter.sym # of pins=7
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/level_shifter.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/level_shifter.sch
+.subckt level_shifter avdd dvdd in out out_b avss dvss
+*.PININFO avdd:B out_b:O out:O avss:B dvdd:B in:I dvss:B
+XM1 in_b in dvss dvss sky130_fd_pr__nfet_01v8 L=3 W=1 nf=1 m=1
+XM2 in_b in dvdd dvdd sky130_fd_pr__pfet_01v8 L=3 W=1 nf=1 m=1
+XM3 out_b out avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+XM4 out out_b avdd avdd sky130_fd_pr__pfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+XM8 out in_b avss avss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=2 nf=1 m=1
+XM7 out_b in avss avss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=2 nf=1 m=1
+XD3 dvss in sky130_fd_pr__diode_pw2nd_05v5 area=0.315e12 perim=4e6
+.ends
+
+
+* expanding   symbol:  trans_gate.sym # of pins=6
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/trans_gate.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/trans_gate.sch
+.subckt trans_gate in ena_b ena avdd vss out
+*.PININFO avdd:B vss:B ena:I ena_b:I in:I out:O
+XM1 in ena out vss sky130_fd_pr__nfet_g5v0d10v5 L=5 W=1 nf=1 m=1
+XM2 in ena_b out avdd sky130_fd_pr__pfet_g5v0d10v5 L=5 W=6 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  trans_gate_mux.sym # of pins=6
+** sym_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/trans_gate_mux.sym
+** sch_path: /home/vblabs/Videos/sky130_vbl_ip__overvoltage/xschem/trans_gate_mux.sch
+.subckt trans_gate_mux in ena_b ena avdd vss out
+*.PININFO avdd:B vss:B ena:I ena_b:I in:I out:O
+XM1 in ena out vss sky130_fd_pr__nfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+XM2 in ena_b out avdd sky130_fd_pr__pfet_g5v0d10v5 L=3 W=1 nf=1 m=1
+.ends
+
+.end

@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713563119
+timestamp 1713724750
 << dnwell >>
 rect -18138 9035 5931 17409
 rect 7922 10297 23998 15120
@@ -390,7 +390,7 @@ rect 4546 572 4686 629
 rect 10276 314 10416 392
 rect 13294 -2046 13434 -1881
 << metal3 >>
-rect 7296 10414 7460 17924
+rect 7296 10414 7460 17489
 rect 7296 10358 7308 10414
 rect 7448 10358 7460 10414
 rect 7296 10348 7460 10358
@@ -503,7 +503,7 @@ rect 13261 -4002 13469 -2046
 rect 18268 2356 20844 5659
 rect 21598 101 23454 3000
 use comp_hyst  comp_hyst_0
-timestamp 1713226135
+timestamp 1713724750
 transform 1 0 6715 0 1 11492
 box 1667 -5363 16947 2564
 use initials  initials_0
@@ -511,23 +511,23 @@ timestamp 1713221383
 transform 1 0 16849 0 1 2277
 box 1419 79 3995 3382
 use level_shifter  level_shifter_0
-timestamp 1713359379
+timestamp 1713724750
 transform 1 0 6519 0 1 8816
 box 1105 -2399 6458 -251
 use level_shifter  level_shifter_1
-timestamp 1713359379
+timestamp 1713724750
 transform 1 0 6519 0 1 6624
 box 1105 -2399 6458 -251
 use level_shifter  level_shifter_2
-timestamp 1713359379
+timestamp 1713724750
 transform 1 0 6519 0 1 4432
 box 1105 -2399 6458 -251
 use level_shifter  level_shifter_3
-timestamp 1713359379
+timestamp 1713724750
 transform 1 0 6519 0 1 2240
 box 1105 -2399 6458 -251
 use multiplexer  multiplexer_0
-timestamp 1713226135
+timestamp 1713724750
 transform 1 0 -1955 0 1 209
 box -199 -135 8108 13095
 use rocket  rocket_0
@@ -539,33 +539,33 @@ timestamp 1713221383
 transform 1 0 478 0 1 1
 box -3578 973 -2488 12383
 use voltage_divider  voltage_divider_0
-timestamp 1713226135
+timestamp 1713724750
 transform 1 0 -16053 0 1 -2158
 box -1259 -1438 14153 19128
 << labels >>
-flabel metal3 7296 17760 7460 17924 0 FreeSans 1600 0 0 0 ibias
-port 12 nsew
 flabel metal2 13425 5991 22940 6111 0 FreeSans 800 0 0 0 vin
 flabel metal1 -18218 -4002 10025 -2701 0 FreeSans 8000 0 0 0 avss
-port 18 nsew
+port 12 nsew
 flabel metal1 -18218 16076 5440 17489 0 FreeSans 8000 0 0 0 avdd
-port 15 nsew
+port 1 nsew
 flabel metal1 13032 -4002 24405 -2705 0 FreeSans 8000 0 0 0 dvss
-port 16 nsew
+port 11 nsew
 flabel metal1 7535 16078 24079 17489 0 FreeSans 8000 0 0 0 dvdd
-port 19 nsew
-flabel metal3 10263 -4002 10429 -3847 0 FreeSans 1600 90 0 0 vtrip[3]
 port 2 nsew
-flabel metal3 10555 -4002 10721 -3848 0 FreeSans 1600 90 0 0 vtrip[2]
-port 3 nsew
-flabel metal3 10860 -4002 11026 -3848 0 FreeSans 1600 90 0 0 vtrip[1]
+flabel metal3 10263 -4002 10429 -3847 0 FreeSans 1600 90 0 0 vtrip[3]
 port 4 nsew
+flabel metal3 10555 -4002 10721 -3848 0 FreeSans 1600 90 0 0 vtrip[2]
+port 6 nsew
+flabel metal3 10860 -4002 11026 -3848 0 FreeSans 1600 90 0 0 vtrip[1]
+port 9 nsew
 flabel metal3 11195 -4002 11361 -3848 0 FreeSans 1600 90 0 0 vtrip[0]
-port 5 nsew
-flabel metal3 13261 -4002 13469 -3848 0 FreeSans 1600 0 0 0 ena
-port 17 nsew
-flabel metal2 23788 5821 24078 5941 0 FreeSans 1600 0 0 0 vbg
 port 10 nsew
+flabel metal3 13261 -4002 13469 -3848 0 FreeSans 1600 0 0 0 ena
+port 3 nsew
+flabel metal2 23788 5821 24078 5941 0 FreeSans 1600 0 0 0 vbg
+port 8 nsew
 flabel metal2 23196 10475 24078 10653 0 FreeSans 1600 0 0 0 ovout
-port 20 nsew
+port 7 nsew
+flabel metal3 7296 17325 7460 17489 0 FreeSans 1600 0 0 0 ibias
+port 5 nsew
 << end >>

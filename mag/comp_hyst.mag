@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1713226135
+timestamp 1713724750
 << nwell >>
 rect 15899 1815 15954 1823
 rect 14281 1580 15936 1584
@@ -1480,7 +1480,7 @@ timestamp 1713221383
 transform 0 1 16300 -1 0 -5180
 box -183 -208 183 208
 use trans_gate  x1
-timestamp 1713226135
+timestamp 1713724750
 transform 1 0 5910 0 1 -2537
 box 1220 -2096 2736 522
 use sky130_fd_pr__nfet_g5v0d10v5_6975WM  XM1[0]

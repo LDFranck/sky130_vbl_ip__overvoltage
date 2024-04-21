@@ -2,7 +2,6 @@ cace/*.spice
 cace/xschemrc
 cace/sky130_vbl_ip__overvoltage_out.txt
 cace/*.sym
-netlist/*
 ngspice/*
 spice/*
 plots/*
@@ -12,6 +11,7 @@ mag/*.ext
 mag/*.res.ext
 mag/*.nodes
 mag/*.sim
+mag/.magicrc
 .spiceinit
 
 blocks/comp_hyst/cace/*.spice
