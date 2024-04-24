@@ -1,5 +1,8 @@
 # SKY130 Overvoltage Detector
+[![](https://img.shields.io/badge/License-Apache%202.0-blue)](https://opensource.org/licenses/Apache-2.0)
+[![](https://img.shields.io/badge/Technology-sky130A-brightgreen)](https://skywater-pdk.readthedocs.io/en/main/)
 
+<img align="right" width="200" src="https://raw.githubusercontent.com/LDFranck/sky130_vbl_ip__overvoltage/main/vblabs.png" alt="logo">
 
 ### Efabless Chipalooza Challange 2024 <br><sub>16 Feb. 2024 - 17 Apr. 2024</sub>
 
