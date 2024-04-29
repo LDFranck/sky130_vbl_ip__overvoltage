@@ -26,7 +26,7 @@ TODO
 <img src="imgs/pinout.png" width="350"/>
 
 ## Acknowledgment 
-First, we would like to thank Von Braun Labs for allowing us to participate in the Chipalooza challenge. Next, we want to give a shout-out to everyone who helped us with guidance and support: Osmar Vieira Machado (Von Braun Labs), João Navarro Soares Jr. (USP), and Tim Edwards (Efabless). Finally, last but not least, we want to say a big thank you to Efabless for organizing and sponsoring the challenge.
+First, we would like to thank Von Braun Labs for allowing us to participate in the Chipalooza challenge. Next, we want to give a shout-out to everyone who helped us with guidance and support: Osmar Vieira Machado (Von Braun Labs), João Navarro Soares Jr. (USP), and Tim Edwards (Efabless). Last but not least, we want to say a big thank you to Efabless for organizing and sponsoring the challenge.
 
 ## References
 [1] P. E. Allen, "CMOS Analog Circuit Design", 2nd ed., Oxford University Press, 2012.
